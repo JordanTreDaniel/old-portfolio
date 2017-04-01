@@ -40,3 +40,17 @@
 
 }
 /* THUMBNAIL SECTION*/
+
+/* MY SKILLS */
+.skills-image {
+  /*height: 200px;*/
+  width: 100%;
+}
+#skills-arrow-left, #skills-arrow-right {
+  margin-top: 10%;
+  font-size: 2em;
+};
+#skills-div * {
+  margin-top: 50%;
+}
+/* MY SKILLS END */

@@ -2,11 +2,38 @@ $(document).ready(()=> {
   //Start typing your code here
   showSkills();
   showEvents();
-  $('#next-skill').click(()=> {
+
+
+
+  //My Skills
+  var skillsTimeLoop;
+  function setSkillsLoop() {
+    skillsTimeLoop = setInterval(() => {
+      skillsIndex++;
+      showSkills();
+    }, 3000);
+  }
+  function nextSkill() {
     skillsIndex++;
     showSkills();
+  }
+  setSkillsLoop();
+  $('#next-skill').click(()=> {
+    nextSkill();
   });
-
+  $('#skills-div').hover(() => {
+    clearInterval(skillsTimeLoop);
+  }).mouseleave(() => {
+    setSkillsLoop();
+  });
+  $('#skills-div').click(() => {
+    nextSkill();
+  })
+  $('#skills-div').dblclick(() => {
+    skillsIndex--;
+    showSkills();
+    console.log("right one hit");
+  })
 });
 
 //The index to control the skills section's content
@@ -20,9 +47,11 @@ function showSkills() {
     skillsIndex = 0;
   }
   //Select the skills div and add the image div
-  $('#skills-div').append('<div class="col-xs-4"><img class="skills-image" src="' + skills[skillsIndex].imageUrl + '"></div>');
+  $('#skills-div').append('<div class="col-xs-3"><img class="skills-image" src="' + skills[skillsIndex].imageUrl + '"></div>');
   //add the text div
-  $('#skills-div').append('<div class="col-xs-8"><h4>' + skills[skillsIndex].name + '</h4><p>' + skills[skillsIndex].description + '</p></div>')
+  $('#skills-div').append('<div class="col-xs-8 col-xs-offset-1"><h4>' + skills[skillsIndex].name + '</h4><p>' + skills[skillsIndex].description + '</p></div>');
+  //add animation to it
+  $('#skills-div').slideDown(1000);
 }
 var skills = [
   {
@@ -32,57 +61,57 @@ var skills = [
   },
   {
     name: "Angular 1.5",
-    imageUrl: "",
+    imageUrl: "https://angular.io/resources/images/logos/angular2/angular.svg",
     description: "I learned how to make a single page app with Angular while in Coder Camps, Nov. '16 - Jan. '17. I am still working with Angular, in particular I am teaching myself how to make a component based application."
   },
   {
     name: "Angular Material",
-    imageUrl: "",
+    imageUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/profile/profile-512_2.jpg",
     description: "I loved bootstrap, until I met Material Design. This is another skill that I picked up in bootcamp, and it is my favorite design framework. I use it on any project that I get the chance to use it on."
   },
   {
     name: "HTML5",
-    imageUrl: "",
+    imageUrl: "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png",
     description: "I taught myself to write HTML on Codecademy back in 2015, and I have been practicing it ever since. I have a very good grasp on HTML and the DOM."
   },
   {
     name: "CSS",
-    imageUrl: "",
+    imageUrl: "https://www.sololearn.com/Icons/Courses/1023.png",
     description: "I learned HTML and CSS simultaneously, and while I definitely prefer using a design framework, I defi"
   },
   {
     name: "JQuery",
-    imageUrl: "",
+    imageUrl: "http://wikiprogramming.org/wp-content/uploads/2016/10/jquery-icon-150x150.png",
     description: "I learned JQuery as my first javascript framework. That is how I learned to manipulate the DOM and everything. This portfolio was written using JQuery."
   },
   {
     name: "JSON Web Tokens",
-    imageUrl: "",
+    imageUrl: "https://jwt.io/img/pic_logo.svg",
     description: "I learned how to use JWT's during my time in bootcamp as part of my authentication for my projects."
   },
   {
     name: "Express",
-    imageUrl: "",
+    imageUrl: "https://cdnp-2f3a.kxcdn.com/blog/wp-content/uploads/2015/11/Express-JS-101.png",
     description: "Express was a big part of my back-end for What's Inside and Coding Skills. I am by no means an expert on this technology, but I remember how to use it to create a basic CRUD API, and how to use it for the main server."
   },
   {
     name: "Node",
-    imageUrl: "",
+    imageUrl: "http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png",
     description: "Node is another technology that I know just enough to use it. I have a basic understanding of how it works now, and I read up on the concepts whenever I can."
   },
   {
     name: "AJAX/HTTP Requests",
-    imageUrl: "",
+    imageUrl: "http://programmerguru.com/ajax-tutorial/wp-content/uploads/sites/8/2013/04/ajax-logo.jpg",
     description: "I have used ajax calls in many different forms, including the JQuery and Angular formats. I have a good solid understanding of how they work and when to use them."
   },
   {
     name: "Typescript",
-    imageUrl: "",
+    imageUrl: "https://s.gravatar.com/avatar/17e414f1d3c2a1c190a1fe04d9850286?size=496&default=retro",
     description: "I have been using Typescript for a few months now, which means I am familiar with ES6 code as well. I love the syntax and ease of the language and I cannot wait until ES6 is supported throughout all browsers."
   },
   {
     name: "Mongo/MongoDB",
-    imageUrl: "",
+    imageUrl: "https://camo.githubusercontent.com/90d369fa79f305989417b8746bfbfce05d07b29f/68747470733a2f2f7468756d6273706c75732e74757473706c75732e636f6d2f75706c6f6164732f75736572732f313131362f706f7374732f32343833352f707265766965775f696d6167652f6d6f6e676f64622d6c6f676f2e706e673f6865696768743d3330302677696474683d333030",
     description: "I learned these two technologies almost simultaneously. Mongo is the first DB that I worked with, and I loved the flexibility of the non-relational DB. Although I worked with it for a short period of time, I got pretty good at using it."
   }
 ]
