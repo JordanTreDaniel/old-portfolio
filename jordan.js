@@ -11,7 +11,7 @@ $(document).ready(()=> {
     skillsTimeLoop = setInterval(() => {
       skillsIndex++;
       showSkills();
-    }, 3000);
+    }, 300);
   }
   function nextSkill() {
     skillsIndex++;
@@ -28,12 +28,7 @@ $(document).ready(()=> {
   });
   $('#skills-div').click(() => {
     nextSkill();
-  })
-  $('#skills-div').dblclick(() => {
-    skillsIndex--;
-    showSkills();
-    console.log("right one hit");
-  })
+  });
 });
 
 //The index to control the skills section's content
