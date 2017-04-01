@@ -1,0 +1,42 @@
+.navbar-social-image {
+  height: 30px;
+}
+
+#main {
+  width: 80%;
+}
+
+/* HERO SECTION*/
+#hero-row * {
+  margin-top: 5%;
+}
+#profile-picture {
+  border-radius: 50%;
+  height: 300px;
+}
+/* END HERO SECTION */
+
+/* MY STORY SECTION*/
+.section-div {
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.section-div h1{
+  margin-bottom: 5%;
+}
+/* MY STORY SECTION END */
+
+
+/* THUMBNAIL SECTION*/
+.thumbnail {
+  height: 500px;
+}
+.thumbnail img {
+  height: 33%
+}
+.thumbnail .button-holder {
+  position: absolute;
+  bottom: 5px;
+
+}
+/* THUMBNAIL SECTION*/
