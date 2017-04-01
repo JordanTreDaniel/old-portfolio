@@ -9,7 +9,9 @@
 /* HERO SECTION*/
 #hero-row * {
   margin-top: 5%;
+  opa: .1;
 }
+
 #profile-picture {
   border-radius: 50%;
   height: 300px;
@@ -52,5 +54,9 @@
 };
 #skills-div * {
   margin-top: 50%;
+
+}
+#big-skills-div {
+  height: 400px;
 }
 /* MY SKILLS END */

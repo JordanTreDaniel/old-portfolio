@@ -2,37 +2,26 @@ $(document).ready(()=> {
   //Start typing your code here
   showSkills();
   showEvents();
+  //Hero SECTION
 
-
-
-  //My Skills
-  var skillsTimeLoop;
-  function setSkillsLoop() {
-    skillsTimeLoop = setInterval(() => {
-      skillsIndex++;
-      showSkills();
-    }, 300);
-  }
-  function nextSkill() {
-    skillsIndex++;
-    showSkills();
-  }
-  setSkillsLoop();
-  $('#next-skill').click(()=> {
-    nextSkill();
-  });
-  $('#skills-div').hover(() => {
-    clearInterval(skillsTimeLoop);
-  }).mouseleave(() => {
-    setSkillsLoop();
-  });
-  $('#skills-div').click(() => {
-    nextSkill();
-  });
+  //timeLine
+  startTimeline();
 });
 
 //The index to control the skills section's content
 var skillsIndex = 0;
+//var to destroy the loop when necessary
+var skillsTimeLoop;
+function setSkillsLoop() {
+  skillsTimeLoop = setInterval(() => {
+    skillsIndex++;
+    showSkills();
+  }, 333);
+}
+function nextSkill() {
+  skillsIndex++;
+  showSkills();
+}
 //This function allows me to dynamically add/populate a skills section to the page
 function showSkills() {
   //Clear any existing children
@@ -110,20 +99,51 @@ var skills = [
     description: "I learned these two technologies almost simultaneously. Mongo is the first DB that I worked with, and I loved the flexibility of the non-relational DB. Although I worked with it for a short period of time, I got pretty good at using it."
   }
 ]
+//My Skills
+setSkillsLoop();
+$('#next-skill').click(()=> {
+  nextSkill();
+});
+$('#skills-div').hover(() => {
+  clearInterval(skillsTimeLoop);
+}).mouseleave(() => {
+  setSkillsLoop();
+});
+$('#skills-div').click(() => {
+  nextSkill();
+});
+
 
 var timelineIndex = 0;
+var timelineLoop;
+function startTimeline() {
+  timelineLoop = setInterval(() => {
+    timelineIndex++;
+    showEvents();
+  }, 4000);
+}
 //Function to populate the timeline section
 function showEvents() {
-  $('#timeline-div').empty();
-  if(timelineIndex === lifeStory.length) {
-    timelineIndex = 0;
-  }
-  //add the event name and date
-  var eventHead = lifeStory[timelineIndex].event + ' - ' + lifeStory[timelineIndex].when;
-  $("#timeline-div").append('<h5 class="pull-left">' + eventHead + '</h5>')
-  //Add the description
-  $('#timeline-div').append('<h3 class="pull-right">' + lifeStory[timelineIndex].description + '</h3>');
+  $('#timeline-div').fadeOut(1000, () => {
+    $('#timeline-div').empty();
+    if(timelineIndex === lifeStory.length) {
+      timelineIndex = 0;
+    }
+    //add the event name and date
+    var eventHead = lifeStory[timelineIndex].event + ' - ' + lifeStory[timelineIndex].when;
+    $("#timeline-div").append('<h5 class="pull-left">' + eventHead + '</h5>')
+    //Add the description
+    $('#timeline-div').append('<h3 class="pull-right">' + lifeStory[timelineIndex].description + '</h3>');
+    $('#timeline-div').fadeIn(500);
+  });
 }
+$('#timeline-div').hover(() => {
+  clearInterval(timelineLoop);
+})
+.mouseleave(() => {
+  startTimeline();
+})
+.click(showEvents);
 var lifeStory = [
   {
     event: "Birth",
