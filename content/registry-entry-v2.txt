@@ -1,0 +1,95 @@
+# registry entry v2 — for the portfolio-next / Mac merge.
+# shape mirrors content/registry-entry.txt (v1). Merge both; v1 stays live.
+'poker-hands-v2': {
+    slug: 'poker-hands-v2',
+    tier: 'public',
+    title: 'Poker Hands for Beginners: Rankings, Quiz & Mistakes',
+    description:
+      'Poker hands for beginners: 10 rankings from royal flush to high card, how best-5-of-7 works, kickers explained, and 7 classic beginner mistakes to teach.',
+    tag: 'Tutorial',
+    published: '2026-10-11',
+    author: 'Jordan Christley',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: 'Poker Hands for Beginners: Rankings, Quiz & Mistakes',
+      description:
+        'Poker hands for beginners: 10 rankings from royal flush to high card, how best-5-of-7 works, kickers explained, and 7 classic beginner mistakes to teach.',
+      author: {
+        '@type': 'Person',
+        name: 'Jordan Christley',
+      },
+      datePublished: '2026-10-11',
+    },
+    # page-level JSON-LD injected verbatim by build-v2.py (FAQPage, 8 Q&As):
+    faqJsonLd: {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+            {
+                  "@type": "Question",
+                  "name": "What is the best hand in poker?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A royal flush — the 10, jack, queen, king and ace all of the same suit. It is the highest straight flush, so it beats every other poker hand; you are dealt one about 1 in 649,740 times, and it can never lose."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "What is the worst hand in poker?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "High card. With no pair, straight or flush you play your single highest card, and it only wins if everyone else also has nothing — even then, only if your top card is the biggest."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "What is the correct order of poker hands?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "From strongest to weakest: royal flush, straight flush, four of a kind, full house, flush, straight, three of a kind, two pair, one pair, high card."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "How many cards are in a poker hand?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Exactly five. In Texas Hold’em you pick the best 5 cards from your 2 hole cards plus the 5 community cards — the “best 5 of 7” — and you never show 6 or 7 cards."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "Do you have to use both of your hole cards?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. You may use both, just one, or neither — your hand is simply the best 5-card combination of your seven cards. If the five community cards already beat anything your cards make, you play the board."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "What is a kicker in poker?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A kicker is a leftover high card used to break ties. When two players make the same kind of hand — say, both pair the board’s kings — the next-highest cards are compared one at a time until one player pulls ahead; identical kickers split the pot."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "What is the difference between a flush and a straight?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A flush is five cards that all share one suit but are not in order (like 9♥ 8♥ 5♥ 2♥ K♥); a straight is five cards in consecutive rank order from mixed suits (like 9♣ 8♦ 7♥ 6♠ 5♣). A flush beats a straight."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "Is A-2-3-4-5 a straight in poker?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. For straights only, an ace can count as the low card, so A-2-3-4-5 is a straight — the lowest one. But the ace can never wrap around the end: Q-K-A-2-3 is not a straight."
+                  }
+            }
+      ]
+},
+},

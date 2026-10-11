@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en" data-version="v2">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poker Hands for Beginners: Rankings, Quiz &amp; Mistakes</title>
+<meta name="description" content="Poker hands for beginners: 10 rankings from royal flush to high card, how best-5-of-7 works, kickers explained, and 7 classic beginner mistakes to teach.">
+<link rel="canonical" href="https://portfolio.jordanchristley.com/public/poker-hands-v2/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Cpath%20d='M50%2012C50%2012%2022%2036%2022%2054C22%2063%2028%2069%2036%2069C41%2069%2045%2067%2047%2064C46%2074%2042%2082%2035%2088L65%2088C58%2082%2054%2074%2053%2064C55%2067%2059%2069%2064%2069C72%2069%2078%2063%2078%2054C78%2036%2050%2012%2050%2012Z'%20fill='%23FFD700'/%3E%3C/svg%3E">
+<meta property="og:title" content="Poker Hands for Beginners: Rankings, Quiz &amp; Mistakes">
+<meta property="og:description" content="Poker hands for beginners: 10 rankings from royal flush to high card, how best-5-of-7 works, kickers explained, and 7 classic beginner mistakes to teach.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://portfolio.jordanchristley.com/public/poker-hands-v2/">
+<meta property="og:site_name" content="Poker Hands, Decoded">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Poker Hands for Beginners: Rankings, Quiz &amp; Mistakes">
+<meta name="twitter:description" content="Poker hands for beginners: 10 rankings from royal flush to high card, how best-5-of-7 works, kickers explained, and 7 classic beginner mistakes to teach.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the best hand in poker?", "acceptedAnswer": {"@type": "Answer", "text": "A royal flush — the 10, jack, queen, king and ace all of the same suit. It is the highest straight flush, so it beats every other poker hand; you are dealt one about 1 in 649,740 times, and it can never lose."}}, {"@type": "Question", "name": "What is the worst hand in poker?", "acceptedAnswer": {"@type": "Answer", "text": "High card. With no pair, straight or flush you play your single highest card, and it only wins if everyone else also has nothing — even then, only if your top card is the biggest."}}, {"@type": "Question", "name": "What is the correct order of poker hands?", "acceptedAnswer": {"@type": "Answer", "text": "From strongest to weakest: royal flush, straight flush, four of a kind, full house, flush, straight, three of a kind, two pair, one pair, high card."}}, {"@type": "Question", "name": "How many cards are in a poker hand?", "acceptedAnswer": {"@type": "Answer", "text": "Exactly five. In Texas Hold’em you pick the best 5 cards from your 2 hole cards plus the 5 community cards — the “best 5 of 7” — and you never show 6 or 7 cards."}}, {"@type": "Question", "name": "Do you have to use both of your hole cards?", "acceptedAnswer": {"@type": "Answer", "text": "No. You may use both, just one, or neither — your hand is simply the best 5-card combination of your seven cards. If the five community cards already beat anything your cards make, you play the board."}}, {"@type": "Question", "name": "What is a kicker in poker?", "acceptedAnswer": {"@type": "Answer", "text": "A kicker is a leftover high card used to break ties. When two players make the same kind of hand — say, both pair the board’s kings — the next-highest cards are compared one at a time until one player pulls ahead; identical kickers split the pot."}}, {"@type": "Question", "name": "What is the difference between a flush and a straight?", "acceptedAnswer": {"@type": "Answer", "text": "A flush is five cards that all share one suit but are not in order (like 9♥ 8♥ 5♥ 2♥ K♥); a straight is five cards in consecutive rank order from mixed suits (like 9♣ 8♦ 7♥ 6♠ 5♣). A flush beats a straight."}}, {"@type": "Question", "name": "Is A-2-3-4-5 a straight in poker?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. For straights only, an ace can count as the low card, so A-2-3-4-5 is a straight — the lowest one. But the ace can never wrap around the end: Q-K-A-2-3 is not a straight."}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0a; --bg-card: #141414; --bg-card-alt: #1a1a1a;
+  --pink: #FF1493; --cyan: #00E5FF; --gold: #FFD700; --green: #00E676; --green-soft: #69F0AE;
+  --red: #FF5252; --red-soft: #FF8A80; --orange: #FF9100;
+  --text: #e8e6e1; --text-dim: #aaa69d; --text-faint: #9c988f;
+  --line: #262421; --line-soft: #1d1b19;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  color: var(--text);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  /* casino-table atmosphere: deep felt vignette, top lamp + bottom rail shadow */
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(1300px 640px at 50% -8%, rgba(16,72,46,.32), transparent 64%),
+    radial-gradient(1000px 560px at 50% 106%, rgba(8,40,26,.28), transparent 60%),
+    linear-gradient(180deg, #08140e 0px, #0a0d0b 400px, #0a0a0a 880px);
+  background-attachment: fixed;
+}
+img { display: block; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* ---------- header + tabs (CSS radio-hack: no JS required) ---------- */
+.masthead {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(7,11,9,.93);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: saturate(140%) blur(3px);
+}
+.masthead-inner {
+  max-width: 1080px; margin: 0 auto; padding: 18px 24px 0;
+}
+.masthead h1 {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(1.5rem, 3.4vw, 2.15rem); letter-spacing: .01em;
+}
+.masthead h1 em {
+  font-style: italic;
+  background: linear-gradient(100deg, var(--gold), var(--pink));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.masthead .kicker {
+  font-family: var(--font-mono); font-size: .68rem; letter-spacing: .22em;
+  text-transform: uppercase; color: var(--text-dim); margin-bottom: 4px;
+}
+.tabbar { display: flex; gap: 4px; margin-top: 14px; }
+.tab {
+  cursor: pointer; user-select: none;
+  font-family: var(--font-mono); font-size: .8rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--text-dim);
+  padding: 12px 18px 13px; border-bottom: 2px solid transparent;
+  transition: color .18s, border-color .18s;
+}
+.tab:hover { color: var(--text); }
+.tab .tab-num { color: var(--text-faint); margin-right: 7px; }
+#tab-input-rankings:checked ~ .masthead label[for="tab-input-rankings"],
+#tab-input-combine:checked ~ .masthead label[for="tab-input-combine"] { color: var(--gold); border-bottom-color: var(--gold); }
+#tab-input-rankings:checked ~ .masthead label[for="tab-input-rankings"] .tab-num,
+#tab-input-combine:checked ~ .masthead label[for="tab-input-combine"] .tab-num { color: var(--gold); }
+#tab-input-rankings:focus-visible ~ .masthead label[for="tab-input-rankings"],
+#tab-input-combine:focus-visible ~ .masthead label[for="tab-input-combine"] {
+  outline: 2px solid var(--gold); outline-offset: -2px; border-radius: 2px;
+}
+
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px 96px; }
+.tab-panel { display: none; }
+#tab-input-rankings:checked ~ .wrap #panel-rankings,
+#tab-input-combine:checked ~ .wrap #panel-combine { display: block; animation: rise .35s ease both; }
+#tab-input-combine:checked ~ .wrap #panel-rankings,
+#tab-input-rankings:checked ~ .wrap #panel-combine { display: none; }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+.panel-intro {
+  padding: 30px 0 8px; color: var(--text-dim); font-size: .95rem;
+  max-width: 62ch;
+}
+.panel-intro strong { color: var(--text); font-weight: 600; }
+.panel-sub {
+  padding: 40px 0 4px; color: var(--text-dim); font-size: 1rem;
+  font-family: var(--font-body); font-weight: 600; max-width: 74ch;
+}
+
+/* ---------- cards ---------- */
+.fan { display: flex; align-items: flex-end; justify-content: center; padding: 18px 8px 26px; }
+.card {
+  width: auto; height: 118px; border-radius: 8px;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,.55)) drop-shadow(0 1px 2px rgba(0,0,0,.6));
+  transition: transform .25s ease, filter .25s ease, opacity .25s ease;
+}
+.fan-hand .card { margin: 0 -13px; }
+.fan-hand .card:hover { transform: translateY(-8px) rotate(0deg) !important; z-index: 30; }
+
+/* ---------- hand entries ---------- */
+.hand {
+  display: grid; grid-template-columns: 88px 1fr; gap: 0 20px;
+  border-top: 1px solid var(--line); padding: 44px 0 48px;
+}
+.hand-rail {
+  font-family: var(--font-mono); text-align: center; padding-top: 4px;
+  position: sticky; top: 172px; align-self: start;
+}
+.hand-rank { font-size: 1.9rem; font-weight: 700; color: var(--text-faint); }
+.hand-rank-total { display: block; font-size: .72rem; color: var(--text-faint); letter-spacing: .1em; }
+.hand-head {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  justify-content: space-between; gap: 10px 24px; margin-bottom: 2px;
+}
+.hand-name {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: 1.6rem; letter-spacing: .01em;
+}
+.odds { text-align: right; font-family: var(--font-mono); }
+.odds-label {
+  display: block; font-size: .6rem; letter-spacing: .24em;
+  text-transform: uppercase; color: var(--text-faint);
+}
+.odds-value { font-size: 1.05rem; color: var(--cyan); }
+.odds-combos { display: block; font-size: .66rem; color: var(--text-faint); }
+.definition { max-width: 66ch; color: var(--text); font-size: .97rem; margin-top: 14px; }
+
+.beats { margin-top: 18px; }
+.beats-label, .note-label, .why-label {
+  display: block; font-family: var(--font-mono); font-size: .6rem;
+  letter-spacing: .24em; text-transform: uppercase; color: var(--text-faint);
+  margin-bottom: 7px;
+}
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  font-family: var(--font-mono); font-size: .68rem; padding: 3px 10px;
+  border: 1px solid var(--line); border-radius: 999px; color: var(--text-dim);
+  background: var(--bg-card);
+}
+.chip-none { color: var(--gold); border-color: rgba(255,215,0,.35); }
+.why { margin-top: 18px; max-width: 72ch; font-size: .92rem; color: var(--text-dim); }
+.notes { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 22px; }
+.note { background: var(--bg-card); border: 1px solid var(--line-soft); padding: 14px 16px; }
+.note p { font-size: .85rem; color: var(--text-dim); }
+.note-tip { border-left: 2px solid var(--green); }
+.note-story { border-left: 2px solid var(--pink); }
+
+/* tier emphasis: strongest hands get more visual weight */
+.tier-gold { border-top-color: rgba(255,215,0,.5); }
+.tier-gold .hand-rank { color: var(--gold); font-size: 2.5rem; }
+.tier-gold .hand-rank-total { color: rgba(255,215,0,.55); }
+.tier-gold .card { height: 152px; }
+.tier-gold .hand-name { font-size: 2.2rem; }
+.tier-gold .hand-name-top {
+  background: linear-gradient(95deg, var(--gold) 20%, #fff2b0 60%, var(--gold));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.tier-gold .odds-value { color: var(--gold); font-size: 1.2rem; }
+.tier-gold .definition { font-size: 1.02rem; }
+#hand-1 { background: linear-gradient(180deg, rgba(255,215,0,.05), transparent 340px); }
+.tier-mid .hand-rank { color: var(--text-dim); font-size: 1.7rem; }
+.tier-mid .card { height: 128px; }
+.tier-low .card { height: 100px; }
+.tier-low .hand-name { font-size: 1.3rem; color: var(--text-dim); }
+.tier-low .hand-rank { font-size: 1.45rem; }
+.tier-low .definition, .tier-low .why { font-size: .88rem; color: var(--text-dim); }
+.tier-low .notes { margin-top: 16px; }
+
+/* ---------- primer ---------- */
+.primer {
+  margin-top: 30px; background: var(--bg-card); border: 1px solid var(--line);
+  padding: 30px 32px 26px; position: relative; overflow: hidden;
+}
+.primer::before {
+  content: ''; position: absolute; inset: 0 auto 0 0; width: 3px;
+  background: linear-gradient(180deg, var(--gold), var(--pink));
+}
+.primer h2 {
+  font-family: var(--font-display); font-size: 1.55rem; font-weight: 700;
+  margin-bottom: 8px;
+}
+.primer > p { color: var(--text-dim); max-width: 70ch; font-size: .95rem; }
+.primer-steps { list-style: none; counter-reset: step; margin: 20px 0 6px; display: grid; gap: 10px; }
+.primer-steps li {
+  counter-increment: step; position: relative; padding-left: 44px;
+  font-size: .93rem; color: var(--text);
+}
+.primer-steps li::before {
+  content: counter(step); position: absolute; left: 0; top: 1px;
+  width: 28px; height: 28px; border-radius: 50%;
+  border: 1px solid var(--gold); color: var(--gold);
+  font-family: var(--font-mono); font-size: .75rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.primer-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 20px; }
+.primer-note { background: var(--bg-card-alt); padding: 13px 15px; border: 1px solid var(--line-soft); }
+.primer-note p { font-size: .84rem; color: var(--text-dim); }
+
+/* ---------- interaction examples (learn) ---------- */
+.example { border-top: 1px solid var(--line); padding: 40px 0 44px; }
+.example-title {
+  font-family: var(--font-display); font-size: 1.35rem; font-weight: 700;
+  display: flex; gap: 14px; align-items: baseline; max-width: 74ch;
+  flex-wrap: wrap;
+}
+.example-num {
+  font-family: var(--font-mono); font-size: .7rem; color: var(--bg);
+  background: var(--cyan); padding: 3px 9px; border-radius: 3px;
+  flex: none; transform: translateY(-2px);
+}
+.example-hand {
+  font-family: var(--font-mono); font-size: .68rem; font-weight: 700;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--gold);
+  border: 1px solid rgba(255,215,0,.4); border-radius: 999px;
+  padding: 3px 12px; flex: none; transform: translateY(-3px);
+}
+.table-row {
+  display: grid; grid-template-columns: auto 1fr; gap: 28px;
+  margin-top: 22px; align-items: start;
+}
+.zone-label {
+  display: block; font-family: var(--font-mono); font-size: .62rem;
+  letter-spacing: .2em; text-transform: uppercase; color: var(--gold);
+  margin-bottom: 12px;
+}
+.zone-label-board { color: var(--cyan); }
+.zone-label-b { margin-top: 18px; color: var(--pink); }
+.zone-cards { display: flex; gap: 8px; align-items: flex-end; }
+.zone-hole {
+  padding: 16px 20px 8px; background: var(--bg-card);
+  border: 1px solid var(--line); border-radius: 10px;
+}
+.zone-hole .card { height: 128px; }
+.zone-board {
+  padding: 16px 20px 8px; background: var(--bg-card-alt);
+  border: 1px dashed var(--line); border-radius: 10px;
+}
+.zone-board .card { height: 106px; }
+.card.counts {
+  outline: 2px solid var(--green); outline-offset: 3px; border-radius: 8px;
+}
+.card.dimmed { opacity: .22; filter: grayscale(1) drop-shadow(0 4px 8px rgba(0,0,0,.4)); }
+.legend {
+  margin-top: 16px; font-family: var(--font-mono); font-size: .68rem;
+  color: var(--text-faint); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+.legend-ring {
+  display: inline-block; width: 14px; height: 10px;
+  outline: 2px solid var(--green); outline-offset: 2px; border-radius: 2px;
+}
+.example-expl { margin-top: 14px; max-width: 78ch; font-size: .93rem; color: var(--text-dim); }
+
+/* ---------- mistakes callout ---------- */
+.mistakes {
+  margin-top: 44px; background: var(--bg-card);
+  border: 1px solid var(--line); border-left: 3px solid var(--red);
+  padding: 28px 32px;
+}
+.mistakes h2 {
+  font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 4px;
+}
+.mistakes .sub { color: var(--text-dim); font-size: .88rem; margin-bottom: 18px; }
+.mistakes .sub strong { color: var(--gold); font-weight: 600; }
+.mistakes ol { list-style: none; counter-reset: myth; display: grid; gap: 13px; }
+.mistakes li {
+  counter-increment: myth; position: relative; padding-left: 40px;
+  font-size: .9rem; color: var(--text-dim);
+}
+.mistakes li::before {
+  content: '\2717'; position: absolute; left: 6px; top: 0;
+  color: var(--red); font-weight: 700; font-size: .95rem;
+}
+.mistakes li em { color: var(--text); font-style: italic; }
+
+/* ---------- glossary ---------- */
+.glossary { margin-top: 44px; }
+.glossary h2 {
+  font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 18px;
+}
+.glossary dl { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.term { background: var(--bg); padding: 14px 18px; }
+.term dt {
+  font-family: var(--font-mono); font-size: .74rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 5px;
+}
+.term dd { font-size: .84rem; color: var(--text-dim); }
+.glossary dl .term:last-child { grid-column: 1 / -1; }
+
+footer {
+  border-top: 1px solid var(--line); margin-top: 70px; padding-top: 22px;
+  font-family: var(--font-mono); font-size: .68rem; color: var(--text-faint);
+  display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+}
+
+/* ---------- accessibility ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 860px) {
+  .hand { grid-template-columns: 1fr; padding: 34px 0 38px; }
+  .hand-rail { position: static; text-align: left; margin-bottom: 6px; }
+  .hand-rank { font-size: 1.4rem; }
+  .hand-rank-total { display: inline; margin-left: 4px; }
+  .tier-gold .hand-rank { font-size: 1.7rem; }
+  .table-row { grid-template-columns: 1fr; gap: 18px; }
+  .notes, .primer-notes, .glossary dl { grid-template-columns: 1fr; }
+  .card { height: 92px; }
+  .tier-gold .card { height: 108px; }
+  .tier-mid .card { height: 98px; }
+  .tier-low .card { height: 82px; }
+  .zone-hole .card { height: 104px; }
+  .zone-board .card { height: 86px; }
+  .zone-cards { flex-wrap: wrap; }
+  .odds { text-align: left; }
+  .masthead-inner { padding: 14px 16px 0; }
+  .wrap { padding: 0 16px 72px; }
+  .tab { padding: 11px 12px; font-size: .72rem; }
+  .primer, .mistakes { padding: 22px 18px; }
+}
+@media (max-width: 480px) {
+  .tabbar { gap: 0; width: 100%; }
+  .tab { flex: 1 1 0; font-size: .64rem; letter-spacing: .06em; padding: 11px 6px 12px; white-space: nowrap; text-align: center; }
+  .tab .tab-num { margin-right: 5px; }
+}
+
+
+/* ===== v2 additions ===== */
+/* ===== v2: table texture (very low opacity SVG noise, fixed overlay) ===== */
+body::after {
+  content: ''; position: fixed; inset: 0; z-index: 200; pointer-events: none;
+  opacity: .05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+}
+
+/* ===== learn / quiz mode toggle (radio-hack, sibling of both zones) ===== */
+.modebar {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  padding: 26px 0 4px;
+}
+.modebar-kicker {
+  font-family: var(--font-mono); font-size: .62rem; letter-spacing: .22em;
+  text-transform: uppercase; color: var(--text-faint); margin-right: 6px;
+}
+.mode-btn {
+  cursor: pointer; user-select: none;
+  font-family: var(--font-mono); font-size: .72rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--text-dim);
+  border: 1px solid var(--line); border-radius: 999px; padding: 7px 18px;
+  transition: color .18s, border-color .18s, background .18s;
+}
+.mode-btn:hover { color: var(--text); border-color: #423e39; }
+#mode-input-learn:checked ~ .modebar label[for="mode-input-learn"],
+#mode-input-quiz:checked ~ .modebar label[for="mode-input-quiz"] {
+  color: var(--gold); border-color: rgba(255,215,0,.5); background: rgba(255,215,0,.07);
+}
+#mode-input-learn:focus-visible ~ .modebar label[for="mode-input-learn"],
+#mode-input-quiz:focus-visible ~ .modebar label[for="mode-input-quiz"] {
+  outline: 2px solid var(--gold); outline-offset: 2px;
+}
+#mode-input-learn:checked ~ .quiz-zone,
+#mode-input-quiz:checked ~ .learn-zone { display: none; }
+
+/* ===== learn: CSS-only visual breakdowns (brackets via borders + ::after labels) ===== */
+.breakdown { margin-top: 18px; max-width: 82ch; }
+.breakdown summary, .showme summary, .hand-reveal summary {
+  cursor: pointer; list-style: none;
+  font-family: var(--font-mono); font-size: .68rem; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--cyan);
+  display: inline-flex; align-items: center; gap: 7px;
+}
+.breakdown summary::-webkit-details-marker, .showme summary::-webkit-details-marker,
+.hand-reveal summary::-webkit-details-marker { display: none; }
+.breakdown summary::before, .showme summary::before, .hand-reveal summary::before {
+  content: '+'; font-size: .85rem; line-height: 1;
+}
+.breakdown[open] summary::before, .showme[open] summary::before,
+.hand-reveal[open] summary::before { content: '\2212'; }
+.breakdown summary:hover, .showme summary:hover, .hand-reveal summary:hover { color: var(--text); }
+.brk-rows { display: flex; flex-wrap: wrap; gap: 26px; margin-top: 16px; align-items: flex-start; }
+.grp { display: flex; flex-direction: column; align-items: center; }
+.grp-cards {
+  display: flex; gap: 4px; position: relative;
+  padding: 0 3px 7px;
+  border-bottom: 2px solid rgba(255,215,0,.5);
+  border-radius: 0 0 6px 6px;
+}
+.grp-cards::before, .grp-cards::after {
+  content: ''; position: absolute; bottom: -2px; width: 2px; height: 7px;
+  background: rgba(255,215,0,.5);
+}
+.grp-cards::before { left: 0; }
+.grp-cards::after { right: 0; }
+.grp::after {
+  content: attr(data-label); display: block; text-align: center;
+  font-family: var(--font-mono); font-size: .58rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--gold); margin-top: 9px; max-width: 20ch;
+}
+.brk-card { height: 60px; }
+.brk-discard { margin-top: 20px; }
+.brk-discard .brk-card { height: 44px; opacity: .5; }
+.brk-discard-label, .brk-note { display: block; font-family: var(--font-mono); font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; color: var(--text-faint); margin-bottom: 8px; }
+.brk-note { margin: 18px 0 0; text-transform: none; letter-spacing: .02em; font-family: var(--font-body); font-size: .82rem; color: var(--text-dim); }
+.brk-note strong { color: var(--gold); font-weight: 600; }
+
+/* ===== quiz ===== */
+.quiz-intro { padding-top: 32px; max-width: 74ch; }
+.quiz-section {
+  font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;
+  margin: 44px 0 2px; padding-top: 10px;
+}
+.quiz-section-note { color: var(--text-dim); font-size: .88rem; max-width: 72ch; margin-top: 6px; }
+.quiz-q { border-top: 1px solid var(--line); padding: 34px 0 38px; margin-top: 22px; }
+.q-head { display: flex; gap: 14px; align-items: baseline; flex-wrap: wrap; }
+.q-num {
+  font-family: var(--font-mono); font-size: .66rem; letter-spacing: .1em;
+  color: var(--bg); background: var(--gold); padding: 3px 10px; border-radius: 3px;
+  flex: none; transform: translateY(-2px); font-weight: 700;
+}
+.q-trap .q-num { background: var(--red); }
+.q-title { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; }
+.q-prompt { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .04em; color: var(--text-dim); margin-top: 10px; max-width: 72ch; }
+.q-hint { font-family: var(--font-mono); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; color: var(--text-faint); margin-top: 14px; }
+
+.qcard { display: block; }
+.qcard label {
+  display: block; cursor: pointer; border-radius: 9px;
+  outline: 2px solid transparent; outline-offset: 3px;
+  transition: transform .18s ease, outline-color .18s ease;
+}
+.qcard label:hover { transform: translateY(-5px); }
+.qcard:has(.qcheck:checked) label { outline-color: var(--gold); transform: translateY(-5px); }
+.qcard:has(.qcheck:focus-visible) label { outline: 2px dashed var(--cyan); }
+
+.reveal { display: none; margin-top: 20px; padding: 20px 22px; border-radius: 4px; max-width: 84ch; }
+.reveal-wrong {
+  background: linear-gradient(180deg, rgba(255,82,82,.10), rgba(255,145,0,.05));
+  border: 1px solid rgba(255,82,82,.35); border-left: 3px solid var(--red);
+}
+.reveal-win {
+  background: linear-gradient(180deg, rgba(0,230,118,.10), rgba(0,230,118,.03));
+  border: 1px solid rgba(0,230,118,.35); border-left: 3px solid var(--green);
+}
+.reveal-tag {
+  display: inline-block; font-family: var(--font-mono); font-size: .62rem;
+  letter-spacing: .22em; text-transform: uppercase; font-weight: 700; margin-bottom: 10px;
+}
+.reveal-wrong .reveal-tag { color: var(--red-soft); }
+.reveal-win .reveal-tag { color: var(--green-soft); }
+.reveal p { font-size: .92rem; color: var(--text); }
+.bait-line s { color: var(--red-soft); text-decoration-thickness: 2px; text-decoration-color: var(--red); }
+.reveal .note-label { margin-top: 14px; }
+.reveal-best {
+  margin-top: 14px; font-family: var(--font-mono); font-size: .78rem !important;
+  color: var(--green-soft) !important;
+}
+.hand-reveal { margin-top: 14px; }
+.hand-name-big {
+  font-family: var(--font-display); font-size: 1.7rem; font-weight: 700;
+  color: var(--gold); margin-top: 10px;
+}
+.ladder { font-size: .88rem; color: var(--text-dim); margin-top: 8px; }
+.ladder strong { color: var(--text); }
+
+.showme { margin-top: 18px; }
+.showme-body {
+  margin-top: 12px; padding: 16px 18px; background: var(--bg-card);
+  border: 1px solid var(--line-soft); border-left: 2px solid var(--cyan);
+  max-width: 84ch;
+}
+.showme-body p { font-size: .88rem; color: var(--text-dim); margin-bottom: 6px; }
+.showme-best { margin-top: 10px; }
+.fan-brk { justify-content: flex-start; padding: 6px 0 2px; }
+.fan-brk .card { height: 74px; margin: 0 -6px; }
+.showme-name { font-family: var(--font-mono); font-size: .7rem !important; color: var(--gold) !important; }
+
+/* ===== quiz responsive ===== */
+@media (max-width: 860px) {
+  .quiz-section { font-size: 1.25rem; }
+  .q-title { font-size: 1.1rem; }
+  .reveal { padding: 16px 16px; }
+  .brk-rows { gap: 20px; }
+}
+@media (max-width: 480px) {
+  .modebar { padding: 20px 0 2px; }
+  .mode-btn { padding: 6px 14px; font-size: .66rem; }
+  .q-num { font-size: .6rem; }
+  .q-prompt { font-size: .66rem; }
+  .grp::after { font-size: .52rem; }
+  .brk-card { height: 50px; }
+}
+
+
+/* ===== per-question quiz state (:has chains, generated) ===== */
+#q1:has(.qcheck-wrong:checked) .reveal-wrong, #q1:has(#q1-b1:checked):has(#q1-b2:checked):has(#q1-b3:checked):has(#q1-b4:checked):has(#q1-b5:checked):not(:has(.qcheck-wrong:checked)) .reveal-win { display: block; }
+#q1:has(.qcheck-wrong:checked) .qcard.is-best label, #q1:has(#q1-b1:checked):has(#q1-b2:checked):has(#q1-b3:checked):has(#q1-b4:checked):has(#q1-b5:checked):not(:has(.qcheck-wrong:checked)) .qcard.is-best label { outline-color: var(--green); }
+#q1:has(.qcheck-wrong:checked) .qcard.is-wrong label { outline-color: var(--red); }
+#q2:has(.qcheck-wrong:checked) .reveal-wrong, #q2:has(#q2-b1:checked):has(#q2-b2:checked):has(#q2-b3:checked):has(#q2-b4:checked):has(#q2-b5:checked):not(:has(.qcheck-wrong:checked)) .reveal-win { display: block; }
+#q2:has(.qcheck-wrong:checked) .qcard.is-best label, #q2:has(#q2-b1:checked):has(#q2-b2:checked):has(#q2-b3:checked):has(#q2-b4:checked):has(#q2-b5:checked):not(:has(.qcheck-wrong:checked)) .qcard.is-best label { outline-color: var(--green); }
+#q2:has(.qcheck-wrong:checked) .qcard.is-wrong label { outline-color: var(--red); }
+#q3:has(.qcheck-wrong:checked) .reveal-wrong, #q3:has(#q3-b1:checked):has(#q3-b2:checked):has(#q3-b3:checked):has(#q3-b4:checked):has(#q3-b5:checked):not(:has(.qcheck-wrong:checked)) .reveal-win { display: block; }
+#q3:has(.qcheck-wrong:checked) .qcard.is-best label, #q3:has(#q3-b1:checked):has(#q3-b2:checked):has(#q3-b3:checked):has(#q3-b4:checked):has(#q3-b5:checked):not(:has(.qcheck-wrong:checked)) .qcard.is-best label { outline-color: var(--green); }
+#q3:has(.qcheck-wrong:checked) .qcard.is-wrong label { outline-color: var(--red); }
+#qk:has(.qcheck-wrong:checked) .reveal-wrong, #qk:has(#qk-b1:checked):has(#qk-b2:checked):has(#qk-b3:checked):has(#qk-b4:checked):has(#qk-b5:checked):not(:has(.qcheck-wrong:checked)) .reveal-win { display: block; }
+#qk:has(.qcheck-wrong:checked) .qcard.is-best label, #qk:has(#qk-b1:checked):has(#qk-b2:checked):has(#qk-b3:checked):has(#qk-b4:checked):has(#qk-b5:checked):not(:has(.qcheck-wrong:checked)) .qcard.is-best label { outline-color: var(--green); }
+#qk:has(.qcheck-wrong:checked) .qcard.is-wrong label { outline-color: var(--red); }
+#t1:has(.qcheck-wrong:checked) .reveal-wrong, #t1:has(#t1-b1:checked):has(#t1-b2:checked):has(#t1-b3:checked):has(#t1-b4:checked):has(#t1-b5:checked):not(:has(.qcheck-wrong:checked)) .reveal-win { display: block; }
+#t1:has(.qcheck-wrong:checked) .qcard.is-best label, #t1:has(#t1-b1:checked):has(#t1-b2:checked):has(#t1-b3:checked):has(#t1-b4:checked):has(#t1-b5:checked):not(:has(.qcheck-wrong:checked)) .qcard.is-best label { outline-color: var(--green); }
+#t1:has(.qcheck-wrong:checked) .qcard.is-wrong label { outline-color: var(--red); }
+#t2:has(.qcheck-wrong:checked) .reveal-wrong, #t2:has(#t2-b1:checked):has(#t2-b2:checked):has(#t2-b3:checked):has(#t2-b4:checked):has(#t2-b5:checked):not(:has(.qcheck-wrong:checked)) .reveal-win { display: block; }
+#t2:has(.qcheck-wrong:checked) .qcard.is-best label, #t2:has(#t2-b1:checked):has(#t2-b2:checked):has(#t2-b3:checked):has(#t2-b4:checked):has(#t2-b5:checked):not(:has(.qcheck-wrong:checked)) .qcard.is-best label { outline-color: var(--green); }
+#t2:has(.qcheck-wrong:checked) .qcard.is-wrong label { outline-color: var(--red); }
+#t3:has(.qcheck-wrong:checked) .reveal-wrong, #t3:has(#t3-b1:checked):has(#t3-b2:checked):has(#t3-b3:checked):has(#t3-b4:checked):has(#t3-b5:checked):not(:has(.qcheck-wrong:checked)) .reveal-win { display: block; }
+#t3:has(.qcheck-wrong:checked) .qcard.is-best label, #t3:has(#t3-b1:checked):has(#t3-b2:checked):has(#t3-b3:checked):has(#t3-b4:checked):has(#t3-b5:checked):not(:has(.qcheck-wrong:checked)) .qcard.is-best label { outline-color: var(--green); }
+#t3:has(.qcheck-wrong:checked) .qcard.is-wrong label { outline-color: var(--red); }
+#t4:has(.qcheck-wrong:checked) .reveal-wrong, #t4:has(#t4-b1:checked):has(#t4-b2:checked):has(#t4-b3:checked):has(#t4-b4:checked):has(#t4-b5:checked):not(:has(.qcheck-wrong:checked)) .reveal-win { display: block; }
+#t4:has(.qcheck-wrong:checked) .qcard.is-best label, #t4:has(#t4-b1:checked):has(#t4-b2:checked):has(#t4-b3:checked):has(#t4-b4:checked):has(#t4-b5:checked):not(:has(.qcheck-wrong:checked)) .qcard.is-best label { outline-color: var(--green); }
+#t4:has(.qcheck-wrong:checked) .qcard.is-wrong label { outline-color: var(--red); }
+#t5:has(.qcheck-wrong:checked) .reveal-wrong, #t5:has(#t5-b1:checked):has(#t5-b2:checked):has(#t5-b3:checked):has(#t5-b4:checked):has(#t5-b5:checked):not(:has(.qcheck-wrong:checked)) .reveal-win { display: block; }
+#t5:has(.qcheck-wrong:checked) .qcard.is-best label, #t5:has(#t5-b1:checked):has(#t5-b2:checked):has(#t5-b3:checked):has(#t5-b4:checked):has(#t5-b5:checked):not(:has(.qcheck-wrong:checked)) .qcard.is-best label { outline-color: var(--green); }
+#t5:has(.qcheck-wrong:checked) .qcard.is-wrong label { outline-color: var(--red); }
+#t6:has(.qcheck-wrong:checked) .reveal-wrong, #t6:has(#t6-b1:checked):has(#t6-b2:checked):has(#t6-b3:checked):has(#t6-b4:checked):has(#t6-b5:checked):not(:has(.qcheck-wrong:checked)) .reveal-win { display: block; }
+#t6:has(.qcheck-wrong:checked) .qcard.is-best label, #t6:has(#t6-b1:checked):has(#t6-b2:checked):has(#t6-b3:checked):has(#t6-b4:checked):has(#t6-b5:checked):not(:has(.qcheck-wrong:checked)) .qcard.is-best label { outline-color: var(--green); }
+#t6:has(.qcheck-wrong:checked) .qcard.is-wrong label { outline-color: var(--red); }
+#t7:has(.qcheck-wrong:checked) .reveal-wrong, #t7:has(#t7-b1:checked):has(#t7-b2:checked):has(#t7-b3:checked):has(#t7-b4:checked):has(#t7-b5:checked):not(:has(.qcheck-wrong:checked)) .reveal-win { display: block; }
+#t7:has(.qcheck-wrong:checked) .qcard.is-best label, #t7:has(#t7-b1:checked):has(#t7-b2:checked):has(#t7-b3:checked):has(#t7-b4:checked):has(#t7-b5:checked):not(:has(.qcheck-wrong:checked)) .qcard.is-best label { outline-color: var(--green); }
+#t7:has(.qcheck-wrong:checked) .qcard.is-wrong label { outline-color: var(--red); }
+</style>
+</head>
+<body>
+
+<input type="radio" name="ph-tab" id="tab-input-rankings" class="sr-only" checked>
+<input type="radio" name="ph-tab" id="tab-input-combine" class="sr-only">
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Texas Hold&rsquo;em &middot; Beginner Series</p>
+    <h1>Poker Hands, <em>Decoded</em></h1>
+    <nav class="tabbar" aria-label="Sections">
+      <label class="tab" for="tab-input-rankings" id="tab-rankings"><span class="tab-num">01</span>Hand Rankings</label>
+      <label class="tab" for="tab-input-combine" id="tab-combine"><span class="tab-num">02</span>How Cards Combine</label>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section class="tab-panel" id="panel-rankings" aria-labelledby="tab-rankings">
+  <h2 class="sr-only">Hand rankings &mdash; all ten poker hands, strongest first</h2>
+  <p class="panel-intro">All ten poker hands, <strong>strongest first</strong> &mdash; a royal flush at the top, a whiffed high card at the bottom. Every example below is a real five-card hand, shown with real cards. Odds are per dealt hand.</p>
+  
+<article class="hand tier-gold" id="hand-1">
+  <div class="hand-rail">
+    <span class="hand-rank">#1</span>
+    <span class="hand-rank-total">/10</span>
+  </div>
+  <div class="hand-body">
+    <header class="hand-head">
+      <h3 class="hand-name hand-name-top">Royal flush</h3>
+      <div class="odds">
+        <span class="odds-label">odds</span>
+        <span class="odds-value">1 in 649,740</span>
+        <span class="odds-combos">4 possible combinations</span>
+      </div>
+    </header>
+    <div class="fan fan-hand"><img src="poker-cards/AS.svg" alt="Ace of spades" class="card" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/KS.svg" alt="King of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/QS.svg" alt="Queen of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/JS.svg" alt="Jack of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/10S.svg" alt="Ten of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+    <p class="definition">The highest straight flush: the 10, jack, queen, king and ace all of the same suit — the single strongest hand in poker.</p>
+    <div class="beats">
+      <span class="beats-label">what it beats</span>
+      <div class="chips"><span class="chip">Straight flush</span><span class="chip">Four of a kind</span><span class="chip">Full house</span><span class="chip">Flush</span><span class="chip">Straight</span><span class="chip">Three of a kind</span><span class="chip">Two pair</span><span class="chip">One pair</span><span class="chip">High card</span></div>
+    </div>
+    <p class="why"><span class="why-label">why</span>A royal flush is simply the highest possible straight flush (10-J-Q-K-A, one suit), and a straight flush already beats every other pattern in the game. All four royal flushes are equal, so this hand always at least ties, and it can never lose.</p>
+    <div class="notes">
+      <div class="note note-tip">
+        <span class="note-label">Beginner tip</span>
+        <p>This is the best possible hand — nothing beats it, so if you ever make one, you cannot lose the pot.</p>
+      </div>
+      <div class="note note-story">
+        <span class="note-label">How it happened</span>
+        <p>Your two hole cards were A♠ and K♠, and the board ran out Q♠ J♠ 10♠ 2♦ 3♣. Your two spades plus the three spades on the board made A-K-Q-J-10, all in spades.</p>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="hand tier-gold" id="hand-2">
+  <div class="hand-rail">
+    <span class="hand-rank">#2</span>
+    <span class="hand-rank-total">/10</span>
+  </div>
+  <div class="hand-body">
+    <header class="hand-head">
+      <h3 class="hand-name">Straight flush</h3>
+      <div class="odds">
+        <span class="odds-label">odds</span>
+        <span class="odds-value">1 in 72,193</span>
+        <span class="odds-combos">36 possible combinations</span>
+      </div>
+    </header>
+    <div class="fan fan-hand"><img src="poker-cards/9D.svg" alt="Nine of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/8D.svg" alt="Eight of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/7D.svg" alt="Seven of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/6D.svg" alt="Six of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/5D.svg" alt="Five of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+    <p class="definition">Any five cards in a row (like 5-6-7-8-9) that are also all the same suit.</p>
+    <div class="beats">
+      <span class="beats-label">what it beats</span>
+      <div class="chips"><span class="chip">Four of a kind</span><span class="chip">Full house</span><span class="chip">Flush</span><span class="chip">Straight</span><span class="chip">Three of a kind</span><span class="chip">Two pair</span><span class="chip">One pair</span><span class="chip">High card</span></div>
+    </div>
+    <p class="why"><span class="why-label">why</span>It combines two hard-to-make patterns at once — five cards in a row AND five cards of the same suit. Since four of a kind is only four matching ranks plus one stray card, any five-in-a-row-same-suit outranks it.</p>
+    <div class="notes">
+      <div class="note note-tip">
+        <span class="note-label">Beginner tip</span>
+        <p>You need both things at once: consecutive ranks AND a single suit. Two of each (a flush plus a straight in different suits) is only a straight, not a straight flush.</p>
+      </div>
+      <div class="note note-story">
+        <span class="note-label">How it happened</span>
+        <p>Your hole cards were 9♦ 8♦, and the board ran out 7♦ 6♦ 5♦ 2♣ K♠. Your two diamonds combined with three diamonds on the board to make 9-8-7-6-5, all diamonds. The K♠ and 2♣ were simply ignored.</p>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="hand tier-gold" id="hand-3">
+  <div class="hand-rail">
+    <span class="hand-rank">#3</span>
+    <span class="hand-rank-total">/10</span>
+  </div>
+  <div class="hand-body">
+    <header class="hand-head">
+      <h3 class="hand-name">Four of a kind</h3>
+      <div class="odds">
+        <span class="odds-label">odds</span>
+        <span class="odds-value">1 in 416</span>
+        <span class="odds-combos">624 possible combinations</span>
+      </div>
+    </header>
+    <div class="fan fan-hand"><img src="poker-cards/JS.svg" alt="Jack of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/JH.svg" alt="Jack of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/JD.svg" alt="Jack of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/JC.svg" alt="Jack of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/9C.svg" alt="Nine of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+    <p class="definition">Four cards of the same rank (all four suits of one number), plus one extra card — also called &quot;quads&quot;.</p>
+    <div class="beats">
+      <span class="beats-label">what it beats</span>
+      <div class="chips"><span class="chip">Full house</span><span class="chip">Flush</span><span class="chip">Straight</span><span class="chip">Three of a kind</span><span class="chip">Two pair</span><span class="chip">One pair</span><span class="chip">High card</span></div>
+    </div>
+    <p class="why"><span class="why-label">why</span>Four cards of one rank is the largest &quot;same rank&quot; group possible in a 5-card hand, and poker hands compare the biggest group first — four matching ranks outrank any three-plus-two (full house) or two-plus-two (two pair) pattern. If two players both have four of a kind, the higher rank wins; if somehow identical, the fifth card (kicker) breaks the tie.</p>
+    <div class="notes">
+      <div class="note note-tip">
+        <span class="note-label">Beginner tip</span>
+        <p>There are only 4 jacks in the whole deck, so if you hold two jacks and two more show up on the board, you have all four — nobody can have one too. The fifth card (here 9♣) is just a tiebreaker called a kicker.</p>
+      </div>
+      <div class="note note-story">
+        <span class="note-label">How it happened</span>
+        <p>Your hole cards were J♠ J♥, and the board ran out J♦ J♣ 4♠ 9♣ 2♦. The board delivered the other two jacks, giving you all four jacks, with 9♣ as your best leftover card.</p>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="hand tier-mid" id="hand-4">
+  <div class="hand-rail">
+    <span class="hand-rank">#4</span>
+    <span class="hand-rank-total">/10</span>
+  </div>
+  <div class="hand-body">
+    <header class="hand-head">
+      <h3 class="hand-name">Full house</h3>
+      <div class="odds">
+        <span class="odds-label">odds</span>
+        <span class="odds-value">1 in 693</span>
+        <span class="odds-combos">3,744 possible combinations</span>
+      </div>
+    </header>
+    <div class="fan fan-hand"><img src="poker-cards/QS.svg" alt="Queen of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/QH.svg" alt="Queen of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/QD.svg" alt="Queen of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/8C.svg" alt="Eight of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/8S.svg" alt="Eight of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+    <p class="definition">Three cards of one rank plus two cards of another rank — think &quot;three of a kind plus a pair&quot;.</p>
+    <div class="beats">
+      <span class="beats-label">what it beats</span>
+      <div class="chips"><span class="chip">Flush</span><span class="chip">Straight</span><span class="chip">Three of a kind</span><span class="chip">Two pair</span><span class="chip">One pair</span><span class="chip">High card</span></div>
+    </div>
+    <p class="why"><span class="why-label">why</span>A full house is a three-of-a-kind plus a pair, so it contains a bigger matching group (three) than a flush or straight, which have no matching ranks at all. Between two full houses, the rank of the three-of-a-kind is compared first — kings full of aces beats queens full of kings.</p>
+    <div class="notes">
+      <div class="note note-tip">
+        <span class="note-label">Beginner tip</span>
+        <p>When comparing two full houses, the three-of-a-kind part is compared first: K-K-K-A-A (kings full of aces) beats Q-Q-Q-8-8 (queens full of eights) because three kings outrank three queens — the pair only matters when the triples are equal.</p>
+      </div>
+      <div class="note note-story">
+        <span class="note-label">How it happened</span>
+        <p>Your hole cards were Q♠ Q♥, and the board ran out Q♦ 8♣ 8♠ 3♦ K♣. Your pair of queens paired the queen on the board for three queens, and the board&#x27;s pair of eights (8♣ 8♠) became your pair. The 3♦ and K♣ were discarded.</p>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="hand tier-mid" id="hand-5">
+  <div class="hand-rail">
+    <span class="hand-rank">#5</span>
+    <span class="hand-rank-total">/10</span>
+  </div>
+  <div class="hand-body">
+    <header class="hand-head">
+      <h3 class="hand-name">Flush</h3>
+      <div class="odds">
+        <span class="odds-label">odds</span>
+        <span class="odds-value">1 in 509</span>
+        <span class="odds-combos">5,108 possible combinations</span>
+      </div>
+    </header>
+    <div class="fan fan-hand"><img src="poker-cards/AS.svg" alt="Ace of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/JS.svg" alt="Jack of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/8S.svg" alt="Eight of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/5S.svg" alt="Five of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/2S.svg" alt="Two of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+    <p class="definition">Any five cards that are all the same suit, not in a row.</p>
+    <div class="beats">
+      <span class="beats-label">what it beats</span>
+      <div class="chips"><span class="chip">Straight</span><span class="chip">Three of a kind</span><span class="chip">Two pair</span><span class="chip">One pair</span><span class="chip">High card</span></div>
+    </div>
+    <p class="why"><span class="why-label">why</span>Five cards of one suit is harder to line up than five cards in a row, so the flush outranks the straight. When two players both have a flush, the one whose highest card is bigger wins; identical top cards are compared downward until one pulls ahead.</p>
+    <div class="notes">
+      <div class="note note-tip">
+        <span class="note-label">Beginner tip</span>
+        <p>Suit doesn&#x27;t matter — a clubs flush ties a spades flush. Order doesn&#x27;t matter either; only that all 5 cards share one suit. If two people both have a flush, the highest card in the flush wins.</p>
+      </div>
+      <div class="note note-story">
+        <span class="note-label">How it happened</span>
+        <p>Your hole cards were A♠ J♠, and the board ran out 8♠ 5♠ 2♠ K♦ 9♣. The board had three spades, your two spades completed the five. The K♦ and 9♣ were left out because they&#x27;re the wrong suits.</p>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="hand tier-mid" id="hand-6">
+  <div class="hand-rail">
+    <span class="hand-rank">#6</span>
+    <span class="hand-rank-total">/10</span>
+  </div>
+  <div class="hand-body">
+    <header class="hand-head">
+      <h3 class="hand-name">Straight</h3>
+      <div class="odds">
+        <span class="odds-label">odds</span>
+        <span class="odds-value">1 in 255</span>
+        <span class="odds-combos">10,200 possible combinations</span>
+      </div>
+    </header>
+    <div class="fan fan-hand"><img src="poker-cards/9C.svg" alt="Nine of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/8D.svg" alt="Eight of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/7H.svg" alt="Seven of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/6S.svg" alt="Six of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/5C.svg" alt="Five of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+    <p class="definition">Five cards in consecutive rank order (like 5-6-7-8-9) using any mix of suits.</p>
+    <div class="beats">
+      <span class="beats-label">what it beats</span>
+      <div class="chips"><span class="chip">Three of a kind</span><span class="chip">Two pair</span><span class="chip">One pair</span><span class="chip">High card</span></div>
+    </div>
+    <p class="why"><span class="why-label">why</span>Five cards in unbroken sequence is a real pattern that a random assortment can&#x27;t match, so it outranks any hand built from matching pairs or single high cards. Between two straights, the one ending on the higher card wins — a 10-high straight beats a 9-high straight.</p>
+    <div class="notes">
+      <div class="note note-tip">
+        <span class="note-label">Beginner tip</span>
+        <p>The suits can all be different — only the numbers matter, and they must touch (no gaps). The highest possible straight is A-K-Q-J-10, and the lowest is A-2-3-4-5 (where the ace acts as a 1).</p>
+      </div>
+      <div class="note note-story">
+        <span class="note-label">How it happened</span>
+        <p>Your hole cards were 9♣ 8♦, and the board ran out 7♥ 6♠ 5♣ 2♦ K♥. Your two cards connected with three on the board to make 9-8-7-6-5. The 2♦ and K♥ were ignored — you never have to use every card.</p>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="hand tier-low" id="hand-7">
+  <div class="hand-rail">
+    <span class="hand-rank">#7</span>
+    <span class="hand-rank-total">/10</span>
+  </div>
+  <div class="hand-body">
+    <header class="hand-head">
+      <h3 class="hand-name">Three of a kind</h3>
+      <div class="odds">
+        <span class="odds-label">odds</span>
+        <span class="odds-value">1 in 47</span>
+        <span class="odds-combos">54,912 possible combinations</span>
+      </div>
+    </header>
+    <div class="fan fan-hand"><img src="poker-cards/10S.svg" alt="Ten of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/10H.svg" alt="Ten of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/10D.svg" alt="Ten of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/AC.svg" alt="Ace of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/KS.svg" alt="King of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+    <p class="definition">Three cards of the same rank plus two unrelated cards — also called &quot;trips&quot; or &quot;a set&quot;.</p>
+    <div class="beats">
+      <span class="beats-label">what it beats</span>
+      <div class="chips"><span class="chip">Two pair</span><span class="chip">One pair</span><span class="chip">High card</span></div>
+    </div>
+    <p class="why"><span class="why-label">why</span>Three matching ranks is a bigger group than the two pairs (which max out at two matching cards each) or the single pair below it, and hands compare the largest group first. If two players share the same three of a kind — which happens when the trips are on the board — the kickers decide.</p>
+    <div class="notes">
+      <div class="note note-tip">
+        <span class="note-label">Beginner tip</span>
+        <p>Watch out: if the board ever pairs (two of the same card in the middle), a full house is possible — three of a kind can silently lose to someone holding just one matching card.</p>
+      </div>
+      <div class="note note-story">
+        <span class="note-label">How it happened</span>
+        <p>Your hole cards were 10♠ 10♥, and the board ran out 10♦ A♣ K♠ 4♦ 7♣. Your pair matched the ten on the board for three tens, and your best two leftover cards (A♣ and K♠) became the kickers.</p>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="hand tier-low" id="hand-8">
+  <div class="hand-rail">
+    <span class="hand-rank">#8</span>
+    <span class="hand-rank-total">/10</span>
+  </div>
+  <div class="hand-body">
+    <header class="hand-head">
+      <h3 class="hand-name">Two pair</h3>
+      <div class="odds">
+        <span class="odds-label">odds</span>
+        <span class="odds-value">1 in 21</span>
+        <span class="odds-combos">123,552 possible combinations</span>
+      </div>
+    </header>
+    <div class="fan fan-hand"><img src="poker-cards/KS.svg" alt="King of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/KH.svg" alt="King of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/9D.svg" alt="Nine of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/9C.svg" alt="Nine of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/7D.svg" alt="Seven of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+    <p class="definition">Two different pairs plus one extra card — for example two kings and two nines.</p>
+    <div class="beats">
+      <span class="beats-label">what it beats</span>
+      <div class="chips"><span class="chip">One pair</span><span class="chip">High card</span></div>
+    </div>
+    <p class="why"><span class="why-label">why</span>Two separate pairs make four matching cards total, which is more than the single pair below it, so it wins the comparison. If two players hold the same two pair — common when the pairs are on the board — the fifth card (kicker) decides, and if that matches too, they split the pot.</p>
+    <div class="notes">
+      <div class="note note-tip">
+        <span class="note-label">Beginner tip</span>
+        <p>To compare two two-pair hands, look at the higher pair first. Kings-and-nines beats queens-and-aces because K-K beats Q-Q, even though the other pair is smaller.</p>
+      </div>
+      <div class="note note-story">
+        <span class="note-label">How it happened</span>
+        <p>Your hole cards were K♠ K♥, and the board ran out 9♦ 9♣ 4♠ 2♥ 7♦. You brought one pair from your hand, the board brought the other pair, and 7♦ was the best remaining card. You only used 5 of your 7 cards — the 4♠ and 2♥ were dropped.</p>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="hand tier-low" id="hand-9">
+  <div class="hand-rail">
+    <span class="hand-rank">#9</span>
+    <span class="hand-rank-total">/10</span>
+  </div>
+  <div class="hand-body">
+    <header class="hand-head">
+      <h3 class="hand-name">One pair</h3>
+      <div class="odds">
+        <span class="odds-label">odds</span>
+        <span class="odds-value">1 in 2.4</span>
+        <span class="odds-combos">1,098,240 possible combinations</span>
+      </div>
+    </header>
+    <div class="fan fan-hand"><img src="poker-cards/AS.svg" alt="Ace of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/AH.svg" alt="Ace of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/JD.svg" alt="Jack of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/9C.svg" alt="Nine of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/8C.svg" alt="Eight of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+    <p class="definition">Two cards of the same rank, plus three unrelated cards.</p>
+    <div class="beats">
+      <span class="beats-label">what it beats</span>
+      <div class="chips"><span class="chip">High card</span></div>
+    </div>
+    <p class="why"><span class="why-label">why</span>One pair is two cards of the same rank, which beats a hand with no matching cards at all — the most common winning pattern in real games. When both players have a pair, the higher pair wins, and if the pairs tie (for example, both use the pair on the board), the kickers decide.</p>
+    <div class="notes">
+      <div class="note note-tip">
+        <span class="note-label">Beginner tip</span>
+        <p>This is the most common hand you&#x27;ll make. When both players have a pair, the kickers (the leftover cards) decide — a pair of aces with a king kicker beats a pair of aces with a jack kicker.</p>
+      </div>
+      <div class="note note-story">
+        <span class="note-label">How it happened</span>
+        <p>Your hole cards were A♠ A♥ — already a pair before the board even finished — and the board ran out J♦ 8♣ 4♠ 3♥ 9♣. Your best five was the pair of aces plus the three highest leftovers: J♦, 9♣, 8♣.</p>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="hand tier-low" id="hand-10">
+  <div class="hand-rail">
+    <span class="hand-rank">#10</span>
+    <span class="hand-rank-total">/10</span>
+  </div>
+  <div class="hand-body">
+    <header class="hand-head">
+      <h3 class="hand-name">High card</h3>
+      <div class="odds">
+        <span class="odds-label">odds</span>
+        <span class="odds-value">1 in 2</span>
+        <span class="odds-combos">1,302,540 possible combinations</span>
+      </div>
+    </header>
+    <div class="fan fan-hand"><img src="poker-cards/AS.svg" alt="Ace of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/KD.svg" alt="King of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/JD.svg" alt="Jack of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/9H.svg" alt="Nine of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/8H.svg" alt="Eight of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+    <p class="definition">No pair, no straight, no flush — you just show your single highest card, and if it isn&#x27;t the highest at the table, you lose.</p>
+    <div class="beats">
+      <span class="beats-label">what it beats</span>
+      <div class="chips"><span class="chip chip-none">nothing &mdash; the weakest category</span></div>
+    </div>
+    <p class="why"><span class="why-label">why</span>With no pair, no straight and no flush, your hand has no pattern at all, so it loses to every category above it. Against other high-card hands, the single biggest card wins, and identical top cards are compared one kicker at a time down the line.</p>
+    <div class="notes">
+      <div class="note note-tip">
+        <span class="note-label">Beginner tip</span>
+        <p>&quot;High card&quot; is the weakest category, but it still wins showdowns — if nobody made a pair, the person holding the single biggest card takes the pot. Kickers are compared in order: ace, then king, then jack, and so on.</p>
+      </div>
+      <div class="note note-story">
+        <span class="note-label">How it happened</span>
+        <p>Your hole cards were A♠ J♦, and the board ran out 8♥ 5♣ 2♠ K♦ 9♥. Nothing matched, nothing ran in a row, and no suit reached five cards — so your best five was simply the five biggest cards: A♠ K♦ J♦ 9♥ 8♥.</p>
+      </div>
+    </div>
+  </div>
+</article>
+</section>
+
+<section class="tab-panel" id="panel-combine" aria-labelledby="tab-combine">
+  <input type="radio" name="ph-mode" id="mode-input-learn" class="sr-only" checked>
+  <input type="radio" name="ph-mode" id="mode-input-quiz" class="sr-only">
+  <h2 class="sr-only">How your hole cards and the community cards combine &mdash; learn, then quiz yourself</h2>
+  <nav class="modebar" aria-label="Learn or quiz">
+    <span class="modebar-kicker">This tab</span>
+    <label class="mode-btn" for="mode-input-learn">Learn</label>
+    <label class="mode-btn" for="mode-input-quiz">Quiz</label>
+  </nav>
+  
+<div class="mode-zone learn-zone">
+  <div class="primer">
+    <h2>What is a &quot;hand&quot;?</h2>
+    <p>In Texas Hold&#x27;em, a &quot;hand&quot; is the best 5-card poker hand you can build by the end of a round. Every player gets the same ingredients — the trick is knowing how to combine them.</p>
+    <ol class="primer-steps"><li>Step 1 — Your 2 hole cards: dealt face-down to you alone. These are &quot;your&quot; cards.</li><li>Step 2 — 5 community cards: dealt face-up in the middle over time, shared by everyone at the table.</li><li>Step 3 — Make your best 5: you may use both hole cards, just one, or none at all. You simply pick the best 5-card hand out of the 7 cards available to you (your 2 + the 5 on the board). This is called &quot;the best 5 of 7&quot;.</li></ol>
+    <div class="primer-notes">
+  <div class="primer-note">
+    <span class="note-label">Card order, low → high</span>
+    <p>Cards rank from low to high: 2 &lt; 3 &lt; 4 &lt; 5 &lt; 6 &lt; 7 &lt; 8 &lt; 9 &lt; 10 &lt; J &lt; Q &lt; K &lt; A. So an ace is normally the highest card.</p>
+  </div>
+  <div class="primer-note">
+    <span class="note-label">The one ace exception</span>
+    <p>One exception: for a straight (5 cards in a row), an ace can also count as the low card, making A-2-3-4-5 a valid straight (the lowest one). It can never wrap around like Q-K-A-2-3 — that is not a straight.</p>
+  </div>
+  <div class="primer-note">
+    <span class="note-label">Suits are equal</span>
+    <p>There are 4 suits — spades (♠), hearts (♥), diamonds (♦), clubs (♣). All four suits are equal: no suit beats another.</p>
+  </div>
+  <div class="primer-note">
+    <span class="note-label">Always exactly five</span>
+    <p>A hand is always exactly 5 cards. You never show 6 or 7 cards — you pick the strongest 5-card combination.</p>
+  </div></div>
+  </div>
+
+  <h3 class="panel-sub">How your hole cards and the community cards work together &mdash; five worked examples, from needing both your cards to using neither.</h3>
+  
+<section class="example">
+  <h3 class="example-title"><span class="example-num">1</span><span class="example-hand">Straight</span>&nbsp;&mdash;&nbsp;Using BOTH hole cards: you need your two cards to complete a straight</h3>
+  <div class="table-row">
+    <div class="zone zone-hole">
+      <span class="zone-label">Your hand &mdash; 2 hole cards</span>
+      <div class="zone-cards"><img src="poker-cards/5S.svg" alt="Five of spades" class="card hero-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"><img src="poker-cards/6S.svg" alt="Six of spades" class="card hero-card counts" loading="lazy" width="168" height="244" style="transform:rotate(1.5deg)" decoding="async"></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards</span>
+      <div class="zone-cards zone-cards-board"><img src="poker-cards/4D.svg" alt="Four of diamonds" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/3C.svg" alt="Three of clubs" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/2H.svg" alt="Two of hearts" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/KS.svg" alt="King of spades" class="card dimmed" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/QD.svg" alt="Queen of diamonds" class="card dimmed" loading="lazy" width="168" height="244" decoding="async"></div>
+    </div>
+  </div>
+  <p class="legend"><span class="legend-ring"></span>outlined cards count toward your best 5 &nbsp;&middot;&nbsp; greyed cards are discarded</p>
+  <p class="example-expl">The board on its own only has 4-3-2 in a row — not a straight. Your two hole cards (5♠ and 6♠) plug in right above them to make 6-5-4-3-2. Drop either hole card and the straight disappears, so here you used both of them. The K♠ and Q♦ are too high to connect and are discarded.</p>
+  
+<details class="breakdown">
+  <summary>See the breakdown</summary>
+  <div class="brk-rows"><span class="grp" data-label="five in a row — a straight"><span class="grp-cards"><img src="poker-cards/6S.svg" alt="Six of spades" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/5S.svg" alt="Five of spades" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/4D.svg" alt="Four of diamonds" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/3C.svg" alt="Three of clubs" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/2H.svg" alt="Two of hearts" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"></span></span></div>
+  <div class="brk-discard"><span class="brk-discard-label">discarded &mdash; not in your best 5</span><div class="brk-cards"><img src="poker-cards/KS.svg" alt="King of spades" class="card brk-card dimmed" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/QD.svg" alt="Queen of diamonds" class="card brk-card dimmed" loading="lazy" width="168" height="244" decoding="async"></div></div>
+  <p class="brk-note">Your hand is these five cards: <strong>straight</strong> &mdash; 6♠ 5♠ 4♦ 3♣ 2♥.</p>
+</details>
+</section>
+<section class="example">
+  <h3 class="example-title"><span class="example-num">2</span><span class="example-hand">Three of a kind</span>&nbsp;&mdash;&nbsp;Using exactly ONE hole card: you pair the board</h3>
+  <div class="table-row">
+    <div class="zone zone-hole">
+      <span class="zone-label">Your hand &mdash; 2 hole cards</span>
+      <div class="zone-cards"><img src="poker-cards/QS.svg" alt="Queen of spades" class="card hero-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"><img src="poker-cards/2D.svg" alt="Two of diamonds" class="card hero-card dimmed" loading="lazy" width="168" height="244" style="transform:rotate(1.5deg)" decoding="async"></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards</span>
+      <div class="zone-cards zone-cards-board"><img src="poker-cards/QH.svg" alt="Queen of hearts" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/QD.svg" alt="Queen of diamonds" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/JC.svg" alt="Jack of clubs" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/9S.svg" alt="Nine of spades" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/4H.svg" alt="Four of hearts" class="card dimmed" loading="lazy" width="168" height="244" decoding="async"></div>
+    </div>
+  </div>
+  <p class="legend"><span class="legend-ring"></span>outlined cards count toward your best 5 &nbsp;&middot;&nbsp; greyed cards are discarded</p>
+  <p class="example-expl">The board already had two queens (Q♥ Q♦). Your Q♠ combined with them to make three of a kind — you only needed that one card from your hand. Your other hole card (2♦) is worse than the board&#x27;s J♣ and 9♠, so your final five is three queens plus J♣ and 9♠ as kickers. This is what &quot;pairing the board&quot; looks like.</p>
+  
+<details class="breakdown">
+  <summary>See the breakdown</summary>
+  <div class="brk-rows"><span class="grp" data-label="three of a kind — three queens"><span class="grp-cards"><img src="poker-cards/QS.svg" alt="Queen of spades" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/QH.svg" alt="Queen of hearts" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/QD.svg" alt="Queen of diamonds" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"></span></span><span class="grp" data-label="kickers — the best leftovers"><span class="grp-cards"><img src="poker-cards/JC.svg" alt="Jack of clubs" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/9S.svg" alt="Nine of spades" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"></span></span></div>
+  <div class="brk-discard"><span class="brk-discard-label">discarded &mdash; not in your best 5</span><div class="brk-cards"><img src="poker-cards/2D.svg" alt="Two of diamonds" class="card brk-card dimmed" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/4H.svg" alt="Four of hearts" class="card brk-card dimmed" loading="lazy" width="168" height="244" decoding="async"></div></div>
+  <p class="brk-note">Your hand is these five cards: <strong>three of a kind</strong> &mdash; Q♠ Q♥ Q♦ J♣ 9♠.</p>
+</details>
+</section>
+<section class="example">
+  <h3 class="example-title"><span class="example-num">3</span><span class="example-hand">Flush</span>&nbsp;&mdash;&nbsp;Playing the board: you use ZERO hole cards</h3>
+  <div class="table-row">
+    <div class="zone zone-hole">
+      <span class="zone-label">Your hand &mdash; 2 hole cards</span>
+      <div class="zone-cards"><img src="poker-cards/3C.svg" alt="Three of clubs" class="card hero-card dimmed" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"><img src="poker-cards/4S.svg" alt="Four of spades" class="card hero-card dimmed" loading="lazy" width="168" height="244" style="transform:rotate(1.5deg)" decoding="async"></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards</span>
+      <div class="zone-cards zone-cards-board"><img src="poker-cards/9H.svg" alt="Nine of hearts" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/8H.svg" alt="Eight of hearts" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/7H.svg" alt="Seven of hearts" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/6H.svg" alt="Six of hearts" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/2H.svg" alt="Two of hearts" class="card counts" loading="lazy" width="168" height="244" decoding="async"></div>
+    </div>
+  </div>
+  <p class="legend"><span class="legend-ring"></span>outlined cards count toward your best 5 &nbsp;&middot;&nbsp; greyed cards are discarded</p>
+  <p class="example-expl">The five community cards are all hearts, so the board itself is a flush — and a flush beats anything your 3♣ and 4♠ can make. Your best five-card hand IS the board, so you literally play all five community cards and ignore both hole cards completely. This is legal: your hand is the best 5 of your 7 cards, even when the best 5 come entirely from the middle.</p>
+  
+<details class="breakdown">
+  <summary>See the breakdown</summary>
+  <div class="brk-rows"><span class="grp" data-label="all five hearts — a flush"><span class="grp-cards"><img src="poker-cards/9H.svg" alt="Nine of hearts" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/8H.svg" alt="Eight of hearts" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/7H.svg" alt="Seven of hearts" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/6H.svg" alt="Six of hearts" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/2H.svg" alt="Two of hearts" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"></span></span></div>
+  <div class="brk-discard"><span class="brk-discard-label">discarded &mdash; not in your best 5</span><div class="brk-cards"><img src="poker-cards/3C.svg" alt="Three of clubs" class="card brk-card dimmed" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/4S.svg" alt="Four of spades" class="card brk-card dimmed" loading="lazy" width="168" height="244" decoding="async"></div></div>
+  <p class="brk-note">Your hand is these five cards: <strong>flush</strong> &mdash; 9♥ 8♥ 7♥ 6♥ 2♥.</p>
+</details>
+</section>
+<section class="example">
+  <h3 class="example-title"><span class="example-num">4</span><span class="example-hand">One pair</span>&nbsp;&mdash;&nbsp;Kickers decide it — Player A wins</h3>
+  <div class="table-row">
+    <div class="zone zone-hole">
+      <span class="zone-label">Your hand &mdash; 2 hole cards</span>
+      <div class="zone-cards"><img src="poker-cards/AS.svg" alt="Ace of spades" class="card hero-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"><img src="poker-cards/9D.svg" alt="Nine of diamonds" class="card hero-card counts" loading="lazy" width="168" height="244" style="transform:rotate(1.5deg)" decoding="async"></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards</span>
+      <div class="zone-cards zone-cards-board"><img src="poker-cards/KD.svg" alt="King of diamonds" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/KC.svg" alt="King of clubs" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/8H.svg" alt="Eight of hearts" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/4C.svg" alt="Four of clubs" class="card dimmed" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/2S.svg" alt="Two of spades" class="card dimmed" loading="lazy" width="168" height="244" decoding="async"></div>
+    </div>
+  </div>
+  <p class="legend"><span class="legend-ring"></span>outlined cards count toward your best 5 &nbsp;&middot;&nbsp; greyed cards are discarded</p>
+  <p class="example-expl">Player A makes a pair of kings with the best leftovers: A♠, 9♦, 8♥. Player B (see next example) also makes a pair of kings with an ace kicker — so both players have K-K-A so far. Player A pulls ahead with the fourth card, the 9♦, which beats Player B&#x27;s fourth card. Without that 9♦ in Player A&#x27;s hand, the two players would tie.</p>
+  
+<details class="breakdown">
+  <summary>See the breakdown</summary>
+  <div class="brk-rows"><span class="grp" data-label="a pair — two kings"><span class="grp-cards"><img src="poker-cards/KD.svg" alt="King of diamonds" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/KC.svg" alt="King of clubs" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"></span></span><span class="grp" data-label="kickers — the best leftovers"><span class="grp-cards"><img src="poker-cards/AS.svg" alt="Ace of spades" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/9D.svg" alt="Nine of diamonds" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/8H.svg" alt="Eight of hearts" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"></span></span></div>
+  <div class="brk-discard"><span class="brk-discard-label">discarded &mdash; not in your best 5</span><div class="brk-cards"><img src="poker-cards/4C.svg" alt="Four of clubs" class="card brk-card dimmed" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/2S.svg" alt="Two of spades" class="card brk-card dimmed" loading="lazy" width="168" height="244" decoding="async"></div></div>
+  <p class="brk-note">Your hand is these five cards: <strong>one pair</strong> &mdash; K♦ K♣ A♠ 9♦ 8♥.</p>
+</details>
+</section>
+<section class="example">
+  <h3 class="example-title"><span class="example-num">5</span><span class="example-hand">One pair</span>&nbsp;&mdash;&nbsp;Kickers decide it — Player B loses with a weaker kicker</h3>
+  <div class="table-row">
+    <div class="zone zone-hole">
+      <span class="zone-label">Your hand &mdash; 2 hole cards</span>
+      <div class="zone-cards"><img src="poker-cards/AH.svg" alt="Ace of hearts" class="card hero-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"><img src="poker-cards/7C.svg" alt="Seven of clubs" class="card hero-card counts" loading="lazy" width="168" height="244" style="transform:rotate(1.5deg)" decoding="async"></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards</span>
+      <div class="zone-cards zone-cards-board"><img src="poker-cards/KD.svg" alt="King of diamonds" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/KC.svg" alt="King of clubs" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/8H.svg" alt="Eight of hearts" class="card counts" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/4C.svg" alt="Four of clubs" class="card dimmed" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/2S.svg" alt="Two of spades" class="card dimmed" loading="lazy" width="168" height="244" decoding="async"></div>
+    </div>
+  </div>
+  <p class="legend"><span class="legend-ring"></span>outlined cards count toward your best 5 &nbsp;&middot;&nbsp; greyed cards are discarded</p>
+  <p class="example-expl">Same board as Player A. Player B also pairs the board&#x27;s kings and also has an ace, so after comparing K-K-A on both sides, Player B&#x27;s next card is the 8♥ while Player A had a 9♦. One card — the kicker — is the whole difference. Player A&#x27;s hand (K-K-A-9-8) beats Player B&#x27;s hand (K-K-A-8-7).</p>
+  
+<details class="breakdown">
+  <summary>See the breakdown</summary>
+  <div class="brk-rows"><span class="grp" data-label="a pair — two kings"><span class="grp-cards"><img src="poker-cards/KD.svg" alt="King of diamonds" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/KC.svg" alt="King of clubs" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"></span></span><span class="grp" data-label="kickers — the best leftovers"><span class="grp-cards"><img src="poker-cards/AH.svg" alt="Ace of hearts" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/8H.svg" alt="Eight of hearts" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"><img src="poker-cards/7C.svg" alt="Seven of clubs" class="card brk-card counts" loading="lazy" width="168" height="244" style="transform:rotate(-1deg)" decoding="async"></span></span></div>
+  <div class="brk-discard"><span class="brk-discard-label">discarded &mdash; not in your best 5</span><div class="brk-cards"><img src="poker-cards/4C.svg" alt="Four of clubs" class="card brk-card dimmed" loading="lazy" width="168" height="244" decoding="async"><img src="poker-cards/2S.svg" alt="Two of spades" class="card brk-card dimmed" loading="lazy" width="168" height="244" decoding="async"></div></div>
+  <p class="brk-note">Your hand is these five cards: <strong>one pair</strong> &mdash; K♦ K♣ A♥ 8♥ 7♣.</p>
+</details>
+</section>
+
+  <aside class="mistakes">
+    <h2>Seven beginner traps</h2>
+    <p class="sub">If you remember nothing else from this page, remember these. Then switch to <strong>Quiz</strong> above and walk into all seven on purpose.</p>
+    <ol><li>&quot;I have to use both of my hole cards.&quot; — No. Your hand is the best 5 cards out of your 2 hole cards plus the 5 community cards. If your hole cards are weak, throw them away mentally and use the board&#x27;s cards instead.</li><li>&quot;I can count 6 or 7 cards as my hand.&quot; — No. A poker hand is always exactly 5 cards. Counting 6 cards (like three of a kind plus three extra cards) is a classic beginner error — pick your strongest 5 and stop.</li><li>&quot;The board can&#x27;t make a hand by itself.&quot; — It can. Five community cards make a straight, a flush, a full house or even four of a kind on their own — that&#x27;s called playing the board, and everyone shares it unless a hole card improves on it.</li><li>&quot;My cards are suited, so I probably have a flush.&quot; — You need five cards of the same suit. Two suited cards give you a head start, nothing more.</li><li>&quot;I have an ace, so my high card should win.&quot; — Kickers matter. If your ace is matched by your opponent&#x27;s ace, you compare the next cards down. The player with the bigger kicker wins; identical kickers split the pot.</li><li>&quot;A-2-3-4-5 can&#x27;t be a straight.&quot; — It can. For straights only, an ace can act as the low card. But Q-K-A-2-3 is not a straight — the ace can&#x27;t wrap around.</li><li>&quot;Suited connectors are already a straight flush.&quot; — A straight flush needs five cards in a row AND of the same suit. Most of the time you&#x27;ll end up with at most a flush, a straight, or nothing at all.</li></ol>
+  </aside>
+
+  <section class="glossary">
+    <h2>Glossary</h2>
+    <dl>
+    <div class="term">
+      <dt>Hole card</dt>
+      <dd>One of the two face-down cards dealt only to you at the start of a Texas Hold&#x27;em hand. Also called &quot;pocket cards&quot;.</dd>
+    </div>
+    <div class="term">
+      <dt>Community card</dt>
+      <dd>One of the five face-up cards dealt in the middle of the table. Everyone may use them to build their hand.</dd>
+    </div>
+    <div class="term">
+      <dt>Board</dt>
+      <dd>The nickname for all five community cards together — the shared cards in the middle of the table.</dd>
+    </div>
+    <div class="term">
+      <dt>Kicker</dt>
+      <dd>A leftover high card used to break ties. If two players make the same kind of hand (say, both have a pair of kings), the next-highest cards — the kickers — decide who wins.</dd>
+    </div>
+    <div class="term">
+      <dt>Suit</dt>
+      <dd>The symbol on a card: spades (♠), hearts (♥), diamonds (♦) or clubs (♣). All four suits are equal in strength.</dd>
+    </div>
+    <div class="term">
+      <dt>Rank</dt>
+      <dd>The value of a card: 2 through 10, then jack (J), queen (Q), king (K), ace (A). An ace is normally highest, but can count as a 1 in an A-2-3-4-5 straight.</dd>
+    </div>
+    <div class="term">
+      <dt>Flush vs straight</dt>
+      <dd>A flush is five cards that all share ONE SUIT but are not in order (like 9♥ 8♥ 5♥ 2♥ K♥). A straight is five cards IN CONSECUTIVE ORDER but from mixed suits (like 9♣ 8♦ 7♥ 6♠ 5♣). A flush beats a straight.</dd>
+    </div>
+    </dl>
+  </section>
+</div>
+  
+<div class="mode-zone quiz-zone">
+  <p class="panel-intro quiz-intro"><strong>Tap the cards, not the answers.</strong> Every deal below is real: pick the 5 cards that make your best hand out of your 7. Get it wrong and the table flips the lesson on you; get all 5 right and the hand reveals itself. First four are warm-ups &mdash; the last seven are the classic beginner traps, served raw.</p>
+
+  <h3 class="quiz-section">Warm-up &mdash; four spots</h3>
+  
+<section class="quiz-q" id="q1">
+  <div class="q-head">
+    <span class="q-num">Q1</span>
+    <h4 class="q-title">What hand do you actually have?</h4>
+  </div>
+  <p class="q-prompt">Tap the 5 cards that make your best hand — then name the hand</p>
+  <div class="table-row">
+    <div class="zone zone-hole">
+      <span class="zone-label">Your hand &mdash; 2 hole cards</span>
+      <div class="zone-cards"><span class="qcard is-best"><input type="checkbox" id="q1-b1" class="sr-only qcheck qcheck-best" aria-label="Select Five of spades"><label for="q1-b1"><img src="poker-cards/5S.svg" alt="Five of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-3.0deg)" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="q1-b2" class="sr-only qcheck qcheck-best" aria-label="Select Six of spades"><label for="q1-b2"><img src="poker-cards/6S.svg" alt="Six of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"></label></span></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards</span>
+      <div class="zone-cards zone-cards-board"><span class="qcard is-best"><input type="checkbox" id="q1-b3" class="sr-only qcheck qcheck-best" aria-label="Select Four of diamonds"><label for="q1-b3"><img src="poker-cards/4D.svg" alt="Four of diamonds" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="q1-b4" class="sr-only qcheck qcheck-best" aria-label="Select Three of clubs"><label for="q1-b4"><img src="poker-cards/3C.svg" alt="Three of clubs" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="q1-b5" class="sr-only qcheck qcheck-best" aria-label="Select Two of hearts"><label for="q1-b5"><img src="poker-cards/2H.svg" alt="Two of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="q1-w1" class="sr-only qcheck qcheck-wrong" aria-label="Select King of spades"><label for="q1-w1"><img src="poker-cards/KS.svg" alt="King of spades" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="q1-w2" class="sr-only qcheck qcheck-wrong" aria-label="Select Queen of diamonds"><label for="q1-w2"><img src="poker-cards/QD.svg" alt="Queen of diamonds" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span></div>
+    </div>
+  </div>
+  <p class="q-hint">Tap to select &middot; tap again to undo</p>
+  <div class="reveal reveal-wrong">
+    <span class="reveal-tag">Not quite</span>
+    <p>The board waves a big K and Q at you, but they connect with nothing, and 4-3-2 on its own is only three cards in a row. Beginners either tap the two highest cards for &#x27;high card&#x27; or miss that your 5 and 6 slot exactly on top of the board&#x27;s 4-3-2. Drop either hole card and the straight disappears.</p>
+    <p class="reveal-best">Your best 5 is outlined in green above &mdash; deselect and try again.</p>
+  </div>
+  <div class="reveal reveal-win">
+    <span class="reveal-tag">That&rsquo;s your best 5 of 7</span>
+    <p>6♠ 5♠ 4♦ 3♣ 2♥ &mdash; all five count.</p>
+    <details class="hand-reveal">
+      <summary>What hand is it?</summary>
+      <p class="hand-name-big">Straight</p>
+    </details>
+  </div>
+</section>
+<section class="quiz-q" id="q2">
+  <div class="q-head">
+    <span class="q-num">Q2</span>
+    <h4 class="q-title">Which five cards are your hand?</h4>
+  </div>
+  <p class="q-prompt">Tap the 5 cards that make your best hand — then name the hand</p>
+  <div class="table-row">
+    <div class="zone zone-hole">
+      <span class="zone-label">Your hand &mdash; 2 hole cards</span>
+      <div class="zone-cards"><span class="qcard is-best"><input type="checkbox" id="q2-b1" class="sr-only qcheck qcheck-best" aria-label="Select Queen of spades"><label for="q2-b1"><img src="poker-cards/QS.svg" alt="Queen of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-3.0deg)" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="q2-w1" class="sr-only qcheck qcheck-wrong" aria-label="Select Two of diamonds"><label for="q2-w1"><img src="poker-cards/2D.svg" alt="Two of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"></label></span></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards</span>
+      <div class="zone-cards zone-cards-board"><span class="qcard is-best"><input type="checkbox" id="q2-b2" class="sr-only qcheck qcheck-best" aria-label="Select Queen of hearts"><label for="q2-b2"><img src="poker-cards/QH.svg" alt="Queen of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="q2-b3" class="sr-only qcheck qcheck-best" aria-label="Select Queen of diamonds"><label for="q2-b3"><img src="poker-cards/QD.svg" alt="Queen of diamonds" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="q2-b4" class="sr-only qcheck qcheck-best" aria-label="Select Jack of clubs"><label for="q2-b4"><img src="poker-cards/JC.svg" alt="Jack of clubs" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="q2-b5" class="sr-only qcheck qcheck-best" aria-label="Select Nine of spades"><label for="q2-b5"><img src="poker-cards/9S.svg" alt="Nine of spades" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="q2-w2" class="sr-only qcheck qcheck-wrong" aria-label="Select Four of hearts"><label for="q2-w2"><img src="poker-cards/4H.svg" alt="Four of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span></div>
+    </div>
+  </div>
+  <p class="q-hint">Tap to select &middot; tap again to undo</p>
+  <div class="reveal reveal-wrong">
+    <span class="reveal-tag">Not quite</span>
+    <p>Two queens already sit on the board, so it&#x27;s easy to either stop at &#x27;two pair on the board&#x27; and miss that your Q♠ makes trips — or to force your 2♦ in as a kicker when the board&#x27;s J♣ and 9♠ are better cards. Only one hole card counts here.</p>
+    <p class="reveal-best">Your best 5 is outlined in green above &mdash; deselect and try again.</p>
+  </div>
+  <div class="reveal reveal-win">
+    <span class="reveal-tag">That&rsquo;s your best 5 of 7</span>
+    <p>Q♠ Q♥ Q♦ J♣ 9♠ &mdash; all five count.</p>
+    <details class="hand-reveal">
+      <summary>What hand is it?</summary>
+      <p class="hand-name-big">Three of a kind</p>
+    </details>
+  </div>
+</section>
+<section class="quiz-q" id="q3">
+  <div class="q-head">
+    <span class="q-num">Q3</span>
+    <h4 class="q-title">Can the board win all by itself?</h4>
+  </div>
+  <p class="q-prompt">Tap the 5 cards that make your best hand — then name the hand</p>
+  <div class="table-row">
+    <div class="zone zone-hole">
+      <span class="zone-label">Your hand &mdash; 2 hole cards</span>
+      <div class="zone-cards"><span class="qcard is-wrong"><input type="checkbox" id="q3-w1" class="sr-only qcheck qcheck-wrong" aria-label="Select Three of clubs"><label for="q3-w1"><img src="poker-cards/3C.svg" alt="Three of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-3.0deg)" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="q3-w2" class="sr-only qcheck qcheck-wrong" aria-label="Select Four of spades"><label for="q3-w2"><img src="poker-cards/4S.svg" alt="Four of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"></label></span></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards</span>
+      <div class="zone-cards zone-cards-board"><span class="qcard is-best"><input type="checkbox" id="q3-b1" class="sr-only qcheck qcheck-best" aria-label="Select Nine of hearts"><label for="q3-b1"><img src="poker-cards/9H.svg" alt="Nine of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="q3-b2" class="sr-only qcheck qcheck-best" aria-label="Select Eight of hearts"><label for="q3-b2"><img src="poker-cards/8H.svg" alt="Eight of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="q3-b3" class="sr-only qcheck qcheck-best" aria-label="Select Seven of hearts"><label for="q3-b3"><img src="poker-cards/7H.svg" alt="Seven of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="q3-b4" class="sr-only qcheck qcheck-best" aria-label="Select Six of hearts"><label for="q3-b4"><img src="poker-cards/6H.svg" alt="Six of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="q3-b5" class="sr-only qcheck qcheck-best" aria-label="Select Two of hearts"><label for="q3-b5"><img src="poker-cards/2H.svg" alt="Two of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span></div>
+    </div>
+  </div>
+  <p class="q-hint">Tap to select &middot; tap again to undo</p>
+  <div class="reveal reveal-wrong">
+    <span class="reveal-tag">Not quite</span>
+    <p>Your hole cards are right there and feel impossible to throw away, so beginners dig in and try to use at least one of them. But all five community cards are hearts, and nothing 3♣ 4♠ can build beats a five-card flush — your best hand literally IS the board.</p>
+    <p class="reveal-best">Your best 5 is outlined in green above &mdash; deselect and try again.</p>
+  </div>
+  <div class="reveal reveal-win">
+    <span class="reveal-tag">That&rsquo;s your best 5 of 7</span>
+    <p>9♥ 8♥ 7♥ 6♥ 2♥ &mdash; all five count.</p>
+    <details class="hand-reveal">
+      <summary>What hand is it?</summary>
+      <p class="hand-name-big">Flush</p>
+    </details>
+  </div>
+</section>
+<section class="quiz-q q-paired" id="qk">
+  <div class="q-head">
+    <span class="q-num">Q4</span>
+    <h4 class="q-title">One board, two players &mdash; who actually wins?</h4>
+  </div>
+  <p class="q-prompt">Both players pair the board&rsquo;s kings and both hold an ace. Tap Player A&rsquo;s 5 cards &mdash; the winning hand.</p>
+  <div class="table-row">
+    <div class="zone zone-hole zone-duel">
+      <span class="zone-label">Player A &mdash; hole cards</span>
+      <div class="zone-cards"><span class="qcard is-best"><input type="checkbox" id="qk-b1" class="sr-only qcheck qcheck-best" aria-label="Select Ace of spades"><label for="qk-b1"><img src="poker-cards/AS.svg" alt="Ace of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-3.0deg)" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="qk-b2" class="sr-only qcheck qcheck-best" aria-label="Select Nine of diamonds"><label for="qk-b2"><img src="poker-cards/9D.svg" alt="Nine of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"></label></span></div>
+      <span class="zone-label zone-label-b">Player B &mdash; hole cards</span>
+      <div class="zone-cards"><span class="qcard is-wrong"><input type="checkbox" id="qk-w1" class="sr-only qcheck qcheck-wrong" aria-label="Select Ace of hearts"><label for="qk-w1"><img src="poker-cards/AH.svg" alt="Ace of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg)" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="qk-w2" class="sr-only qcheck qcheck-wrong" aria-label="Select Seven of clubs"><label for="qk-w2"><img src="poker-cards/7C.svg" alt="Seven of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(1.5deg)" decoding="async"></label></span></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards, shared by both</span>
+      <div class="zone-cards zone-cards-board"><span class="qcard is-best"><input type="checkbox" id="qk-b3" class="sr-only qcheck qcheck-best" aria-label="Select King of diamonds"><label for="qk-b3"><img src="poker-cards/KD.svg" alt="King of diamonds" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="qk-b4" class="sr-only qcheck qcheck-best" aria-label="Select King of clubs"><label for="qk-b4"><img src="poker-cards/KC.svg" alt="King of clubs" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="qk-b5" class="sr-only qcheck qcheck-best" aria-label="Select Eight of hearts"><label for="qk-b5"><img src="poker-cards/8H.svg" alt="Eight of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="qk-w3" class="sr-only qcheck qcheck-wrong" aria-label="Select Four of clubs"><label for="qk-w3"><img src="poker-cards/4C.svg" alt="Four of clubs" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="qk-w4" class="sr-only qcheck qcheck-wrong" aria-label="Select Two of spades"><label for="qk-w4"><img src="poker-cards/2S.svg" alt="Two of spades" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span></div>
+    </div>
+  </div>
+  <p class="q-hint">Tap to select &middot; tap again to undo</p>
+  <div class="reveal reveal-wrong">
+    <span class="reveal-tag">Not quite</span>
+    <p>Everyone pairs the board&#x27;s kings and both players hold an ace, so K-K-A is a tie. Beginners stop comparing there and never get to the fourth card — your 9♦ over the opponent&#x27;s 8 is the entire pot. With an ace in hand it feels like a winner, but after K-K-A on both sides the comparison rolls to the fourth card: your 8♥ — and that&#x27;s exactly where Player A pulls ahead with a 9. Your 7♣ as the fifth card never even gets compared.</p>
+    <p class="reveal-best">Player A&rsquo;s best 5 is outlined in green above &mdash; deselect and try again.</p>
+  </div>
+  <div class="reveal reveal-win">
+    <span class="reveal-tag">Exactly &mdash; Player A wins</span>
+    <p>K♦ K♣ A♠ 9♦ 8♥ beats Player B&rsquo;s K♦ K♣ A♥ 8♥ 7♣.</p>
+    <details class="hand-reveal">
+      <summary>Show me the kicker ladder</summary>
+      <p class="hand-name-big">One pair</p>
+      <p class="ladder">K&ndash;K&ndash;A is identical on both sides &mdash; then the fourth card decides: Player A&rsquo;s <strong>9♦</strong> outranks Player B&rsquo;s <strong>8♥</strong>. One kicker, the whole pot.</p>
+    </details>
+  </div>
+</section>
+
+  <h3 class="quiz-section">The seven beginner traps &mdash; no titles, no mercy</h3>
+  <p class="quiz-section-note">You see only hole cards and board, exactly like a real hand. Tap what you believe &mdash; the teaching arrives the moment you fall for it. In a hurry? Every trap has a &ldquo;Show me&rdquo; link.</p>
+  
+<section class="quiz-q q-trap" id="t1">
+  <div class="q-head">
+    <span class="q-num">Trap 1/7</span>
+    <h4 class="q-title sr-only">Beginner trap 1</h4>
+  </div>
+  <p class="q-prompt">Tap the 5 cards you would play. What do you have?</p>
+  <div class="table-row">
+    <div class="zone zone-hole">
+      <span class="zone-label">Your hand &mdash; 2 hole cards</span>
+      <div class="zone-cards"><span class="qcard is-wrong"><input type="checkbox" id="t1-w1" class="sr-only qcheck qcheck-wrong" aria-label="Select Jack of spades"><label for="t1-w1"><img src="poker-cards/JS.svg" alt="Jack of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-3.0deg)" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="t1-w2" class="sr-only qcheck qcheck-wrong" aria-label="Select Four of clubs"><label for="t1-w2"><img src="poker-cards/4C.svg" alt="Four of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"></label></span></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards</span>
+      <div class="zone-cards zone-cards-board"><span class="qcard is-best"><input type="checkbox" id="t1-b1" class="sr-only qcheck qcheck-best" aria-label="Select Jack of hearts"><label for="t1-b1"><img src="poker-cards/JH.svg" alt="Jack of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t1-b2" class="sr-only qcheck qcheck-best" aria-label="Select Queen of hearts"><label for="t1-b2"><img src="poker-cards/QH.svg" alt="Queen of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t1-b3" class="sr-only qcheck qcheck-best" aria-label="Select Ten of hearts"><label for="t1-b3"><img src="poker-cards/10H.svg" alt="Ten of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t1-b4" class="sr-only qcheck qcheck-best" aria-label="Select Eight of hearts"><label for="t1-b4"><img src="poker-cards/8H.svg" alt="Eight of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t1-b5" class="sr-only qcheck qcheck-best" aria-label="Select Two of hearts"><label for="t1-b5"><img src="poker-cards/2H.svg" alt="Two of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span></div>
+    </div>
+  </div>
+  <p class="q-hint">Tap to select &middot; tap again to undo</p>
+  <div class="reveal reveal-wrong">
+    <span class="reveal-tag">You took the bait</span>
+    <p class="bait-line"><s>You paired your jack — one pair!</s></p>
+    <span class="note-label">Beginner mistake &middot; &ldquo;I have to use both of my hole cards.&rdquo;</span>
+    <span class="note-label">The rule</span>
+    <p>You never have to use both of your hole cards: your hand is the best 5 cards out of your 7. If the board already beats what your cards make, throw your hole cards away.</p>
+    <span class="note-label">Why the bait fails</span>
+    <p>By insisting both hole cards count, you build J-J-Q-10-4 — a mere pair of jacks. But the five hearts on the board (Q♥ J♥ 10♥ 8♥ 2♥) are already a flush, and a flush beats a pair. Tapping JS and 4C actually forces you to drop two hearts; your true best 5 is all five board cards.</p>
+    <p class="reveal-best">Your best 5 (outlined in green above): Q♥ J♥ 10♥ 8♥ 2♥ &mdash; <strong>Flush</strong></p>
+  </div>
+  <div class="reveal reveal-win">
+    <span class="reveal-tag">You dodged the trap</span>
+    <p>Q♥ J♥ 10♥ 8♥ 2♥ &mdash; <strong>Flush</strong>. That is the best 5 of your 7.</p>
+  </div>
+  <details class="showme">
+    <summary>Show me</summary>
+    <div class="showme-body">
+      <span class="note-label">The rule</span>
+      <p>You never have to use both of your hole cards: your hand is the best 5 cards out of your 7. If the board already beats what your cards make, throw your hole cards away.</p>
+      <span class="note-label">Why the bait fails</span>
+      <p>By insisting both hole cards count, you build J-J-Q-10-4 — a mere pair of jacks. But the five hearts on the board (Q♥ J♥ 10♥ 8♥ 2♥) are already a flush, and a flush beats a pair. Tapping JS and 4C actually forces you to drop two hearts; your true best 5 is all five board cards.</p>
+      <div class="showme-best">
+        <div class="fan fan-brk"><img src="poker-cards/QH.svg" alt="Queen of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/JH.svg" alt="Jack of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/10H.svg" alt="Ten of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/8H.svg" alt="Eight of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/2H.svg" alt="Two of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+        <p class="showme-name">Flush &mdash; Q♥ J♥ 10♥ 8♥ 2♥</p>
+      </div>
+    </div>
+  </details>
+</section>
+<section class="quiz-q q-trap" id="t2">
+  <div class="q-head">
+    <span class="q-num">Trap 2/7</span>
+    <h4 class="q-title sr-only">Beginner trap 2</h4>
+  </div>
+  <p class="q-prompt">Tap the 5 cards you would play. What do you have?</p>
+  <div class="table-row">
+    <div class="zone zone-hole">
+      <span class="zone-label">Your hand &mdash; 2 hole cards</span>
+      <div class="zone-cards"><span class="qcard is-best"><input type="checkbox" id="t2-b1" class="sr-only qcheck qcheck-best" aria-label="Select Eight of spades"><label for="t2-b1"><img src="poker-cards/8S.svg" alt="Eight of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-3.0deg)" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t2-b2" class="sr-only qcheck qcheck-best" aria-label="Select Seven of spades"><label for="t2-b2"><img src="poker-cards/7S.svg" alt="Seven of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"></label></span></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards</span>
+      <div class="zone-cards zone-cards-board"><span class="qcard is-best"><input type="checkbox" id="t2-b3" class="sr-only qcheck qcheck-best" aria-label="Select Six of hearts"><label for="t2-b3"><img src="poker-cards/6H.svg" alt="Six of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t2-b4" class="sr-only qcheck qcheck-best" aria-label="Select Five of diamonds"><label for="t2-b4"><img src="poker-cards/5D.svg" alt="Five of diamonds" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t2-b5" class="sr-only qcheck qcheck-best" aria-label="Select Four of clubs"><label for="t2-b5"><img src="poker-cards/4C.svg" alt="Four of clubs" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="t2-w1" class="sr-only qcheck qcheck-wrong" aria-label="Select King of spades"><label for="t2-w1"><img src="poker-cards/KS.svg" alt="King of spades" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="t2-w2" class="sr-only qcheck qcheck-wrong" aria-label="Select King of diamonds"><label for="t2-w2"><img src="poker-cards/KD.svg" alt="King of diamonds" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span></div>
+    </div>
+  </div>
+  <p class="q-hint">Tap to select &middot; tap again to undo</p>
+  <div class="reveal reveal-wrong">
+    <span class="reveal-tag">You took the bait</span>
+    <p class="bait-line"><s>A straight AND a pair of kings — that&#x27;s seven cards!</s></p>
+    <span class="note-label">Beginner mistake &middot; &ldquo;I can count 6 or 7 cards as my hand.&rdquo;</span>
+    <span class="note-label">The rule</span>
+    <p>A poker hand is always exactly 5 cards — you can never count 6 or 7. Pick your strongest 5 and stop.</p>
+    <span class="note-label">Why the bait fails</span>
+    <p>You can&#x27;t stack the board&#x27;s pair of kings on top of your straight — that would be a 7-card &#x27;hand&#x27;. Your best 5 is 8-7-6-5-4 (8♠ 7♠ 6♥ 5♦ 4♣) and a straight beats a pair. If you tap the kings to &#x27;keep both&#x27;, you&#x27;ve downgraded yourself to a single pair (K-K-8-7-6) and thrown the straight away.</p>
+    <p class="reveal-best">Your best 5 (outlined in green above): 8♠ 7♠ 6♥ 5♦ 4♣ &mdash; <strong>Straight</strong></p>
+  </div>
+  <div class="reveal reveal-win">
+    <span class="reveal-tag">You dodged the trap</span>
+    <p>8♠ 7♠ 6♥ 5♦ 4♣ &mdash; <strong>Straight</strong>. That is the best 5 of your 7.</p>
+  </div>
+  <details class="showme">
+    <summary>Show me</summary>
+    <div class="showme-body">
+      <span class="note-label">The rule</span>
+      <p>A poker hand is always exactly 5 cards — you can never count 6 or 7. Pick your strongest 5 and stop.</p>
+      <span class="note-label">Why the bait fails</span>
+      <p>You can&#x27;t stack the board&#x27;s pair of kings on top of your straight — that would be a 7-card &#x27;hand&#x27;. Your best 5 is 8-7-6-5-4 (8♠ 7♠ 6♥ 5♦ 4♣) and a straight beats a pair. If you tap the kings to &#x27;keep both&#x27;, you&#x27;ve downgraded yourself to a single pair (K-K-8-7-6) and thrown the straight away.</p>
+      <div class="showme-best">
+        <div class="fan fan-brk"><img src="poker-cards/8S.svg" alt="Eight of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/7S.svg" alt="Seven of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/6H.svg" alt="Six of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/5D.svg" alt="Five of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/4C.svg" alt="Four of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+        <p class="showme-name">Straight &mdash; 8♠ 7♠ 6♥ 5♦ 4♣</p>
+      </div>
+    </div>
+  </details>
+</section>
+<section class="quiz-q q-trap" id="t3">
+  <div class="q-head">
+    <span class="q-num">Trap 3/7</span>
+    <h4 class="q-title sr-only">Beginner trap 3</h4>
+  </div>
+  <p class="q-prompt">Tap the 5 cards you would play. What do you have?</p>
+  <div class="table-row">
+    <div class="zone zone-hole">
+      <span class="zone-label">Your hand &mdash; 2 hole cards</span>
+      <div class="zone-cards"><span class="qcard is-wrong"><input type="checkbox" id="t3-w1" class="sr-only qcheck qcheck-wrong" aria-label="Select Ace of spades"><label for="t3-w1"><img src="poker-cards/AS.svg" alt="Ace of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-3.0deg)" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="t3-w2" class="sr-only qcheck qcheck-wrong" aria-label="Select King of clubs"><label for="t3-w2"><img src="poker-cards/KC.svg" alt="King of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"></label></span></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards</span>
+      <div class="zone-cards zone-cards-board"><span class="qcard is-best"><input type="checkbox" id="t3-b1" class="sr-only qcheck qcheck-best" aria-label="Select Nine of diamonds"><label for="t3-b1"><img src="poker-cards/9D.svg" alt="Nine of diamonds" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t3-b2" class="sr-only qcheck qcheck-best" aria-label="Select Eight of hearts"><label for="t3-b2"><img src="poker-cards/8H.svg" alt="Eight of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t3-b3" class="sr-only qcheck qcheck-best" aria-label="Select Seven of clubs"><label for="t3-b3"><img src="poker-cards/7C.svg" alt="Seven of clubs" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t3-b4" class="sr-only qcheck qcheck-best" aria-label="Select Six of spades"><label for="t3-b4"><img src="poker-cards/6S.svg" alt="Six of spades" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t3-b5" class="sr-only qcheck qcheck-best" aria-label="Select Five of diamonds"><label for="t3-b5"><img src="poker-cards/5D.svg" alt="Five of diamonds" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span></div>
+    </div>
+  </div>
+  <p class="q-hint">Tap to select &middot; tap again to undo</p>
+  <div class="reveal reveal-wrong">
+    <span class="reveal-tag">You took the bait</span>
+    <p class="bait-line"><s>Ace-king high — the big cards win it!</s></p>
+    <span class="note-label">Beginner mistake &middot; &ldquo;The board can&#x27;t make a hand by itself.&rdquo;</span>
+    <span class="note-label">The rule</span>
+    <p>The board CAN make a hand all by itself — five community cards can form a straight, flush, full house or even four of a kind, and &#x27;playing the board&#x27; is legal.</p>
+    <span class="note-label">Why the bait fails</span>
+    <p>Your ace and king connect with nothing (no Q-J-10 to complete a Broadway run), so A-K-9-8-7 is only high card. The five board cards already run 9-8-7-6-5 — a straight — and a straight beats any high card. Your best 5 IS the board; both hole cards are discarded.</p>
+    <p class="reveal-best">Your best 5 (outlined in green above): 9♦ 8♥ 7♣ 6♠ 5♦ &mdash; <strong>Straight</strong></p>
+  </div>
+  <div class="reveal reveal-win">
+    <span class="reveal-tag">You dodged the trap</span>
+    <p>9♦ 8♥ 7♣ 6♠ 5♦ &mdash; <strong>Straight</strong>. That is the best 5 of your 7.</p>
+  </div>
+  <details class="showme">
+    <summary>Show me</summary>
+    <div class="showme-body">
+      <span class="note-label">The rule</span>
+      <p>The board CAN make a hand all by itself — five community cards can form a straight, flush, full house or even four of a kind, and &#x27;playing the board&#x27; is legal.</p>
+      <span class="note-label">Why the bait fails</span>
+      <p>Your ace and king connect with nothing (no Q-J-10 to complete a Broadway run), so A-K-9-8-7 is only high card. The five board cards already run 9-8-7-6-5 — a straight — and a straight beats any high card. Your best 5 IS the board; both hole cards are discarded.</p>
+      <div class="showme-best">
+        <div class="fan fan-brk"><img src="poker-cards/9D.svg" alt="Nine of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/8H.svg" alt="Eight of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/7C.svg" alt="Seven of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/6S.svg" alt="Six of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/5D.svg" alt="Five of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+        <p class="showme-name">Straight &mdash; 9♦ 8♥ 7♣ 6♠ 5♦</p>
+      </div>
+    </div>
+  </details>
+</section>
+<section class="quiz-q q-trap" id="t4">
+  <div class="q-head">
+    <span class="q-num">Trap 4/7</span>
+    <h4 class="q-title sr-only">Beginner trap 4</h4>
+  </div>
+  <p class="q-prompt">Tap the 5 cards you would play. What do you have?</p>
+  <div class="table-row">
+    <div class="zone zone-hole">
+      <span class="zone-label">Your hand &mdash; 2 hole cards</span>
+      <div class="zone-cards"><span class="qcard is-wrong"><input type="checkbox" id="t4-w1" class="sr-only qcheck qcheck-wrong" aria-label="Select Ace of spades"><label for="t4-w1"><img src="poker-cards/AS.svg" alt="Ace of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-3.0deg)" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t4-b1" class="sr-only qcheck qcheck-best" aria-label="Select Nine of spades"><label for="t4-b1"><img src="poker-cards/9S.svg" alt="Nine of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"></label></span></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards</span>
+      <div class="zone-cards zone-cards-board"><span class="qcard is-wrong"><input type="checkbox" id="t4-w2" class="sr-only qcheck qcheck-wrong" aria-label="Select King of spades"><label for="t4-w2"><img src="poker-cards/KS.svg" alt="King of spades" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t4-b2" class="sr-only qcheck qcheck-best" aria-label="Select Eight of hearts"><label for="t4-b2"><img src="poker-cards/8H.svg" alt="Eight of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t4-b3" class="sr-only qcheck qcheck-best" aria-label="Select Seven of diamonds"><label for="t4-b3"><img src="poker-cards/7D.svg" alt="Seven of diamonds" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t4-b4" class="sr-only qcheck qcheck-best" aria-label="Select Six of clubs"><label for="t4-b4"><img src="poker-cards/6C.svg" alt="Six of clubs" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t4-b5" class="sr-only qcheck qcheck-best" aria-label="Select Five of spades"><label for="t4-b5"><img src="poker-cards/5S.svg" alt="Five of spades" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span></div>
+    </div>
+  </div>
+  <p class="q-hint">Tap to select &middot; tap again to undo</p>
+  <div class="reveal reveal-wrong">
+    <span class="reveal-tag">You took the bait</span>
+    <p class="bait-line"><s>Four spades — you made a flush!</s></p>
+    <span class="note-label">Beginner mistake &middot; &ldquo;My cards are suited, so I probably have a flush.&rdquo;</span>
+    <span class="note-label">The rule</span>
+    <p>Suited hole cards are only a head start — a flush needs FIVE cards of the same suit, and among your seven cards you only have four spades.</p>
+    <span class="note-label">Why the bait fails</span>
+    <p>Count the spades: A♠ 9♠ K♠ 5♠ — four of them, and four cards can&#x27;t make a five-card flush (your fifth tap would be a non-spade). You&#x27;ve also thrown away your real hand: 9♠ 8♥ 7♦ 6♣ 5♠ is a straight, which beats the ace-high you&#x27;d be left with.</p>
+    <p class="reveal-best">Your best 5 (outlined in green above): 9♠ 8♥ 7♦ 6♣ 5♠ &mdash; <strong>Straight</strong></p>
+  </div>
+  <div class="reveal reveal-win">
+    <span class="reveal-tag">You dodged the trap</span>
+    <p>9♠ 8♥ 7♦ 6♣ 5♠ &mdash; <strong>Straight</strong>. That is the best 5 of your 7.</p>
+  </div>
+  <details class="showme">
+    <summary>Show me</summary>
+    <div class="showme-body">
+      <span class="note-label">The rule</span>
+      <p>Suited hole cards are only a head start — a flush needs FIVE cards of the same suit, and among your seven cards you only have four spades.</p>
+      <span class="note-label">Why the bait fails</span>
+      <p>Count the spades: A♠ 9♠ K♠ 5♠ — four of them, and four cards can&#x27;t make a five-card flush (your fifth tap would be a non-spade). You&#x27;ve also thrown away your real hand: 9♠ 8♥ 7♦ 6♣ 5♠ is a straight, which beats the ace-high you&#x27;d be left with.</p>
+      <div class="showme-best">
+        <div class="fan fan-brk"><img src="poker-cards/9S.svg" alt="Nine of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/8H.svg" alt="Eight of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/7D.svg" alt="Seven of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/6C.svg" alt="Six of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/5S.svg" alt="Five of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+        <p class="showme-name">Straight &mdash; 9♠ 8♥ 7♦ 6♣ 5♠</p>
+      </div>
+    </div>
+  </details>
+</section>
+<section class="quiz-q q-trap" id="t5">
+  <div class="q-head">
+    <span class="q-num">Trap 5/7</span>
+    <h4 class="q-title sr-only">Beginner trap 5</h4>
+  </div>
+  <p class="q-prompt">Tap the 5 cards you would play. What do you have?</p>
+  <div class="table-row">
+    <div class="zone zone-hole">
+      <span class="zone-label">Your hand &mdash; 2 hole cards</span>
+      <div class="zone-cards"><span class="qcard is-wrong"><input type="checkbox" id="t5-w1" class="sr-only qcheck qcheck-wrong" aria-label="Select Ace of spades"><label for="t5-w1"><img src="poker-cards/AS.svg" alt="Ace of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-3.0deg)" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="t5-w2" class="sr-only qcheck qcheck-wrong" aria-label="Select Four of diamonds"><label for="t5-w2"><img src="poker-cards/4D.svg" alt="Four of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"></label></span></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards</span>
+      <div class="zone-cards zone-cards-board"><span class="qcard is-best"><input type="checkbox" id="t5-b1" class="sr-only qcheck qcheck-best" aria-label="Select King of hearts"><label for="t5-b1"><img src="poker-cards/KH.svg" alt="King of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t5-b2" class="sr-only qcheck qcheck-best" aria-label="Select King of clubs"><label for="t5-b2"><img src="poker-cards/KC.svg" alt="King of clubs" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t5-b3" class="sr-only qcheck qcheck-best" aria-label="Select King of diamonds"><label for="t5-b3"><img src="poker-cards/KD.svg" alt="King of diamonds" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t5-b4" class="sr-only qcheck qcheck-best" aria-label="Select Queen of spades"><label for="t5-b4"><img src="poker-cards/QS.svg" alt="Queen of spades" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t5-b5" class="sr-only qcheck qcheck-best" aria-label="Select Queen of clubs"><label for="t5-b5"><img src="poker-cards/QC.svg" alt="Queen of clubs" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span></div>
+    </div>
+  </div>
+  <p class="q-hint">Tap to select &middot; tap again to undo</p>
+  <div class="reveal reveal-wrong">
+    <span class="reveal-tag">You took the bait</span>
+    <p class="bait-line"><s>Your ace kicker wins the showdown!</s></p>
+    <span class="note-label">Beginner mistake &middot; &ldquo;I have an ace, so my high card should win.&rdquo;</span>
+    <span class="note-label">The rule</span>
+    <p>Kickers only compare when both hands are the SAME type — an ace is a tiebreaker, never a hand on its own.</p>
+    <span class="note-label">Why the bait fails</span>
+    <p>Tapping A♠ gives you three kings with an ace kicker — but you&#x27;ve ignored the full house sitting on the board (K♥ K♣ K♦ Q♠ Q♣), a higher hand category that needs zero hole cards. Your ace isn&#x27;t even in your best 5 here, so it can&#x27;t win anything, and kicker comparisons only ever happen between two hands of the same rank.</p>
+    <p class="reveal-best">Your best 5 (outlined in green above): K♥ K♣ K♦ Q♠ Q♣ &mdash; <strong>Full house</strong></p>
+  </div>
+  <div class="reveal reveal-win">
+    <span class="reveal-tag">You dodged the trap</span>
+    <p>K♥ K♣ K♦ Q♠ Q♣ &mdash; <strong>Full house</strong>. That is the best 5 of your 7.</p>
+  </div>
+  <details class="showme">
+    <summary>Show me</summary>
+    <div class="showme-body">
+      <span class="note-label">The rule</span>
+      <p>Kickers only compare when both hands are the SAME type — an ace is a tiebreaker, never a hand on its own.</p>
+      <span class="note-label">Why the bait fails</span>
+      <p>Tapping A♠ gives you three kings with an ace kicker — but you&#x27;ve ignored the full house sitting on the board (K♥ K♣ K♦ Q♠ Q♣), a higher hand category that needs zero hole cards. Your ace isn&#x27;t even in your best 5 here, so it can&#x27;t win anything, and kicker comparisons only ever happen between two hands of the same rank.</p>
+      <div class="showme-best">
+        <div class="fan fan-brk"><img src="poker-cards/KH.svg" alt="King of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/KC.svg" alt="King of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/KD.svg" alt="King of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/QS.svg" alt="Queen of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/QC.svg" alt="Queen of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+        <p class="showme-name">Full house &mdash; K♥ K♣ K♦ Q♠ Q♣</p>
+      </div>
+    </div>
+  </details>
+</section>
+<section class="quiz-q q-trap" id="t6">
+  <div class="q-head">
+    <span class="q-num">Trap 6/7</span>
+    <h4 class="q-title sr-only">Beginner trap 6</h4>
+  </div>
+  <p class="q-prompt">Tap the 5 cards you would play. What do you have?</p>
+  <div class="table-row">
+    <div class="zone zone-hole">
+      <span class="zone-label">Your hand &mdash; 2 hole cards</span>
+      <div class="zone-cards"><span class="qcard is-best"><input type="checkbox" id="t6-b1" class="sr-only qcheck qcheck-best" aria-label="Select Ace of spades"><label for="t6-b1"><img src="poker-cards/AS.svg" alt="Ace of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-3.0deg)" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t6-b2" class="sr-only qcheck qcheck-best" aria-label="Select Four of diamonds"><label for="t6-b2"><img src="poker-cards/4D.svg" alt="Four of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"></label></span></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards</span>
+      <div class="zone-cards zone-cards-board"><span class="qcard is-best"><input type="checkbox" id="t6-b3" class="sr-only qcheck qcheck-best" aria-label="Select Two of hearts"><label for="t6-b3"><img src="poker-cards/2H.svg" alt="Two of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t6-b4" class="sr-only qcheck qcheck-best" aria-label="Select Three of clubs"><label for="t6-b4"><img src="poker-cards/3C.svg" alt="Three of clubs" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t6-b5" class="sr-only qcheck qcheck-best" aria-label="Select Five of diamonds"><label for="t6-b5"><img src="poker-cards/5D.svg" alt="Five of diamonds" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="t6-w1" class="sr-only qcheck qcheck-wrong" aria-label="Select King of spades"><label for="t6-w1"><img src="poker-cards/KS.svg" alt="King of spades" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="t6-w2" class="sr-only qcheck qcheck-wrong" aria-label="Select Queen of clubs"><label for="t6-w2"><img src="poker-cards/QC.svg" alt="Queen of clubs" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span></div>
+    </div>
+  </div>
+  <p class="q-hint">Tap to select &middot; tap again to undo</p>
+  <div class="reveal reveal-wrong">
+    <span class="reveal-tag">You took the bait</span>
+    <p class="bait-line"><s>Q-K-A-2-3 — that&#x27;s a straight, right?</s></p>
+    <span class="note-label">Beginner mistake &middot; &ldquo;A-2-3-4-5 can&#x27;t be a straight.&rdquo;</span>
+    <span class="note-label">The rule</span>
+    <p>For straights only, an ace can be the LOW card — A-2-3-4-5 is a real straight — but it can never wrap around: Q-K-A-2-3 is not a straight.</p>
+    <span class="note-label">Why the bait fails</span>
+    <p>A run steps in one direction: the ace counts as high (above K) or low (below 2), never both, so K-A-2 can&#x27;t continue around the corner. Tapping Q♣ K♠ A♠ 2♥ 3♣ leaves you with nothing but ace-high. Meanwhile your actual best 5 is the straight you overlooked — the wheel: A♠ 2♥ 3♣ 4♦ 5♦.</p>
+    <p class="reveal-best">Your best 5 (outlined in green above): A♠ 5♦ 4♦ 3♣ 2♥ &mdash; <strong>Straight</strong></p>
+  </div>
+  <div class="reveal reveal-win">
+    <span class="reveal-tag">You dodged the trap</span>
+    <p>A♠ 5♦ 4♦ 3♣ 2♥ &mdash; <strong>Straight</strong>. That is the best 5 of your 7.</p>
+  </div>
+  <details class="showme">
+    <summary>Show me</summary>
+    <div class="showme-body">
+      <span class="note-label">The rule</span>
+      <p>For straights only, an ace can be the LOW card — A-2-3-4-5 is a real straight — but it can never wrap around: Q-K-A-2-3 is not a straight.</p>
+      <span class="note-label">Why the bait fails</span>
+      <p>A run steps in one direction: the ace counts as high (above K) or low (below 2), never both, so K-A-2 can&#x27;t continue around the corner. Tapping Q♣ K♠ A♠ 2♥ 3♣ leaves you with nothing but ace-high. Meanwhile your actual best 5 is the straight you overlooked — the wheel: A♠ 2♥ 3♣ 4♦ 5♦.</p>
+      <div class="showme-best">
+        <div class="fan fan-brk"><img src="poker-cards/AS.svg" alt="Ace of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/5D.svg" alt="Five of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/4D.svg" alt="Four of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/3C.svg" alt="Three of clubs" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/2H.svg" alt="Two of hearts" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+        <p class="showme-name">Straight &mdash; A♠ 5♦ 4♦ 3♣ 2♥</p>
+      </div>
+    </div>
+  </details>
+</section>
+<section class="quiz-q q-trap" id="t7">
+  <div class="q-head">
+    <span class="q-num">Trap 7/7</span>
+    <h4 class="q-title sr-only">Beginner trap 7</h4>
+  </div>
+  <p class="q-prompt">Tap the 5 cards you would play. What do you have?</p>
+  <div class="table-row">
+    <div class="zone zone-hole">
+      <span class="zone-label">Your hand &mdash; 2 hole cards</span>
+      <div class="zone-cards"><span class="qcard is-best"><input type="checkbox" id="t7-b1" class="sr-only qcheck qcheck-best" aria-label="Select Nine of spades"><label for="t7-b1"><img src="poker-cards/9S.svg" alt="Nine of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-3.0deg)" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t7-b2" class="sr-only qcheck qcheck-best" aria-label="Select Eight of spades"><label for="t7-b2"><img src="poker-cards/8S.svg" alt="Eight of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-1.5deg)" decoding="async"></label></span></div>
+    </div>
+    <div class="zone zone-board">
+      <span class="zone-label zone-label-board">Board &mdash; 5 community cards</span>
+      <div class="zone-cards zone-cards-board"><span class="qcard is-best"><input type="checkbox" id="t7-b3" class="sr-only qcheck qcheck-best" aria-label="Select Seven of spades"><label for="t7-b3"><img src="poker-cards/7S.svg" alt="Seven of spades" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="t7-w1" class="sr-only qcheck qcheck-wrong" aria-label="Select Six of hearts"><label for="t7-w1"><img src="poker-cards/6H.svg" alt="Six of hearts" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-wrong"><input type="checkbox" id="t7-w2" class="sr-only qcheck qcheck-wrong" aria-label="Select Five of diamonds"><label for="t7-w2"><img src="poker-cards/5D.svg" alt="Five of diamonds" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t7-b4" class="sr-only qcheck qcheck-best" aria-label="Select Jack of spades"><label for="t7-b4"><img src="poker-cards/JS.svg" alt="Jack of spades" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span><span class="qcard is-best"><input type="checkbox" id="t7-b5" class="sr-only qcheck qcheck-best" aria-label="Select Ten of diamonds"><label for="t7-b5"><img src="poker-cards/10D.svg" alt="Ten of diamonds" class="card" loading="lazy" width="168" height="244" decoding="async"></label></span></div>
+    </div>
+  </div>
+  <p class="q-hint">Tap to select &middot; tap again to undo</p>
+  <div class="reveal reveal-wrong">
+    <span class="reveal-tag">You took the bait</span>
+    <p class="bait-line"><s>Straight flush — your 9♠ 8♠ came in!</s></p>
+    <span class="note-label">Beginner mistake &middot; &ldquo;Suited connectors are already a straight flush.&rdquo;</span>
+    <span class="note-label">The rule</span>
+    <p>A straight flush needs five cards in a row AND all the same suit — suited connectors are only a starting point, never a made hand.</p>
+    <span class="note-label">Why the bait fails</span>
+    <p>The run you&#x27;re seeing (9-8-7-6-5) isn&#x27;t all spades: only 4 of your 7 cards are spades, and the 6 and 5 on the board are 6♥ and 5♦ — so there&#x27;s no flush, let alone a straight flush. Tapping that run also leaves your best hand on the table: J♠ 10♦ 9♠ 8♠ 7♠ is a J-high straight, and it beats the 9-high run you tapped.</p>
+    <p class="reveal-best">Your best 5 (outlined in green above): J♠ 10♦ 9♠ 8♠ 7♠ &mdash; <strong>Straight</strong></p>
+  </div>
+  <div class="reveal reveal-win">
+    <span class="reveal-tag">You dodged the trap</span>
+    <p>J♠ 10♦ 9♠ 8♠ 7♠ &mdash; <strong>Straight</strong>. That is the best 5 of your 7.</p>
+  </div>
+  <details class="showme">
+    <summary>Show me</summary>
+    <div class="showme-body">
+      <span class="note-label">The rule</span>
+      <p>A straight flush needs five cards in a row AND all the same suit — suited connectors are only a starting point, never a made hand.</p>
+      <span class="note-label">Why the bait fails</span>
+      <p>The run you&#x27;re seeing (9-8-7-6-5) isn&#x27;t all spades: only 4 of your 7 cards are spades, and the 6 and 5 on the board are 6♥ and 5♦ — so there&#x27;s no flush, let alone a straight flush. Tapping that run also leaves your best hand on the table: J♠ 10♦ 9♠ 8♠ 7♠ is a J-high straight, and it beats the 9-high run you tapped.</p>
+      <div class="showme-best">
+        <div class="fan fan-brk"><img src="poker-cards/JS.svg" alt="Jack of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-9.0deg) translateY(6px);z-index:0" decoding="async"><img src="poker-cards/10D.svg" alt="Ten of diamonds" class="card" loading="lazy" width="168" height="244" style="transform:rotate(-4.5deg) translateY(3px);z-index:1" decoding="async"><img src="poker-cards/9S.svg" alt="Nine of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(0.0deg) translateY(0px);z-index:2" decoding="async"><img src="poker-cards/8S.svg" alt="Eight of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(4.5deg) translateY(3px);z-index:3" decoding="async"><img src="poker-cards/7S.svg" alt="Seven of spades" class="card" loading="lazy" width="168" height="244" style="transform:rotate(9.0deg) translateY(6px);z-index:4" decoding="async"></div>
+        <p class="showme-name">Straight &mdash; J♠ 10♦ 9♠ 8♠ 7♠</p>
+      </div>
+    </div>
+  </details>
+</section>
+</div>
+</section>
+
+<footer>
+  <span>Poker Hands, Decoded &middot; v2 &mdash; learn by doing</span>
+  <span>Card art: Vector Playing Cards (public domain)</span>
+</footer>
+</main>
+
+<script>
+/* Optional progressive enhancement only — every feature above works with this stripped. */
+(function () {
+  var labels = document.querySelectorAll('label.tab');
+  labels.forEach(function (l) {
+    l.addEventListener('click', function () {
+      setTimeout(function () {
+        var t = document.querySelector('input[name="ph-tab"]:checked');
+        if (t && history.replaceState) history.replaceState(null, '', '#' + t.id.replace('tab-input-', ''));
+        window.scrollTo(0, 0);
+      }, 0);
+    });
+  });
+  var h = (location.hash || '').replace('#', '');
+  if (h === 'combine') { var c = document.getElementById('tab-input-combine'); if (c) c.checked = true; }
+})();
+</script>
+</body>
+</html>

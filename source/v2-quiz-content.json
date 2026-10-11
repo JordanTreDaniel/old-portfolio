@@ -1,0 +1,414 @@
+{
+  "quiz": [
+    {
+      "id": "quiz-both-hole-cards",
+      "title": "What hand do you actually have?",
+      "hole": [
+        "5S",
+        "6S"
+      ],
+      "board": [
+        "4D",
+        "3C",
+        "2H",
+        "KS",
+        "QD"
+      ],
+      "best5": [
+        "6S",
+        "5S",
+        "4D",
+        "3C",
+        "2H"
+      ],
+      "hand_name": "Straight",
+      "distractor_note": "The board waves a big K and Q at you, but they connect with nothing, and 4-3-2 on its own is only three cards in a row. Beginners either tap the two highest cards for 'high card' or miss that your 5 and 6 slot exactly on top of the board's 4-3-2. Drop either hole card and the straight disappears.",
+      "prompt": "Tap the 5 cards that make your best hand — then name the hand"
+    },
+    {
+      "id": "quiz-one-hole-card-trips",
+      "title": "Which five cards are your hand?",
+      "hole": [
+        "QS",
+        "2D"
+      ],
+      "board": [
+        "QH",
+        "QD",
+        "JC",
+        "9S",
+        "4H"
+      ],
+      "best5": [
+        "QS",
+        "QH",
+        "QD",
+        "JC",
+        "9S"
+      ],
+      "hand_name": "Three of a kind",
+      "distractor_note": "Two queens already sit on the board, so it's easy to either stop at 'two pair on the board' and miss that your Q♠ makes trips — or to force your 2♦ in as a kicker when the board's J♣ and 9♠ are better cards. Only one hole card counts here.",
+      "prompt": "Tap the 5 cards that make your best hand — then name the hand"
+    },
+    {
+      "id": "quiz-playing-the-board",
+      "title": "Can the board win all by itself?",
+      "hole": [
+        "3C",
+        "4S"
+      ],
+      "board": [
+        "9H",
+        "8H",
+        "7H",
+        "6H",
+        "2H"
+      ],
+      "best5": [
+        "9H",
+        "8H",
+        "7H",
+        "6H",
+        "2H"
+      ],
+      "hand_name": "Flush",
+      "distractor_note": "Your hole cards are right there and feel impossible to throw away, so beginners dig in and try to use at least one of them. But all five community cards are hearts, and nothing 3♣ 4♠ can build beats a five-card flush — your best hand literally IS the board.",
+      "prompt": "Tap the 5 cards that make your best hand — then name the hand"
+    },
+    {
+      "id": "quiz-kickers-a",
+      "title": "Which five cards win it?",
+      "hole": [
+        "AS",
+        "9D"
+      ],
+      "board": [
+        "KD",
+        "KC",
+        "8H",
+        "4C",
+        "2S"
+      ],
+      "best5": [
+        "KD",
+        "KC",
+        "AS",
+        "9D",
+        "8H"
+      ],
+      "hand_name": "One pair",
+      "distractor_note": "Everyone pairs the board's kings and both players hold an ace, so K-K-A is a tie. Beginners stop comparing there and never get to the fourth card — your 9♦ over the opponent's 8 is the entire pot.",
+      "prompt": "Tap the 5 cards that make your best hand — then name the hand"
+    },
+    {
+      "id": "quiz-kickers-b",
+      "title": "Which five cards win it?",
+      "hole": [
+        "AH",
+        "7C"
+      ],
+      "board": [
+        "KD",
+        "KC",
+        "8H",
+        "4C",
+        "2S"
+      ],
+      "best5": [
+        "KD",
+        "KC",
+        "AH",
+        "8H",
+        "7C"
+      ],
+      "hand_name": "One pair",
+      "distractor_note": "With an ace in hand it feels like a winner, but after K-K-A on both sides the comparison rolls to the fourth card: your 8♥ — and that's exactly where Player A pulls ahead with a 9. Your 7♣ as the fifth card never even gets compared.",
+      "prompt": "Tap the 5 cards that make your best hand — then name the hand"
+    }
+  ],
+  "traps": [
+    {
+      "id": "trap-must-use-both-hole-cards",
+      "mistake_ref": 0,
+      "bait_title": "You paired your jack — one pair!",
+      "hole": [
+        "JS",
+        "4C"
+      ],
+      "board": [
+        "JH",
+        "QH",
+        "10H",
+        "8H",
+        "2H"
+      ],
+      "correct_best5": [
+        "QH",
+        "JH",
+        "10H",
+        "8H",
+        "2H"
+      ],
+      "wrong_answer_cards": [
+        "JS",
+        "4C"
+      ],
+      "correct_hand_name": "Flush",
+      "trap_rule": "You never have to use both of your hole cards: your hand is the best 5 cards out of your 7. If the board already beats what your cards make, throw your hole cards away.",
+      "why_the_bait_fails": "By insisting both hole cards count, you build J-J-Q-10-4 — a mere pair of jacks. But the five hearts on the board (Q♥ J♥ 10♥ 8♥ 2♥) are already a flush, and a flush beats a pair. Tapping JS and 4C actually forces you to drop two hearts; your true best 5 is all five board cards."
+    },
+    {
+      "id": "trap-six-or-seven-cards",
+      "mistake_ref": 1,
+      "bait_title": "A straight AND a pair of kings — that's seven cards!",
+      "hole": [
+        "8S",
+        "7S"
+      ],
+      "board": [
+        "6H",
+        "5D",
+        "4C",
+        "KS",
+        "KD"
+      ],
+      "correct_best5": [
+        "8S",
+        "7S",
+        "6H",
+        "5D",
+        "4C"
+      ],
+      "wrong_answer_cards": [
+        "KS",
+        "KD"
+      ],
+      "correct_hand_name": "Straight",
+      "trap_rule": "A poker hand is always exactly 5 cards — you can never count 6 or 7. Pick your strongest 5 and stop.",
+      "why_the_bait_fails": "You can't stack the board's pair of kings on top of your straight — that would be a 7-card 'hand'. Your best 5 is 8-7-6-5-4 (8♠ 7♠ 6♥ 5♦ 4♣) and a straight beats a pair. If you tap the kings to 'keep both', you've downgraded yourself to a single pair (K-K-8-7-6) and thrown the straight away."
+    },
+    {
+      "id": "trap-board-cannot-play-itself",
+      "mistake_ref": 2,
+      "bait_title": "Ace-king high — the big cards win it!",
+      "hole": [
+        "AS",
+        "KC"
+      ],
+      "board": [
+        "9D",
+        "8H",
+        "7C",
+        "6S",
+        "5D"
+      ],
+      "correct_best5": [
+        "9D",
+        "8H",
+        "7C",
+        "6S",
+        "5D"
+      ],
+      "wrong_answer_cards": [
+        "AS",
+        "KC"
+      ],
+      "correct_hand_name": "Straight",
+      "trap_rule": "The board CAN make a hand all by itself — five community cards can form a straight, flush, full house or even four of a kind, and 'playing the board' is legal.",
+      "why_the_bait_fails": "Your ace and king connect with nothing (no Q-J-10 to complete a Broadway run), so A-K-9-8-7 is only high card. The five board cards already run 9-8-7-6-5 — a straight — and a straight beats any high card. Your best 5 IS the board; both hole cards are discarded."
+    },
+    {
+      "id": "trap-suited-is-not-a-flush",
+      "mistake_ref": 3,
+      "bait_title": "Four spades — you made a flush!",
+      "hole": [
+        "AS",
+        "9S"
+      ],
+      "board": [
+        "KS",
+        "8H",
+        "7D",
+        "6C",
+        "5S"
+      ],
+      "correct_best5": [
+        "9S",
+        "8H",
+        "7D",
+        "6C",
+        "5S"
+      ],
+      "wrong_answer_cards": [
+        "AS",
+        "KS"
+      ],
+      "correct_hand_name": "Straight",
+      "trap_rule": "Suited hole cards are only a head start — a flush needs FIVE cards of the same suit, and among your seven cards you only have four spades.",
+      "why_the_bait_fails": "Count the spades: A♠ 9♠ K♠ 5♠ — four of them, and four cards can't make a five-card flush (your fifth tap would be a non-spade). You've also thrown away your real hand: 9♠ 8♥ 7♦ 6♣ 5♠ is a straight, which beats the ace-high you'd be left with."
+    },
+    {
+      "id": "trap-ace-kicker-is-not-a-hand",
+      "mistake_ref": 4,
+      "bait_title": "Your ace kicker wins the showdown!",
+      "hole": [
+        "AS",
+        "4D"
+      ],
+      "board": [
+        "KH",
+        "KC",
+        "KD",
+        "QS",
+        "QC"
+      ],
+      "correct_best5": [
+        "KH",
+        "KC",
+        "KD",
+        "QS",
+        "QC"
+      ],
+      "wrong_answer_cards": [
+        "AS"
+      ],
+      "correct_hand_name": "Full house",
+      "trap_rule": "Kickers only compare when both hands are the SAME type — an ace is a tiebreaker, never a hand on its own.",
+      "why_the_bait_fails": "Tapping A♠ gives you three kings with an ace kicker — but you've ignored the full house sitting on the board (K♥ K♣ K♦ Q♠ Q♣), a higher hand category that needs zero hole cards. Your ace isn't even in your best 5 here, so it can't win anything, and kicker comparisons only ever happen between two hands of the same rank."
+    },
+    {
+      "id": "trap-ace-cannot-wrap",
+      "mistake_ref": 5,
+      "bait_title": "Q-K-A-2-3 — that's a straight, right?",
+      "hole": [
+        "AS",
+        "4D"
+      ],
+      "board": [
+        "2H",
+        "3C",
+        "5D",
+        "KS",
+        "QC"
+      ],
+      "correct_best5": [
+        "AS",
+        "5D",
+        "4D",
+        "3C",
+        "2H"
+      ],
+      "wrong_answer_cards": [
+        "QC",
+        "KS"
+      ],
+      "correct_hand_name": "Straight",
+      "trap_rule": "For straights only, an ace can be the LOW card — A-2-3-4-5 is a real straight — but it can never wrap around: Q-K-A-2-3 is not a straight.",
+      "why_the_bait_fails": "A run steps in one direction: the ace counts as high (above K) or low (below 2), never both, so K-A-2 can't continue around the corner. Tapping Q♣ K♠ A♠ 2♥ 3♣ leaves you with nothing but ace-high. Meanwhile your actual best 5 is the straight you overlooked — the wheel: A♠ 2♥ 3♣ 4♦ 5♦."
+    },
+    {
+      "id": "trap-connectors-are-not-a-straight-flush",
+      "mistake_ref": 6,
+      "bait_title": "Straight flush — your 9♠ 8♠ came in!",
+      "hole": [
+        "9S",
+        "8S"
+      ],
+      "board": [
+        "7S",
+        "6H",
+        "5D",
+        "JS",
+        "10D"
+      ],
+      "correct_best5": [
+        "JS",
+        "10D",
+        "9S",
+        "8S",
+        "7S"
+      ],
+      "wrong_answer_cards": [
+        "6H",
+        "5D"
+      ],
+      "correct_hand_name": "Straight",
+      "trap_rule": "A straight flush needs five cards in a row AND all the same suit — suited connectors are only a starting point, never a made hand.",
+      "why_the_bait_fails": "The run you're seeing (9-8-7-6-5) isn't all spades: only 4 of your 7 cards are spades, and the 6 and 5 on the board are 6♥ and 5♦ — so there's no flush, let alone a straight flush. Tapping that run also leaves your best hand on the table: J♠ 10♦ 9♠ 8♠ 7♠ is a J-high straight, and it beats the 9-high run you tapped."
+    }
+  ],
+  "seo": {
+    "meta_description": "Poker hands for beginners: 10 rankings from royal flush to high card, how best-5-of-7 works, kickers explained, and 7 classic beginner mistakes to teach.",
+    "title_tag": "Poker Hands for Beginners: Rankings, Quiz & Mistakes",
+    "json_ld": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best hand in poker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A royal flush — the 10, jack, queen, king and ace all of the same suit. It is the highest straight flush, so it beats every other poker hand; you are dealt one about 1 in 649,740 times, and it can never lose."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the worst hand in poker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "High card. With no pair, straight or flush you play your single highest card, and it only wins if everyone else also has nothing — even then, only if your top card is the biggest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the correct order of poker hands?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "From strongest to weakest: royal flush, straight flush, four of a kind, full house, flush, straight, three of a kind, two pair, one pair, high card."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many cards are in a poker hand?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Exactly five. In Texas Hold’em you pick the best 5 cards from your 2 hole cards plus the 5 community cards — the “best 5 of 7” — and you never show 6 or 7 cards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you have to use both of your hole cards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. You may use both, just one, or neither — your hand is simply the best 5-card combination of your seven cards. If the five community cards already beat anything your cards make, you play the board."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a kicker in poker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A kicker is a leftover high card used to break ties. When two players make the same kind of hand — say, both pair the board’s kings — the next-highest cards are compared one at a time until one player pulls ahead; identical kickers split the pot."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a flush and a straight?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A flush is five cards that all share one suit but are not in order (like 9♥ 8♥ 5♥ 2♥ K♥); a straight is five cards in consecutive rank order from mixed suits (like 9♣ 8♦ 7♥ 6♠ 5♣). A flush beats a straight."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is A-2-3-4-5 a straight in poker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. For straights only, an ace can count as the low card, so A-2-3-4-5 is a straight — the lowest one. But the ace can never wrap around the end: Q-K-A-2-3 is not a straight."
+          }
+        }
+      ]
+    }
+  }
+}
