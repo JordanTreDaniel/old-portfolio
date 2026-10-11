@@ -1,0 +1,439 @@
+{
+ "hands": [
+  {
+   "name": "Royal flush",
+   "num": "#1",
+   "imgs": [
+    "AS.svg",
+    "KS.svg",
+    "QS.svg",
+    "JS.svg",
+    "10S.svg"
+   ],
+   "hasBeats": true,
+   "hasWhy": true,
+   "hasTip": true,
+   "hasHow": true,
+   "odds": "1 in 649,740",
+   "combos": "4"
+  },
+  {
+   "name": "Straight flush",
+   "num": "#2",
+   "imgs": [
+    "9D.svg",
+    "8D.svg",
+    "7D.svg",
+    "6D.svg",
+    "5D.svg"
+   ],
+   "hasBeats": true,
+   "hasWhy": true,
+   "hasTip": true,
+   "hasHow": true,
+   "odds": "1 in 72,193",
+   "combos": "36"
+  },
+  {
+   "name": "Four of a kind",
+   "num": "#3",
+   "imgs": [
+    "JS.svg",
+    "JH.svg",
+    "JD.svg",
+    "JC.svg",
+    "9C.svg"
+   ],
+   "hasBeats": true,
+   "hasWhy": true,
+   "hasTip": true,
+   "hasHow": true,
+   "odds": "1 in 416",
+   "combos": "624"
+  },
+  {
+   "name": "Full house",
+   "num": "#4",
+   "imgs": [
+    "QS.svg",
+    "QH.svg",
+    "QD.svg",
+    "8C.svg",
+    "8S.svg"
+   ],
+   "hasBeats": true,
+   "hasWhy": true,
+   "hasTip": true,
+   "hasHow": true,
+   "odds": "1 in 693",
+   "combos": "3,744"
+  },
+  {
+   "name": "Flush",
+   "num": "#5",
+   "imgs": [
+    "AS.svg",
+    "JS.svg",
+    "8S.svg",
+    "5S.svg",
+    "2S.svg"
+   ],
+   "hasBeats": true,
+   "hasWhy": true,
+   "hasTip": true,
+   "hasHow": true,
+   "odds": "1 in 509",
+   "combos": "5,108"
+  },
+  {
+   "name": "Straight",
+   "num": "#6",
+   "imgs": [
+    "9C.svg",
+    "8D.svg",
+    "7H.svg",
+    "6S.svg",
+    "5C.svg"
+   ],
+   "hasBeats": true,
+   "hasWhy": true,
+   "hasTip": true,
+   "hasHow": true,
+   "odds": "1 in 255",
+   "combos": "10,200"
+  },
+  {
+   "name": "Three of a kind",
+   "num": "#7",
+   "imgs": [
+    "10S.svg",
+    "10H.svg",
+    "10D.svg",
+    "AC.svg",
+    "KS.svg"
+   ],
+   "hasBeats": true,
+   "hasWhy": true,
+   "hasTip": true,
+   "hasHow": true,
+   "odds": "1 in 47",
+   "combos": "54,912"
+  },
+  {
+   "name": "Two pair",
+   "num": "#8",
+   "imgs": [
+    "KS.svg",
+    "KH.svg",
+    "9D.svg",
+    "9C.svg",
+    "7D.svg"
+   ],
+   "hasBeats": true,
+   "hasWhy": true,
+   "hasTip": true,
+   "hasHow": true,
+   "odds": "1 in 21",
+   "combos": "123,552"
+  },
+  {
+   "name": "One pair",
+   "num": "#9",
+   "imgs": [
+    "AS.svg",
+    "AH.svg",
+    "JD.svg",
+    "9C.svg",
+    "8C.svg"
+   ],
+   "hasBeats": true,
+   "hasWhy": true,
+   "hasTip": true,
+   "hasHow": true,
+   "odds": "1 in 2.4",
+   "combos": "1,098,240"
+  },
+  {
+   "name": "High card",
+   "num": "#10",
+   "imgs": [
+    "AS.svg",
+    "KD.svg",
+    "JD.svg",
+    "9H.svg",
+    "8H.svg"
+   ],
+   "hasBeats": true,
+   "hasWhy": true,
+   "hasTip": true,
+   "hasHow": true,
+   "odds": "1 in 2",
+   "combos": "1,302,540"
+  }
+ ],
+ "examples_audit": [
+  {
+   "title": "1\nUsing BOTH hole cards: you need your two cards to complete a straight",
+   "hole": [
+    {
+     "f": "5S.svg",
+     "cls": "card hero-card counts"
+    },
+    {
+     "f": "6S.svg",
+     "cls": "card hero-card counts"
+    }
+   ],
+   "board": [
+    {
+     "f": "4D.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "3C.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "2H.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "KS.svg",
+     "cls": "card dimmed"
+    },
+    {
+     "f": "QD.svg",
+     "cls": "card dimmed"
+    }
+   ],
+   "ringed": [],
+   "dimmed": [
+    "KS.svg",
+    "QD.svg"
+   ],
+   "zones": [
+    "YOUR HAND \u2014 2 HOLE CARDS",
+    "BOARD \u2014 5 COMMUNITY CARDS"
+   ],
+   "hasLegend": true
+  },
+  {
+   "title": "2\nUsing exactly ONE hole card: you pair the board",
+   "hole": [
+    {
+     "f": "QS.svg",
+     "cls": "card hero-card counts"
+    },
+    {
+     "f": "2D.svg",
+     "cls": "card hero-card dimmed"
+    }
+   ],
+   "board": [
+    {
+     "f": "QH.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "QD.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "JC.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "9S.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "4H.svg",
+     "cls": "card dimmed"
+    }
+   ],
+   "ringed": [],
+   "dimmed": [
+    "2D.svg",
+    "4H.svg"
+   ],
+   "zones": [
+    "YOUR HAND \u2014 2 HOLE CARDS",
+    "BOARD \u2014 5 COMMUNITY CARDS"
+   ],
+   "hasLegend": true
+  },
+  {
+   "title": "3\nPlaying the board: you use ZERO hole cards",
+   "hole": [
+    {
+     "f": "3C.svg",
+     "cls": "card hero-card dimmed"
+    },
+    {
+     "f": "4S.svg",
+     "cls": "card hero-card dimmed"
+    }
+   ],
+   "board": [
+    {
+     "f": "9H.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "8H.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "7H.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "6H.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "2H.svg",
+     "cls": "card counts"
+    }
+   ],
+   "ringed": [],
+   "dimmed": [
+    "3C.svg",
+    "4S.svg"
+   ],
+   "zones": [
+    "YOUR HAND \u2014 2 HOLE CARDS",
+    "BOARD \u2014 5 COMMUNITY CARDS"
+   ],
+   "hasLegend": true
+  },
+  {
+   "title": "4\nKickers decide it \u2014 Player A wins",
+   "hole": [
+    {
+     "f": "AS.svg",
+     "cls": "card hero-card counts"
+    },
+    {
+     "f": "9D.svg",
+     "cls": "card hero-card counts"
+    }
+   ],
+   "board": [
+    {
+     "f": "KD.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "KC.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "8H.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "4C.svg",
+     "cls": "card dimmed"
+    },
+    {
+     "f": "2S.svg",
+     "cls": "card dimmed"
+    }
+   ],
+   "ringed": [],
+   "dimmed": [
+    "4C.svg",
+    "2S.svg"
+   ],
+   "zones": [
+    "YOUR HAND \u2014 2 HOLE CARDS",
+    "BOARD \u2014 5 COMMUNITY CARDS"
+   ],
+   "hasLegend": true
+  },
+  {
+   "title": "5\nKickers decide it \u2014 Player B loses with a weaker kicker",
+   "hole": [
+    {
+     "f": "AH.svg",
+     "cls": "card hero-card counts"
+    },
+    {
+     "f": "7C.svg",
+     "cls": "card hero-card counts"
+    }
+   ],
+   "board": [
+    {
+     "f": "KD.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "KC.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "8H.svg",
+     "cls": "card counts"
+    },
+    {
+     "f": "4C.svg",
+     "cls": "card dimmed"
+    },
+    {
+     "f": "2S.svg",
+     "cls": "card dimmed"
+    }
+   ],
+   "ringed": [],
+   "dimmed": [
+    "4C.svg",
+    "2S.svg"
+   ],
+   "zones": [
+    "YOUR HAND \u2014 2 HOLE CARDS",
+    "BOARD \u2014 5 COMMUNITY CARDS"
+   ],
+   "hasLegend": true
+  }
+ ],
+ "zone_style": {
+  "hole": {
+   "bg": "rgb(20, 20, 20)",
+   "border": "1px solid rgb(38, 36, 33)",
+   "padding": "16px 20px 8px"
+  },
+  "board": {
+   "bg": "rgb(26, 26, 26)",
+   "border": "1px dashed rgb(38, 36, 33)",
+   "padding": "16px 20px 8px"
+  }
+ },
+ "mobile_overflow": {
+  "sw": 380,
+  "cw": 380
+ },
+ "mobile_zone_widths": [
+  {
+   "cls": "zone zone-hole",
+   "w": 348,
+   "right": 364
+  },
+  {
+   "cls": "zone zone-board",
+   "w": 348,
+   "right": 364
+  },
+  {
+   "cls": "zone zone-hole",
+   "w": 348,
+   "right": 364
+  },
+  {
+   "cls": "zone zone-board",
+   "w": 348,
+   "right": 364
+  }
+ ]
+}

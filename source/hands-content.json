@@ -1,0 +1,532 @@
+{
+  "primer": {
+    "title": "What is a \"hand\"?",
+    "intro": "In Texas Hold'em, a \"hand\" is the best 5-card poker hand you can build by the end of a round. Every player gets the same ingredients — the trick is knowing how to combine them.",
+    "steps": [
+      "Step 1 — Your 2 hole cards: dealt face-down to you alone. These are \"your\" cards.",
+      "Step 2 — 5 community cards: dealt face-up in the middle over time, shared by everyone at the table.",
+      "Step 3 — Make your best 5: you may use both hole cards, just one, or none at all. You simply pick the best 5-card hand out of the 7 cards available to you (your 2 + the 5 on the board). This is called \"the best 5 of 7\"."
+    ],
+    "card_order": "Cards rank from low to high: 2 < 3 < 4 < 5 < 6 < 7 < 8 < 9 < 10 < J < Q < K < A. So an ace is normally the highest card.",
+    "low_ace_note": "One exception: for a straight (5 cards in a row), an ace can also count as the low card, making A-2-3-4-5 a valid straight (the lowest one). It can never wrap around like Q-K-A-2-3 — that is not a straight.",
+    "suits_note": "There are 4 suits — spades (♠), hearts (♥), diamonds (♦), clubs (♣). All four suits are equal: no suit beats another.",
+    "hand_is_exactly_five": "A hand is always exactly 5 cards. You never show 6 or 7 cards — you pick the strongest 5-card combination."
+  },
+  "hands": [
+    {
+      "rank": 1,
+      "name": "Royal flush",
+      "definition": "The highest straight flush: the 10, jack, queen, king and ace all of the same suit — the single strongest hand in poker.",
+      "why": "A royal flush is simply the highest possible straight flush (10-J-Q-K-A, one suit), and a straight flush already beats every other pattern in the game. All four royal flushes are equal, so this hand always at least ties, and it can never lose.",
+      "combos": 4,
+      "odds": "1 in 649,740",
+      "beats": "Beats everything — the royal flush is the strongest hand in poker, so no other hand can beat it.",
+      "beats_rank": [
+        "Straight flush",
+        "Four of a kind",
+        "Full house",
+        "Flush",
+        "Straight",
+        "Three of a kind",
+        "Two pair",
+        "One pair",
+        "High card"
+      ],
+      "example_cards": [
+        "A♠",
+        "K♠",
+        "Q♠",
+        "J♠",
+        "10♠"
+      ],
+      "example_hole": [
+        "A♠",
+        "K♠"
+      ],
+      "example_board": [
+        "Q♠",
+        "J♠",
+        "10♠",
+        "2♦",
+        "3♣"
+      ],
+      "beginner_tip": "This is the best possible hand — nothing beats it, so if you ever make one, you cannot lose the pot.",
+      "community_note": "Your two hole cards were A♠ and K♠, and the board ran out Q♠ J♠ 10♠ 2♦ 3♣. Your two spades plus the three spades on the board made A-K-Q-J-10, all in spades."
+    },
+    {
+      "rank": 2,
+      "name": "Straight flush",
+      "definition": "Any five cards in a row (like 5-6-7-8-9) that are also all the same suit.",
+      "why": "It combines two hard-to-make patterns at once — five cards in a row AND five cards of the same suit. Since four of a kind is only four matching ranks plus one stray card, any five-in-a-row-same-suit outranks it.",
+      "combos": 36,
+      "odds": "1 in 72,193",
+      "beats": "Beats four of a kind, a full house, a flush, a straight, three of a kind, two pair, one pair and high card. Only a higher straight flush (or a royal flush) can beat it.",
+      "beats_rank": [
+        "Four of a kind",
+        "Full house",
+        "Flush",
+        "Straight",
+        "Three of a kind",
+        "Two pair",
+        "One pair",
+        "High card"
+      ],
+      "example_cards": [
+        "9♦",
+        "8♦",
+        "7♦",
+        "6♦",
+        "5♦"
+      ],
+      "example_hole": [
+        "9♦",
+        "8♦"
+      ],
+      "example_board": [
+        "7♦",
+        "6♦",
+        "5♦",
+        "2♣",
+        "K♠"
+      ],
+      "beginner_tip": "You need both things at once: consecutive ranks AND a single suit. Two of each (a flush plus a straight in different suits) is only a straight, not a straight flush.",
+      "community_note": "Your hole cards were 9♦ 8♦, and the board ran out 7♦ 6♦ 5♦ 2♣ K♠. Your two diamonds combined with three diamonds on the board to make 9-8-7-6-5, all diamonds. The K♠ and 2♣ were simply ignored."
+    },
+    {
+      "rank": 3,
+      "name": "Four of a kind",
+      "definition": "Four cards of the same rank (all four suits of one number), plus one extra card — also called \"quads\".",
+      "why": "Four cards of one rank is the largest \"same rank\" group possible in a 5-card hand, and poker hands compare the biggest group first — four matching ranks outrank any three-plus-two (full house) or two-plus-two (two pair) pattern. If two players both have four of a kind, the higher rank wins; if somehow identical, the fifth card (kicker) breaks the tie.",
+      "combos": 624,
+      "odds": "1 in 416",
+      "beats": "Beats every full house, flush, straight, three of a kind, two pair, one pair and high card. Only a higher four of a kind or a straight flush can beat it.",
+      "beats_rank": [
+        "Full house",
+        "Flush",
+        "Straight",
+        "Three of a kind",
+        "Two pair",
+        "One pair",
+        "High card"
+      ],
+      "example_cards": [
+        "J♠",
+        "J♥",
+        "J♦",
+        "J♣",
+        "9♣"
+      ],
+      "example_hole": [
+        "J♠",
+        "J♥"
+      ],
+      "example_board": [
+        "J♦",
+        "J♣",
+        "4♠",
+        "9♣",
+        "2♦"
+      ],
+      "beginner_tip": "There are only 4 jacks in the whole deck, so if you hold two jacks and two more show up on the board, you have all four — nobody can have one too. The fifth card (here 9♣) is just a tiebreaker called a kicker.",
+      "community_note": "Your hole cards were J♠ J♥, and the board ran out J♦ J♣ 4♠ 9♣ 2♦. The board delivered the other two jacks, giving you all four jacks, with 9♣ as your best leftover card."
+    },
+    {
+      "rank": 4,
+      "name": "Full house",
+      "definition": "Three cards of one rank plus two cards of another rank — think \"three of a kind plus a pair\".",
+      "why": "A full house is a three-of-a-kind plus a pair, so it contains a bigger matching group (three) than a flush or straight, which have no matching ranks at all. Between two full houses, the rank of the three-of-a-kind is compared first — kings full of aces beats queens full of kings.",
+      "combos": 3744,
+      "odds": "1 in 693",
+      "beats": "Beats every flush, straight, three of a kind, two pair, one pair and high card. Only four of a kind or better can beat it.",
+      "beats_rank": [
+        "Flush",
+        "Straight",
+        "Three of a kind",
+        "Two pair",
+        "One pair",
+        "High card"
+      ],
+      "example_cards": [
+        "Q♠",
+        "Q♥",
+        "Q♦",
+        "8♣",
+        "8♠"
+      ],
+      "example_hole": [
+        "Q♠",
+        "Q♥"
+      ],
+      "example_board": [
+        "Q♦",
+        "8♣",
+        "8♠",
+        "3♦",
+        "K♣"
+      ],
+      "beginner_tip": "When comparing two full houses, the three-of-a-kind part is compared first: K-K-K-A-A (kings full of aces) beats Q-Q-Q-8-8 (queens full of eights) because three kings outrank three queens — the pair only matters when the triples are equal.",
+      "community_note": "Your hole cards were Q♠ Q♥, and the board ran out Q♦ 8♣ 8♠ 3♦ K♣. Your pair of queens paired the queen on the board for three queens, and the board's pair of eights (8♣ 8♠) became your pair. The 3♦ and K♣ were discarded."
+    },
+    {
+      "rank": 5,
+      "name": "Flush",
+      "definition": "Any five cards that are all the same suit, not in a row.",
+      "why": "Five cards of one suit is harder to line up than five cards in a row, so the flush outranks the straight. When two players both have a flush, the one whose highest card is bigger wins; identical top cards are compared downward until one pulls ahead.",
+      "combos": 5108,
+      "odds": "1 in 509",
+      "beats": "Beats every straight, three of a kind, two pair, one pair and high card. Only a full house or better can beat it.",
+      "beats_rank": [
+        "Straight",
+        "Three of a kind",
+        "Two pair",
+        "One pair",
+        "High card"
+      ],
+      "example_cards": [
+        "A♠",
+        "J♠",
+        "8♠",
+        "5♠",
+        "2♠"
+      ],
+      "example_hole": [
+        "A♠",
+        "J♠"
+      ],
+      "example_board": [
+        "8♠",
+        "5♠",
+        "2♠",
+        "K♦",
+        "9♣"
+      ],
+      "beginner_tip": "Suit doesn't matter — a clubs flush ties a spades flush. Order doesn't matter either; only that all 5 cards share one suit. If two people both have a flush, the highest card in the flush wins.",
+      "community_note": "Your hole cards were A♠ J♠, and the board ran out 8♠ 5♠ 2♠ K♦ 9♣. The board had three spades, your two spades completed the five. The K♦ and 9♣ were left out because they're the wrong suits."
+    },
+    {
+      "rank": 6,
+      "name": "Straight",
+      "definition": "Five cards in consecutive rank order (like 5-6-7-8-9) using any mix of suits.",
+      "why": "Five cards in unbroken sequence is a real pattern that a random assortment can't match, so it outranks any hand built from matching pairs or single high cards. Between two straights, the one ending on the higher card wins — a 10-high straight beats a 9-high straight.",
+      "combos": 10200,
+      "odds": "1 in 255",
+      "beats": "Beats every three of a kind, two pair, one pair and high card. Only a flush or better can beat it.",
+      "beats_rank": [
+        "Three of a kind",
+        "Two pair",
+        "One pair",
+        "High card"
+      ],
+      "example_cards": [
+        "9♣",
+        "8♦",
+        "7♥",
+        "6♠",
+        "5♣"
+      ],
+      "example_hole": [
+        "9♣",
+        "8♦"
+      ],
+      "example_board": [
+        "7♥",
+        "6♠",
+        "5♣",
+        "2♦",
+        "K♥"
+      ],
+      "beginner_tip": "The suits can all be different — only the numbers matter, and they must touch (no gaps). The highest possible straight is A-K-Q-J-10, and the lowest is A-2-3-4-5 (where the ace acts as a 1).",
+      "community_note": "Your hole cards were 9♣ 8♦, and the board ran out 7♥ 6♠ 5♣ 2♦ K♥. Your two cards connected with three on the board to make 9-8-7-6-5. The 2♦ and K♥ were ignored — you never have to use every card."
+    },
+    {
+      "rank": 7,
+      "name": "Three of a kind",
+      "definition": "Three cards of the same rank plus two unrelated cards — also called \"trips\" or \"a set\".",
+      "why": "Three matching ranks is a bigger group than the two pairs (which max out at two matching cards each) or the single pair below it, and hands compare the largest group first. If two players share the same three of a kind — which happens when the trips are on the board — the kickers decide.",
+      "combos": 54912,
+      "odds": "1 in 47",
+      "beats": "Beats every two pair, one pair and high card. Only a straight or better can beat it.",
+      "beats_rank": [
+        "Two pair",
+        "One pair",
+        "High card"
+      ],
+      "example_cards": [
+        "10♠",
+        "10♥",
+        "10♦",
+        "A♣",
+        "K♠"
+      ],
+      "example_hole": [
+        "10♠",
+        "10♥"
+      ],
+      "example_board": [
+        "10♦",
+        "A♣",
+        "K♠",
+        "4♦",
+        "7♣"
+      ],
+      "beginner_tip": "Watch out: if the board ever pairs (two of the same card in the middle), a full house is possible — three of a kind can silently lose to someone holding just one matching card.",
+      "community_note": "Your hole cards were 10♠ 10♥, and the board ran out 10♦ A♣ K♠ 4♦ 7♣. Your pair matched the ten on the board for three tens, and your best two leftover cards (A♣ and K♠) became the kickers."
+    },
+    {
+      "rank": 8,
+      "name": "Two pair",
+      "definition": "Two different pairs plus one extra card — for example two kings and two nines.",
+      "why": "Two separate pairs make four matching cards total, which is more than the single pair below it, so it wins the comparison. If two players hold the same two pair — common when the pairs are on the board — the fifth card (kicker) decides, and if that matches too, they split the pot.",
+      "combos": 123552,
+      "odds": "1 in 21",
+      "beats": "Beats one pair and high card. Only three of a kind or better can beat it.",
+      "beats_rank": [
+        "One pair",
+        "High card"
+      ],
+      "example_cards": [
+        "K♠",
+        "K♥",
+        "9♦",
+        "9♣",
+        "7♦"
+      ],
+      "example_hole": [
+        "K♠",
+        "K♥"
+      ],
+      "example_board": [
+        "9♦",
+        "9♣",
+        "4♠",
+        "2♥",
+        "7♦"
+      ],
+      "beginner_tip": "To compare two two-pair hands, look at the higher pair first. Kings-and-nines beats queens-and-aces because K-K beats Q-Q, even though the other pair is smaller.",
+      "community_note": "Your hole cards were K♠ K♥, and the board ran out 9♦ 9♣ 4♠ 2♥ 7♦. You brought one pair from your hand, the board brought the other pair, and 7♦ was the best remaining card. You only used 5 of your 7 cards — the 4♠ and 2♥ were dropped."
+    },
+    {
+      "rank": 9,
+      "name": "One pair",
+      "definition": "Two cards of the same rank, plus three unrelated cards.",
+      "why": "One pair is two cards of the same rank, which beats a hand with no matching cards at all — the most common winning pattern in real games. When both players have a pair, the higher pair wins, and if the pairs tie (for example, both use the pair on the board), the kickers decide.",
+      "combos": 1098240,
+      "odds": "1 in 2.4",
+      "beats": "Beats high card only. Two pair and everything above it wins against a pair.",
+      "beats_rank": [
+        "High card"
+      ],
+      "example_cards": [
+        "A♠",
+        "A♥",
+        "J♦",
+        "9♣",
+        "8♣"
+      ],
+      "example_hole": [
+        "A♠",
+        "A♥"
+      ],
+      "example_board": [
+        "J♦",
+        "8♣",
+        "4♠",
+        "3♥",
+        "9♣"
+      ],
+      "beginner_tip": "This is the most common hand you'll make. When both players have a pair, the kickers (the leftover cards) decide — a pair of aces with a king kicker beats a pair of aces with a jack kicker.",
+      "community_note": "Your hole cards were A♠ A♥ — already a pair before the board even finished — and the board ran out J♦ 8♣ 4♠ 3♥ 9♣. Your best five was the pair of aces plus the three highest leftovers: J♦, 9♣, 8♣."
+    },
+    {
+      "rank": 10,
+      "name": "High card",
+      "definition": "No pair, no straight, no flush — you just show your single highest card, and if it isn't the highest at the table, you lose.",
+      "why": "With no pair, no straight and no flush, your hand has no pattern at all, so it loses to every category above it. Against other high-card hands, the single biggest card wins, and identical top cards are compared one kicker at a time down the line.",
+      "combos": 1302540,
+      "odds": "1 in 2",
+      "beats": "Beats nothing else — this is the weakest category. It only wins if every other player also has only high card, and even then only if your highest card is the biggest.",
+      "beats_rank": [],
+      "example_cards": [
+        "A♠",
+        "K♦",
+        "J♦",
+        "9♥",
+        "8♥"
+      ],
+      "example_hole": [
+        "A♠",
+        "J♦"
+      ],
+      "example_board": [
+        "8♥",
+        "5♣",
+        "2♠",
+        "K♦",
+        "9♥"
+      ],
+      "beginner_tip": "\"High card\" is the weakest category, but it still wins showdowns — if nobody made a pair, the person holding the single biggest card takes the pot. Kickers are compared in order: ace, then king, then jack, and so on.",
+      "community_note": "Your hole cards were A♠ J♦, and the board ran out 8♥ 5♣ 2♠ K♦ 9♥. Nothing matched, nothing ran in a row, and no suit reached five cards — so your best five was simply the five biggest cards: A♠ K♦ J♦ 9♥ 8♥."
+    }
+  ],
+  "interaction": {
+    "title": "How your hole cards and the community cards work together",
+    "explanations": [
+      "You never have to use both of your hole cards. At the end of the round you look at all seven cards — your 2 plus the 5 on the board — and keep only the best 5.",
+      "Sometimes both hole cards are needed to complete a hand, sometimes only one helps, and sometimes neither does. All three are perfectly legal.",
+      "The board can make a strong hand all by itself. If the five community cards already form a flush or a straight, every player shares that hand — your hole cards only matter if they beat it or improve it.",
+      "Kickers are the leftover cards that break ties. When two players make the same kind of hand, the next-highest cards are compared one at a time until someone pulls ahead.",
+      "Always re-check your best 5 cards after the last community card arrives — the river can change everything, adding a straight, a flush, or a full hand to the middle."
+    ],
+    "examples": [
+      {
+        "title": "Using BOTH hole cards: you need your two cards to complete a straight",
+        "hole": [
+          "5♠",
+          "6♠"
+        ],
+        "board": [
+          "4♦",
+          "3♣",
+          "2♥",
+          "K♠",
+          "Q♦"
+        ],
+        "best5": [
+          "6♠",
+          "5♠",
+          "4♦",
+          "3♣",
+          "2♥"
+        ],
+        "explanation": "The board on its own only has 4-3-2 in a row — not a straight. Your two hole cards (5♠ and 6♠) plug in right above them to make 6-5-4-3-2. Drop either hole card and the straight disappears, so here you used both of them. The K♠ and Q♦ are too high to connect and are discarded."
+      },
+      {
+        "title": "Using exactly ONE hole card: you pair the board",
+        "hole": [
+          "Q♠",
+          "2♦"
+        ],
+        "board": [
+          "Q♥",
+          "Q♦",
+          "J♣",
+          "9♠",
+          "4♥"
+        ],
+        "best5": [
+          "Q♠",
+          "Q♥",
+          "Q♦",
+          "J♣",
+          "9♠"
+        ],
+        "explanation": "The board already had two queens (Q♥ Q♦). Your Q♠ combined with them to make three of a kind — you only needed that one card from your hand. Your other hole card (2♦) is worse than the board's J♣ and 9♠, so your final five is three queens plus J♣ and 9♠ as kickers. This is what \"pairing the board\" looks like."
+      },
+      {
+        "title": "Playing the board: you use ZERO hole cards",
+        "hole": [
+          "3♣",
+          "4♠"
+        ],
+        "board": [
+          "9♥",
+          "8♥",
+          "7♥",
+          "6♥",
+          "2♥"
+        ],
+        "best5": [
+          "9♥",
+          "8♥",
+          "7♥",
+          "6♥",
+          "2♥"
+        ],
+        "explanation": "The five community cards are all hearts, so the board itself is a flush — and a flush beats anything your 3♣ and 4♠ can make. Your best five-card hand IS the board, so you literally play all five community cards and ignore both hole cards completely. This is legal: your hand is the best 5 of your 7 cards, even when the best 5 come entirely from the middle."
+      },
+      {
+        "title": "Kickers decide it — Player A wins",
+        "hole": [
+          "A♠",
+          "9♦"
+        ],
+        "board": [
+          "K♦",
+          "K♣",
+          "8♥",
+          "4♣",
+          "2♠"
+        ],
+        "best5": [
+          "K♦",
+          "K♣",
+          "A♠",
+          "9♦",
+          "8♥"
+        ],
+        "explanation": "Player A makes a pair of kings with the best leftovers: A♠, 9♦, 8♥. Player B (see next example) also makes a pair of kings with an ace kicker — so both players have K-K-A so far. Player A pulls ahead with the fourth card, the 9♦, which beats Player B's fourth card. Without that 9♦ in Player A's hand, the two players would tie."
+      },
+      {
+        "title": "Kickers decide it — Player B loses with a weaker kicker",
+        "hole": [
+          "A♥",
+          "7♣"
+        ],
+        "board": [
+          "K♦",
+          "K♣",
+          "8♥",
+          "4♣",
+          "2♠"
+        ],
+        "best5": [
+          "K♦",
+          "K♣",
+          "A♥",
+          "8♥",
+          "7♣"
+        ],
+        "explanation": "Same board as Player A. Player B also pairs the board's kings and also has an ace, so after comparing K-K-A on both sides, Player B's next card is the 8♥ while Player A had a 9♦. One card — the kicker — is the whole difference. Player A's hand (K-K-A-9-8) beats Player B's hand (K-K-A-8-7)."
+      }
+    ],
+    "mistakes": [
+      "\"I have to use both of my hole cards.\" — No. Your hand is the best 5 cards out of your 2 hole cards plus the 5 community cards. If your hole cards are weak, throw them away mentally and use the board's cards instead.",
+      "\"I can count 6 or 7 cards as my hand.\" — No. A poker hand is always exactly 5 cards. Counting 6 cards (like three of a kind plus three extra cards) is a classic beginner error — pick your strongest 5 and stop.",
+      "\"The board can't make a hand by itself.\" — It can. Five community cards make a straight, a flush, a full house or even four of a kind on their own — that's called playing the board, and everyone shares it unless a hole card improves on it.",
+      "\"My cards are suited, so I probably have a flush.\" — You need five cards of the same suit. Two suited cards give you a head start, nothing more.",
+      "\"I have an ace, so my high card should win.\" — Kickers matter. If your ace is matched by your opponent's ace, you compare the next cards down. The player with the bigger kicker wins; identical kickers split the pot.",
+      "\"A-2-3-4-5 can't be a straight.\" — It can. For straights only, an ace can act as the low card. But Q-K-A-2-3 is not a straight — the ace can't wrap around.",
+      "\"Suited connectors are already a straight flush.\" — A straight flush needs five cards in a row AND of the same suit. Most of the time you'll end up with at most a flush, a straight, or nothing at all."
+    ]
+  },
+  "glossary": [
+    {
+      "term": "Hole card",
+      "definition": "One of the two face-down cards dealt only to you at the start of a Texas Hold'em hand. Also called \"pocket cards\"."
+    },
+    {
+      "term": "Community card",
+      "definition": "One of the five face-up cards dealt in the middle of the table. Everyone may use them to build their hand."
+    },
+    {
+      "term": "Board",
+      "definition": "The nickname for all five community cards together — the shared cards in the middle of the table."
+    },
+    {
+      "term": "Kicker",
+      "definition": "A leftover high card used to break ties. If two players make the same kind of hand (say, both have a pair of kings), the next-highest cards — the kickers — decide who wins."
+    },
+    {
+      "term": "Suit",
+      "definition": "The symbol on a card: spades (♠), hearts (♥), diamonds (♦) or clubs (♣). All four suits are equal in strength."
+    },
+    {
+      "term": "Rank",
+      "definition": "The value of a card: 2 through 10, then jack (J), queen (Q), king (K), ace (A). An ace is normally highest, but can count as a 1 in an A-2-3-4-5 straight."
+    },
+    {
+      "term": "Flush vs straight",
+      "definition": "A flush is five cards that all share ONE SUIT but are not in order (like 9♥ 8♥ 5♥ 2♥ K♥). A straight is five cards IN CONSECUTIVE ORDER but from mixed suits (like 9♣ 8♦ 7♥ 6♠ 5♣). A flush beats a straight."
+    }
+  ]
+}

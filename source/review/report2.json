@@ -1,0 +1,557 @@
+{
+ "tab2_imgs": {
+  "total": 35,
+  "broken": [],
+  "zeroSize": 0
+ },
+ "examples": [
+  {
+   "title": "1",
+   "groups": {
+    "[class*=hole]": [
+     {
+      "cls": "zone zone-hole",
+      "imgs": [
+       "5S.svg",
+       "6S.svg"
+      ]
+     }
+    ],
+    "[class*=board]": [
+     {
+      "cls": "zone zone-board",
+      "imgs": [
+       "4D.svg",
+       "3C.svg",
+       "2H.svg",
+       "KS.svg",
+       "QD.svg"
+      ]
+     },
+     {
+      "cls": "zone-label zone-label-board",
+      "imgs": []
+     },
+     {
+      "cls": "zone-cards zone-cards-board",
+      "imgs": [
+       "4D.svg",
+       "3C.svg",
+       "2H.svg",
+       "KS.svg",
+       "QD.svg"
+      ]
+     }
+    ],
+    "[class*=best]": [],
+    "[class*=dim]": [
+     {
+      "cls": "card dimmed",
+      "imgs": []
+     },
+     {
+      "cls": "card dimmed",
+      "imgs": []
+     },
+     {
+      "cls": "legend-dim",
+      "imgs": []
+     }
+    ],
+    "[class*=ring]": [
+     {
+      "cls": "legend-ring",
+      "imgs": []
+     }
+    ]
+   },
+   "html": "<section class=\"example\">\n  <h3 class=\"example-title\"><span class=\"example-num\">1</span>Using BOTH hole cards: you need your two cards to complete a straight</h3>\n  <div class=\"table-row\">\n    <div class=\"zone zone-hole\">\n      <span class=\"zone-label\">Your hand \u2014 2 hole cards</span>\n      <div class=\"zone-cards\"><img src=\"poker-cards/5S.svg\" alt=\"Five of spades\" class=\"card hero-card counts\" load"
+  },
+  {
+   "title": "1",
+   "groups": {
+    "[class*=hole]": [],
+    "[class*=board]": [],
+    "[class*=best]": [],
+    "[class*=dim]": [],
+    "[class*=ring]": []
+   },
+   "html": "<h3 class=\"example-title\"><span class=\"example-num\">1</span>Using BOTH hole cards: you need your two cards to complete a straight</h3>"
+  },
+  {
+   "title": "1",
+   "groups": {
+    "[class*=hole]": [],
+    "[class*=board]": [],
+    "[class*=best]": [],
+    "[class*=dim]": [],
+    "[class*=ring]": []
+   },
+   "html": "<span class=\"example-num\">1</span>"
+  },
+  {
+   "title": "The board on its own only has 4-3-2 in a row \u2014 not a straight. Your tw",
+   "groups": {
+    "[class*=hole]": [],
+    "[class*=board]": [],
+    "[class*=best]": [],
+    "[class*=dim]": [],
+    "[class*=ring]": []
+   },
+   "html": "<p class=\"example-expl\">The board on its own only has 4-3-2 in a row \u2014 not a straight. Your two hole cards (5\u2660 and 6\u2660) plug in right above them to make 6-5-4-3-2. Drop either hole card and the straight disappears, so here you used both of them. The K\u2660 and Q\u2666 are too high to connect and are discarded.</p>"
+  },
+  {
+   "title": "2",
+   "groups": {
+    "[class*=hole]": [
+     {
+      "cls": "zone zone-hole",
+      "imgs": [
+       "QS.svg",
+       "2D.svg"
+      ]
+     }
+    ],
+    "[class*=board]": [
+     {
+      "cls": "zone zone-board",
+      "imgs": [
+       "QH.svg",
+       "QD.svg",
+       "JC.svg",
+       "9S.svg",
+       "4H.svg"
+      ]
+     },
+     {
+      "cls": "zone-label zone-label-board",
+      "imgs": []
+     },
+     {
+      "cls": "zone-cards zone-cards-board",
+      "imgs": [
+       "QH.svg",
+       "QD.svg",
+       "JC.svg",
+       "9S.svg",
+       "4H.svg"
+      ]
+     }
+    ],
+    "[class*=best]": [],
+    "[class*=dim]": [
+     {
+      "cls": "card hero-card dimmed",
+      "imgs": []
+     },
+     {
+      "cls": "card dimmed",
+      "imgs": []
+     },
+     {
+      "cls": "legend-dim",
+      "imgs": []
+     }
+    ],
+    "[class*=ring]": [
+     {
+      "cls": "legend-ring",
+      "imgs": []
+     }
+    ]
+   },
+   "html": "<section class=\"example\">\n  <h3 class=\"example-title\"><span class=\"example-num\">2</span>Using exactly ONE hole card: you pair the board</h3>\n  <div class=\"table-row\">\n    <div class=\"zone zone-hole\">\n      <span class=\"zone-label\">Your hand \u2014 2 hole cards</span>\n      <div class=\"zone-cards\"><img src=\"poker-cards/QS.svg\" alt=\"Queen of spades\" class=\"card hero-card counts\" loading=\"lazy\" width=\"168"
+  },
+  {
+   "title": "2",
+   "groups": {
+    "[class*=hole]": [],
+    "[class*=board]": [],
+    "[class*=best]": [],
+    "[class*=dim]": [],
+    "[class*=ring]": []
+   },
+   "html": "<h3 class=\"example-title\"><span class=\"example-num\">2</span>Using exactly ONE hole card: you pair the board</h3>"
+  },
+  {
+   "title": "2",
+   "groups": {
+    "[class*=hole]": [],
+    "[class*=board]": [],
+    "[class*=best]": [],
+    "[class*=dim]": [],
+    "[class*=ring]": []
+   },
+   "html": "<span class=\"example-num\">2</span>"
+  },
+  {
+   "title": "The board already had two queens (Q\u2665 Q\u2666). Your Q\u2660 combined with them t",
+   "groups": {
+    "[class*=hole]": [],
+    "[class*=board]": [],
+    "[class*=best]": [],
+    "[class*=dim]": [],
+    "[class*=ring]": []
+   },
+   "html": "<p class=\"example-expl\">The board already had two queens (Q\u2665 Q\u2666). Your Q\u2660 combined with them to make three of a kind \u2014 you only needed that one card from your hand. Your other hole card (2\u2666) is worse than the board's J\u2663 and 9\u2660, so your final five is three queens plus J\u2663 and 9\u2660 as kickers. This is what \"pairing the board\" looks like.</p>"
+  },
+  {
+   "title": "3",
+   "groups": {
+    "[class*=hole]": [
+     {
+      "cls": "zone zone-hole",
+      "imgs": [
+       "3C.svg",
+       "4S.svg"
+      ]
+     }
+    ],
+    "[class*=board]": [
+     {
+      "cls": "zone zone-board",
+      "imgs": [
+       "9H.svg",
+       "8H.svg",
+       "7H.svg",
+       "6H.svg",
+       "2H.svg"
+      ]
+     },
+     {
+      "cls": "zone-label zone-label-board",
+      "imgs": []
+     },
+     {
+      "cls": "zone-cards zone-cards-board",
+      "imgs": [
+       "9H.svg",
+       "8H.svg",
+       "7H.svg",
+       "6H.svg",
+       "2H.svg"
+      ]
+     }
+    ],
+    "[class*=best]": [],
+    "[class*=dim]": [
+     {
+      "cls": "card hero-card dimmed",
+      "imgs": []
+     },
+     {
+      "cls": "card hero-card dimmed",
+      "imgs": []
+     },
+     {
+      "cls": "legend-dim",
+      "imgs": []
+     }
+    ],
+    "[class*=ring]": [
+     {
+      "cls": "legend-ring",
+      "imgs": []
+     }
+    ]
+   },
+   "html": "<section class=\"example\">\n  <h3 class=\"example-title\"><span class=\"example-num\">3</span>Playing the board: you use ZERO hole cards</h3>\n  <div class=\"table-row\">\n    <div class=\"zone zone-hole\">\n      <span class=\"zone-label\">Your hand \u2014 2 hole cards</span>\n      <div class=\"zone-cards\"><img src=\"poker-cards/3C.svg\" alt=\"Three of clubs\" class=\"card hero-card dimmed\" loading=\"lazy\" width=\"168\" heig"
+  },
+  {
+   "title": "3",
+   "groups": {
+    "[class*=hole]": [],
+    "[class*=board]": [],
+    "[class*=best]": [],
+    "[class*=dim]": [],
+    "[class*=ring]": []
+   },
+   "html": "<h3 class=\"example-title\"><span class=\"example-num\">3</span>Playing the board: you use ZERO hole cards</h3>"
+  },
+  {
+   "title": "3",
+   "groups": {
+    "[class*=hole]": [],
+    "[class*=board]": [],
+    "[class*=best]": [],
+    "[class*=dim]": [],
+    "[class*=ring]": []
+   },
+   "html": "<span class=\"example-num\">3</span>"
+  },
+  {
+   "title": "The five community cards are all hearts, so the board itself is a flus",
+   "groups": {
+    "[class*=hole]": [],
+    "[class*=board]": [],
+    "[class*=best]": [],
+    "[class*=dim]": [],
+    "[class*=ring]": []
+   },
+   "html": "<p class=\"example-expl\">The five community cards are all hearts, so the board itself is a flush \u2014 and a flush beats anything your 3\u2663 and 4\u2660 can make. Your best five-card hand IS the board, so you literally play all five community cards and ignore both hole cards completely. This is legal: your hand is the best 5 of your 7 cards, even when the best 5 come entirely from the middle.</p>"
+  },
+  {
+   "title": "4",
+   "groups": {
+    "[class*=hole]": [
+     {
+      "cls": "zone zone-hole",
+      "imgs": [
+       "AS.svg",
+       "9D.svg"
+      ]
+     }
+    ],
+    "[class*=board]": [
+     {
+      "cls": "zone zone-board",
+      "imgs": [
+       "KD.svg",
+       "KC.svg",
+       "8H.svg",
+       "4C.svg",
+       "2S.svg"
+      ]
+     },
+     {
+      "cls": "zone-label zone-label-board",
+      "imgs": []
+     },
+     {
+      "cls": "zone-cards zone-cards-board",
+      "imgs": [
+       "KD.svg",
+       "KC.svg",
+       "8H.svg",
+       "4C.svg",
+       "2S.svg"
+      ]
+     }
+    ],
+    "[class*=best]": [],
+    "[class*=dim]": [
+     {
+      "cls": "card dimmed",
+      "imgs": []
+     },
+     {
+      "cls": "card dimmed",
+      "imgs": []
+     },
+     {
+      "cls": "legend-dim",
+      "imgs": []
+     }
+    ],
+    "[class*=ring]": [
+     {
+      "cls": "legend-ring",
+      "imgs": []
+     }
+    ]
+   },
+   "html": "<section class=\"example\">\n  <h3 class=\"example-title\"><span class=\"example-num\">4</span>Kickers decide it \u2014 Player A wins</h3>\n  <div class=\"table-row\">\n    <div class=\"zone zone-hole\">\n      <span class=\"zone-label\">Your hand \u2014 2 hole cards</span>\n      <div class=\"zone-cards\"><img src=\"poker-cards/AS.svg\" alt=\"Ace of spades\" class=\"card hero-card counts\" loading=\"lazy\" width=\"168\" height=\"244\" s"
+  },
+  {
+   "title": "4",
+   "groups": {
+    "[class*=hole]": [],
+    "[class*=board]": [],
+    "[class*=best]": [],
+    "[class*=dim]": [],
+    "[class*=ring]": []
+   },
+   "html": "<h3 class=\"example-title\"><span class=\"example-num\">4</span>Kickers decide it \u2014 Player A wins</h3>"
+  },
+  {
+   "title": "4",
+   "groups": {
+    "[class*=hole]": [],
+    "[class*=board]": [],
+    "[class*=best]": [],
+    "[class*=dim]": [],
+    "[class*=ring]": []
+   },
+   "html": "<span class=\"example-num\">4</span>"
+  },
+  {
+   "title": "Player A makes a pair of kings with the best leftovers: A\u2660, 9\u2666, 8\u2665. Pl",
+   "groups": {
+    "[class*=hole]": [],
+    "[class*=board]": [],
+    "[class*=best]": [],
+    "[class*=dim]": [],
+    "[class*=ring]": []
+   },
+   "html": "<p class=\"example-expl\">Player A makes a pair of kings with the best leftovers: A\u2660, 9\u2666, 8\u2665. Player B (see next example) also makes a pair of kings with an ace kicker \u2014 so both players have K-K-A so far. Player A pulls ahead with the fourth card, the 9\u2666, which beats Player B's fourth card. Without that 9\u2666 in Player A's hand, the two players would tie.</p>"
+  },
+  {
+   "title": "5",
+   "groups": {
+    "[class*=hole]": [
+     {
+      "cls": "zone zone-hole",
+      "imgs": [
+       "AH.svg",
+       "7C.svg"
+      ]
+     }
+    ],
+    "[class*=board]": [
+     {
+      "cls": "zone zone-board",
+      "imgs": [
+       "KD.svg",
+       "KC.svg",
+       "8H.svg",
+       "4C.svg",
+       "2S.svg"
+      ]
+     },
+     {
+      "cls": "zone-label zone-label-board",
+      "imgs": []
+     },
+     {
+      "cls": "zone-cards zone-cards-board",
+      "imgs": [
+       "KD.svg",
+       "KC.svg",
+       "8H.svg",
+       "4C.svg",
+       "2S.svg"
+      ]
+     }
+    ],
+    "[class*=best]": [],
+    "[class*=dim]": [
+     {
+      "cls": "card dimmed",
+      "imgs": []
+     },
+     {
+      "cls": "card dimmed",
+      "imgs": []
+     },
+     {
+      "cls": "legend-dim",
+      "imgs": []
+     }
+    ],
+    "[class*=ring]": [
+     {
+      "cls": "legend-ring",
+      "imgs": []
+     }
+    ]
+   },
+   "html": "<section class=\"example\">\n  <h3 class=\"example-title\"><span class=\"example-num\">5</span>Kickers decide it \u2014 Player B loses with a weaker kicker</h3>\n  <div class=\"table-row\">\n    <div class=\"zone zone-hole\">\n      <span class=\"zone-label\">Your hand \u2014 2 hole cards</span>\n      <div class=\"zone-cards\"><img src=\"poker-cards/AH.svg\" alt=\"Ace of hearts\" class=\"card hero-card counts\" loading=\"lazy\" widt"
+  },
+  {
+   "title": "5",
+   "groups": {
+    "[class*=hole]": [],
+    "[class*=board]": [],
+    "[class*=best]": [],
+    "[class*=dim]": [],
+    "[class*=ring]": []
+   },
+   "html": "<h3 class=\"example-title\"><span class=\"example-num\">5</span>Kickers decide it \u2014 Player B loses with a weaker kicker</h3>"
+  },
+  {
+   "title": "5",
+   "groups": {
+    "[class*=hole]": [],
+    "[class*=board]": [],
+    "[class*=best]": [],
+    "[class*=dim]": [],
+    "[class*=ring]": []
+   },
+   "html": "<span class=\"example-num\">5</span>"
+  },
+  {
+   "title": "Same board as Player A. Player B also pairs the board's kings and also",
+   "groups": {
+    "[class*=hole]": [],
+    "[class*=board]": [],
+    "[class*=best]": [],
+    "[class*=dim]": [],
+    "[class*=ring]": []
+   },
+   "html": "<p class=\"example-expl\">Same board as Player A. Player B also pairs the board's kings and also has an ace, so after comparing K-K-A on both sides, Player B's next card is the 8\u2665 while Player A had a 9\u2666. One card \u2014 the kicker \u2014 is the whole difference. Player A's hand (K-K-A-9-8) beats Player B's hand (K-K-A-8-7).</p>"
+  }
+ ],
+ "glossary": [
+  "Hole card\n      One of the two face-down cards dealt only to you at the start of a Texas Hold'em hand. Also called \"pocket cards\".",
+  "Hole card",
+  "Community card\n      One of the five face-up cards dealt in the middle of the table. Everyone may use them to build their hand.",
+  "Community card",
+  "Board\n      The nickname for all five community cards together \u2014 the shared cards in the middle of the table.",
+  "Board",
+  "Kicker\n      A leftover high card used to break ties. If two players make the same kind of hand (say, both have a pair of kings), the next-highest cards \u2014 the kickers \u2014 decide who wins.",
+  "Kicker",
+  "Suit\n      The symbol on a card: spades (\u2660), hearts (\u2665), diamonds (\u2666) or clubs (\u2663). All four suits are equal in strength.",
+  "Suit",
+  "Rank\n      The value of a card: 2 through 10, then jack (J), queen (Q), king (K), ace (A). An ace is normally highest, but can count as a 1 in an A-2-3-4-5 straight.",
+  "Rank",
+  "Flush vs straight\n      A flush is five cards that all share ONE SUIT but are not in order (like 9\u2665 8\u2665 5\u2665 2\u2665 K\u2665). A straight is five cards IN CONSECUTIVE ORDER but from mixed suits (like 9\u2663 8\u2666 7\u2665 6\u2660 5\u2663). A flush beats a straight.",
+  "Flush vs straight"
+ ],
+ "traps": [
+  "\"I have to use both of my hole cards.\" \u2014 No. Your hand is the best 5 c",
+  "\"I can count 6 or 7 cards as my hand.\" \u2014 No. A poker hand is always ex",
+  "\"The board can't make a hand by itself.\" \u2014 It can. Five community card",
+  "\"My cards are suited, so I probably have a flush.\" \u2014 You need five car",
+  "\"I have an ace, so my high card should win.\" \u2014 Kickers matter. If your",
+  "\"A-2-3-4-5 can't be a straight.\" \u2014 It can. For straights only, an ace ",
+  "\"Suited connectors are already a straight flush.\" \u2014 A straight flush n"
+ ],
+ "trapsCount": 7,
+ "styling": [
+  {
+   "sel": "[class*=hole]",
+   "cls": "zone zone-hole",
+   "bg": "rgb(20, 20, 20)",
+   "border": "rgb(38, 36, 33)",
+   "opacity": "1",
+   "outline": "rgb(232, 230, 225) none 3px"
+  },
+  {
+   "sel": "[class*=board]",
+   "cls": "zone zone-board",
+   "bg": "rgb(26, 26, 26)",
+   "border": "rgb(38, 36, 33)",
+   "opacity": "1",
+   "outline": "rgb(232, 230, 225) none 3px"
+  },
+  null,
+  {
+   "sel": "[class*=dim]",
+   "cls": "card dimmed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "rgb(232, 230, 225)",
+   "opacity": "0.22",
+   "outline": "rgb(232, 230, 225) none 3px"
+  }
+ ],
+ "type_scale": {
+  "first": {
+   "name": "Royal flush",
+   "h3": "35.2px",
+   "num": "40px"
+  },
+  "last": {
+   "name": "High card",
+   "h3": "20.8px",
+   "num": "23.2px"
+  },
+  "accent": "rgb(232, 230, 225)",
+  "allSame": false
+ },
+ "mobile_body_font": {
+  "p": "16.32px",
+  "h3": "35.2px",
+  "beats": "9.6px"
+ },
+ "pageerrors": []
+}

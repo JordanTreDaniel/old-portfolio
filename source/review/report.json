@@ -1,0 +1,567 @@
+{
+ "console": [],
+ "pageerrors": [],
+ "requests_failed": [],
+ "images": {
+  "total": 85,
+  "broken": [
+   {
+    "src": "4D.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "3C.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "2H.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "2D.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "9S.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "4H.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "3C.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "4S.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "6H.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "2H.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "KC.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "4C.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "7C.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "KC.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "4C.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   }
+  ],
+  "zero_display_size": [
+   {
+    "src": "5S.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "6S.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "4D.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "3C.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "2H.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "KS.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "QD.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "QS.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "2D.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "QH.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "QD.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "JC.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "9S.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "4H.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "3C.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "4S.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "9H.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "8H.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "7H.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "6H.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "2H.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "AS.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "9D.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "KD.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "KC.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "8H.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "4C.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "2S.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "AH.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "7C.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "KD.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "KC.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "8H.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "4C.svg",
+    "nw": 0,
+    "nh": 0,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   },
+   {
+    "src": "2S.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 0,
+    "h": 0,
+    "loaded": false
+   }
+  ],
+  "sample_sizes": [
+   {
+    "src": "AS.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 127,
+    "h": 166,
+    "loaded": true
+   },
+   {
+    "src": "KS.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 116,
+    "h": 160,
+    "loaded": true
+   },
+   {
+    "src": "QS.svg",
+    "nw": 103,
+    "nh": 150,
+    "w": 104,
+    "h": 152,
+    "loaded": true
+   }
+  ]
+ },
+ "desktop_overflow": {
+  "sw": 1280,
+  "cw": 1280
+ },
+ "tab_switch_marker": "alive",
+ "tab2_selected": "02How Cards Combine",
+ "tab1_hidden": {
+  "hidden": true,
+  "rect": 0
+ },
+ "tab2": {
+  "headings": [
+   "What is a \"hand\"?",
+   "1Using BOTH hole cards: you need your two cards to complete a straight",
+   "2Using exactly ONE hole card: you pair the board",
+   "3Playing the board: you use ZERO hole cards",
+   "4Kickers decide it \u2014 Player A wins",
+   "5Kickers decide it \u2014 Player B loses with a weaker kicker",
+   "Seven beginner traps",
+   "Glossary"
+  ],
+  "imgCount": 35,
+  "imgs": [
+   "5S.svg",
+   "6S.svg",
+   "4D.svg",
+   "3C.svg",
+   "2H.svg",
+   "KS.svg",
+   "QD.svg",
+   "QS.svg",
+   "2D.svg",
+   "QH.svg",
+   "QD.svg",
+   "JC.svg",
+   "9S.svg",
+   "4H.svg",
+   "3C.svg",
+   "4S.svg",
+   "9H.svg",
+   "8H.svg",
+   "7H.svg",
+   "6H.svg",
+   "2H.svg",
+   "AS.svg",
+   "9D.svg",
+   "KD.svg",
+   "KC.svg",
+   "8H.svg",
+   "4C.svg",
+   "2S.svg",
+   "AH.svg",
+   "7C.svg",
+   "KD.svg",
+   "KC.svg",
+   "8H.svg",
+   "4C.svg",
+   "2S.svg"
+  ],
+  "hasPrimer": true,
+  "hasMistakes": false,
+  "hasGlossary": true,
+  "best5Count": 12,
+  "textLen": 6333,
+  "excerpt": "What is a \"hand\"?\n\nIn Texas Hold'em, a \"hand\" is the best 5-card poker hand you can build by the end of a round. Every player gets the same ingredients \u2014 the trick is knowing how to combine them.\n\nStep 1 \u2014 Your 2 hole cards: dealt face-down to you alone. These are \"your\" cards.\nStep 2 \u2014 5 community cards: dealt face-up in the middle over time, shared by everyone at the table.\nStep 3 \u2014 Make your best 5: you may use both hole cards, just one, or none at all. You simply pick the best 5-card hand out of the 7 cards available to you (your 2 + the 5 on the board). This is called \"the best 5 of 7\".\nCARD ORDER, LOW \u2192 HIGH\n\nCards rank from low to high: 2 < 3 < 4 < 5 < 6 < 7 < 8 < 9 < 10 < J < Q < K <"
+ },
+ "shot_errors": [
+  "mistakes: Locator.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"text=Mistakes\").first\n"
+ ],
+ "after_3_switches_marker": "alive",
+ "after_switches_overflow": {
+  "sw": 1280,
+  "cw": 1280
+ },
+ "mobile_overflow": {
+  "sw": 380,
+  "cw": 380
+ },
+ "mobile_wide_elements": [],
+ "mobile_small_text": [
+  {
+   "t": "Texas Hold\u2019em \u00b7 Beginner Series",
+   "fs": 10.88
+  },
+  {
+   "t": "odds",
+   "fs": 9.6
+  },
+  {
+   "t": "4 possible combinations",
+   "fs": 10.56
+  },
+  {
+   "t": "what it beats",
+   "fs": 9.6
+  },
+  {
+   "t": "Straight flush",
+   "fs": 10.88
+  },
+  {
+   "t": "Four of a kind",
+   "fs": 10.88
+  },
+  {
+   "t": "Full house",
+   "fs": 10.88
+  },
+  {
+   "t": "Flush",
+   "fs": 10.88
+  },
+  {
+   "t": "Straight",
+   "fs": 10.88
+  },
+  {
+   "t": "Three of a kind",
+   "fs": 10.88
+  }
+ ],
+ "mobile_overflow_tab2": {
+  "sw": 380,
+  "cw": 380
+ },
+ "w320_overflow": {
+  "sw": 320,
+  "cw": 320
+ }
+}

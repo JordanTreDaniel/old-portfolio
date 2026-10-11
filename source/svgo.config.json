@@ -1,0 +1,19 @@
+{
+  "multipass": true,
+  "floatPrecision": 1,
+  "plugins": [
+    "preset-default",
+    "removeDimensions",
+    {"name": "mergePaths", "params": {"collapseRepeated": true, "force": true}},
+    {"name": "convertShapeToPath", "params": {"noSpaceAfterFlags": false}},
+    "removeElementsByAttr",
+    "removeEmptyContainers",
+    "removeHiddenElems",
+    "removeUnusedNS",
+    "sortAttrs",
+    "removeStyleElement",
+    "removeScripts",
+    {"name": "cleanupNumericValues", "params": {"floatPrecision": 1}},
+    {"name": "roundingPrecision", "params": 1}
+  ]
+}

@@ -1,0 +1,10 @@
+Playing card face images (52 SVGs, ranks 2-10/J/Q/K/A x S/H/D/C)
+
+Source:  https://github.com/notpeter/Vector-Playing-Cards (cards-svg/)
+Original artwork: Byron Knoll "vector-playing-cards" (Google Code), public domain.
+Repo license: Public domain / WTFPL (do what you want) for images, scripts, and
+transformed output (e.g. custom PNGs). Free for any commercial or non-commercial use.
+Upstream note: fork of https://code.google.com/archive/p/vector-playing-cards/
+
+Naming: <RANK><SUIT>.svg  where RANK in {2..10,J,Q,K,A}, SUIT in {S,H,D,C}
+e.g. AS.svg = Ace of Spades, 10D.svg = 10 of Diamonds, QH.svg = Queen of Hearts

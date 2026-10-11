@@ -1,0 +1,22 @@
+  'poker-hands': {
+    slug: 'poker-hands',
+    tier: 'public',
+    title: 'Poker Hands, Decoded — A Beginner\'s Guide to Texas Hold\'em',
+    description:
+      'Learn poker hand rankings from the royal flush down to high card, and how your two hole cards combine with the five community cards to make the best 5 of 7. Plain English, real examples, real cards.',
+    tag: 'Tutorial',
+    published: '2026-10-10',
+    author: 'Jordan Christley',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: 'Poker Hands, Decoded — A Beginner\'s Guide to Texas Hold\'em',
+      description:
+        'Learn poker hand rankings from the royal flush down to high card, and how your two hole cards combine with the five community cards to make the best 5 of 7. Plain English, real examples, real cards.',
+      author: {
+        '@type': 'Person',
+        name: 'Jordan Christley',
+      },
+      datePublished: '2026-10-10',
+    },
+  },
