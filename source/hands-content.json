@@ -364,7 +364,7 @@
         "K♦",
         "9♥"
       ],
-      "beginner_tip": "\"High card\" is the weakest category, but it still wins showdowns — if nobody made a pair, the person holding the single biggest card takes the pot. Kickers are compared in order: ace, then king, then jack, and so on.",
+      "beginner_tip": "\"High card\" is the weakest category, but it still wins showdowns — if nobody made a pair, the person holding the single biggest card takes the pot. Kickers are compared in order: ace, then king, then queen, then jack, and so on.",
       "community_note": "Your hole cards were A♠ J♦, and the board ran out 8♥ 5♣ 2♠ K♦ 9♥. Nothing matched, nothing ran in a row, and no suit reached five cards — so your best five was simply the five biggest cards: A♠ K♦ J♦ 9♥ 8♥."
     }
   ],

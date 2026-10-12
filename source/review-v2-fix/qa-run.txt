@@ -1,0 +1,87 @@
+PASS  h1 contains "Poker Hands for Beginners" — Poker Hands for Beginners, Decoded
+PASS  quiz zone has its own <h2> — ['Test yourself']
+PASS  glossary h2 comes BEFORE quiz h2 — {'prev': 'Glossary', 'next': None, 'q4_under_quiz': 'H4'}
+PASS  heading document-order has no level skips (h2->h3->h4 ok)
+PASS  q1 title is h4 (h2/h3 precede it in document order) — H4
+PASS  og:image absolute URL — {'ogimage': 'https://portfolio.jordanchristley.com/public/poker-hands-v2/og-image.png', 'twimage': 'https://portfolio.jordanchristley.com/public/poker-hands-v2/og-image.png', 'twcard': 'summary_large_image'}
+PASS  twitter:image present + large card — {'ogimage': 'https://portfolio.jordanchristley.com/public/poker-hands-v2/og-image.png', 'twimage': 'https://portfolio.jordanchristley.com/public/poker-hands-v2/og-image.png', 'twcard': 'summary_large_image'}
+PASS  FAQ has 9 Q&As incl. teaching question — How do I teach poker hands to a beginner?
+PASS  teacher note present — Coaching tip: let them fall for each trap before revealing the rule — the mistake is the lesson.
+PASS  @supports block PARSES (CSSSupportsRule in CSSOM) — [{'cond': '(prefers-reduced-motion: reduce)', 'n': 2}, {'cond': '(max-width: 860px)', 'n': 19}, {'cond': '(max-width: 480px)', 'n': 3}, {'cond': '(max-width: 860px)', 'n': 4}, {'cond': '(max-width: 480px)', 'n': 7}, {'cond': 'not (selector(:has(*)))', 'n': 3}]
+PASS  modern Chrome: :has() supported, so block inert
+PASS  modern Chrome: reveals still hidden by default — none
+PASS  modern Chrome: no-has note still hidden — none
+PASS  fallback: reveals forced visible — ['.reveal { display: block; }', '.reveal-tag, .reveal-best { display: none; }', '.no-has-note { display: block; }']
+PASS  fallback: conditional tags/deselect lines hidden — ('none', 'none')
+PASS  fallback: update-browser note shown — block
+PASS  fallback: selected-card outline works without :has() — rgb(255, 215, 0)
+PASS  fallback: rules removed -> modern behavior restored — none
+--- qk wrong reveal ---
+NOT QUITE
+
+Everyone pairs the board's kings and both players hold an ace, so K-K-A is identical on both sides. Beginners stop comparing right there — but the showdown rolls to the fourth card, and that's exactly where Player A pulls ahead: the 9♦ beats the 8. Player B's 7♣ sits in fifth place and never even gets compared. One kicker decides the whole pot.
+
+Player A’s best 5 is outlined in green above — deselect and try again.
+---
+PASS  qk wrong reveal renders
+PASS  qk note is ONE paragraph (single <p>)
+PASS  qk note no longer stitched/self-contradictory — NOT QUITE
+
+Everyone pairs the board's kings and both players hold an ace, so K-K-A is identical on both sides. Beginners
+PASS  qk note accurate to data (9 beats 8, 7 never compared)
+PASS  q1 win reveal shows — block|rendered
+PASS  q1 wrong reveal suppressed on win
+PASS  q1 hand-name reveal = Straight
+PASS  prompt no longer promises "name the hand" as an action — Tap the 5 cards that make your best hand — the hand name stays hidden until you nail all five
+trap wrong ids: {'t1': ['t1-w1', 't1-w2'], 't2': ['t2-w1', 't2-w2'], 't3': ['t3-w1', 't3-w2'], 't4': ['t4-w1', 't4-w2'], 't5': ['t5-w1', 't5-w2'], 't6': ['t6-w1', 't6-w2'], 't7': ['t7-w1', 't7-w2']}
+PASS  t1 reveal opens on wrong tap t1-w1
+PASS  t1 reveal text tap-agnostic (no "tap" wording)
+PASS  t1 reveal opens on wrong tap t1-w2
+PASS  t1 reveal text tap-agnostic (no "tap" wording)
+PASS  t2 reveal opens on wrong tap t2-w1
+PASS  t2 reveal text tap-agnostic (no "tap" wording)
+PASS  t2 reveal opens on wrong tap t2-w2
+PASS  t2 reveal text tap-agnostic (no "tap" wording)
+PASS  t3 reveal opens on wrong tap t3-w1
+PASS  t3 reveal text tap-agnostic (no "tap" wording)
+PASS  t3 reveal opens on wrong tap t3-w2
+PASS  t3 reveal text tap-agnostic (no "tap" wording)
+PASS  t4 reveal opens on wrong tap t4-w1
+PASS  t4 reveal text tap-agnostic (no "tap" wording)
+PASS  t4 reveal opens on wrong tap t4-w2
+PASS  t4 reveal text tap-agnostic (no "tap" wording)
+PASS  t5 reveal opens on wrong tap t5-w1
+PASS  t5 reveal text tap-agnostic (no "tap" wording)
+PASS  t5 reveal opens on wrong tap t5-w2
+PASS  t5 reveal text tap-agnostic (no "tap" wording)
+PASS  t6 reveal opens on wrong tap t6-w1
+PASS  t6 reveal text tap-agnostic (no "tap" wording)
+PASS  t6 reveal opens on wrong tap t6-w2
+PASS  t6 reveal text tap-agnostic (no "tap" wording)
+PASS  t7 reveal opens on wrong tap t7-w1
+PASS  t7 reveal text tap-agnostic (no "tap" wording)
+PASS  t7 reveal opens on wrong tap t7-w2
+PASS  t7 reveal text tap-agnostic (no "tap" wording)
+--- t5 reveal (tapped 4♦) ---
+
+    You took the bait
+    Your ace kicker wins the showdown!
+    Beginner mistake · “I have an ace, so my high card should win.”
+    The rule
+    Kickers only compare when both hands are the SAME type — an ace is a tiebreaker, never a hand on its own.
+    Why the bait fails
+    Reaching for the ace builds three kings with an ace kicker — but you've ignored the full house sitting on the board (K♥ K♣ K♦ Q♠ Q♣), a higher hand category that needs zero hole cards. The ace isn't even in your best 5 here, so it can't win anything, and kicker comparisons only ever happen between two hands of the same rank.
+    Your best 5 (outlined in green above): K♥ K♣ K♦ Q♠ Q♣ — Full house
+  
+---
+PASS  t5 still names the full house on the board
+PASS  full-house breakdown exists
+PASS  full-house brackets are 3 + 2 — {'labels': ['the 3 — three queens', 'the 2 — two eights'], 'cards': 5, 'note': 'Your hand is these five cards: full house — Q♠ Q♥ Q♦ 8♣ 8♠.'}
+PASS  full-house breakdown = 5 cards — 5
+PASS  high-card tip includes queen in kicker order — e compared in order: ace, then king, then queen, then jack, and so on.
+PASS  360px no horizontal overflow — {'docW': 360, 'winW': 360}
+PASS  360px quiz mode no overflow — {'docW': 360, 'winW': 360}
+PASS  h1 fits masthead at 360px — {'w': 328, 'h': 79, 'bottom': 115}
+PASS  console clean
+
+FAILURES: none

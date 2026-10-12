@@ -120,21 +120,26 @@ QUIZ_META = [
         id='quiz-kickers-a',
         title='Which five cards win it?',
         hand_name='One pair',
+        # NOTE: the kicker duel (build-v2.paired_question) renders ONLY this note as one
+        # coherent paragraph — never stitch a's and b's notes together.
         distractor_note=(
-            "Everyone pairs the board's kings and both players hold an ace, so K-K-A is a tie. "
-            "Beginners stop comparing there and never get to the fourth card — your 9♦ over the "
-            "opponent's 8 is the entire pot.")),
+            "Everyone pairs the board's kings and both players hold an ace, so K-K-A is identical "
+            "on both sides. Beginners stop comparing right there — but the showdown rolls to the "
+            "fourth card, and that's exactly where Player A pulls ahead: the 9♦ beats the 8. "
+            "Player B's 7♣ sits in fifth place and never even gets compared. One kicker decides "
+            "the whole pot.")),
     dict(
         id='quiz-kickers-b',
         title='Which five cards win it?',
         hand_name='One pair',
         distractor_note=(
-            "With an ace in hand it feels like a winner, but after K-K-A on both sides the "
-            "comparison rolls to the fourth card: your 8♥ — and that's exactly where Player A "
-            "pulls ahead with a 9. Your 7♣ as the fifth card never even gets compared.")),
+            "Player B's ace looks like a winner, but after K-K-A on both sides the comparison "
+            "rolls to the fourth card — Player A's 9 beats B's 8, and B's 7♣ in fifth place never "
+            "even gets compared.")),
 ]
 
-QUIZ_PROMPT = 'Tap the 5 cards that make your best hand — then name the hand'
+QUIZ_PROMPT = ('Tap the 5 cards that make your best hand — the hand name stays hidden '
+               'until you nail all five')
 
 quiz = []
 for i, (src, meta) in enumerate(zip(SRC['interaction']['examples'], QUIZ_META)):
@@ -167,8 +172,8 @@ traps = [
         why_the_bait_fails=(
             "By insisting both hole cards count, you build J-J-Q-10-4 — a mere pair of jacks. "
             "But the five hearts on the board (Q♥ J♥ 10♥ 8♥ 2♥) are already a flush, and a flush "
-            "beats a pair. Tapping JS and 4C actually forces you to drop two hearts; your true "
-            "best 5 is all five board cards."),
+            "beats a pair. Committing to both hole cards actually forces you to drop two hearts; "
+            "your true best 5 is all five board cards."),
         bait_tap=['JS', '4C', 'JH', 'QH', '10H'],
         bait_checks=['board_flush_beats_bait', 'bait_uses_both_hole_cards'],
     ),
@@ -186,8 +191,8 @@ traps = [
         why_the_bait_fails=(
             "You can't stack the board's pair of kings on top of your straight — that would be a "
             "7-card 'hand'. Your best 5 is 8-7-6-5-4 (8♠ 7♠ 6♥ 5♦ 4♣) and a straight beats a pair. "
-            "If you tap the kings to 'keep both', you've downgraded yourself to a single pair "
-            "(K-K-8-7-6) and thrown the straight away."),
+            "Keeping the kings as well downgrades you to a single pair (K-K-8-7-6) and throws the "
+            "straight away."),
         bait_tap=['KS', 'KD', '8S', '7S', '6H'],
         bait_checks=['claimed_set_gt_5_cards', 'bait_is_worse_category'],
     ),
@@ -221,9 +226,9 @@ traps = [
         trap_rule=("Suited hole cards are only a head start — a flush needs FIVE cards of the same "
                    "suit, and among your seven cards you only have four spades."),
         why_the_bait_fails=(
-            "Count the spades: A♠ 9♠ K♠ 5♠ — four of them, and four cards can't make a five-card "
-            "flush (your fifth tap would be a non-spade). You've also thrown away your real hand: "
-            "9♠ 8♥ 7♦ 6♣ 5♠ is a straight, which beats the ace-high you'd be left with."),
+            "Count the spades: A♠ 9♠ K♠ 5♠ — four of them, and four cards can't fill a five-card "
+            "flush (the fifth card would have to be a non-spade). You've also thrown away your "
+            "real hand: 9♠ 8♥ 7♦ 6♣ 5♠ is a straight, which beats the ace-high you'd be left with."),
         bait_tap=['AS', '9S', 'KS', '5S', '8H'],
         bait_checks=['only_four_of_suit', 'bait_not_flush'],
     ),
@@ -239,10 +244,10 @@ traps = [
         trap_rule=("Kickers only compare when both hands are the SAME type — an ace is a tiebreaker, "
                    "never a hand on its own."),
         why_the_bait_fails=(
-            "Tapping A♠ gives you three kings with an ace kicker — but you've ignored the full house "
-            "sitting on the board (K♥ K♣ K♦ Q♠ Q♣), a higher hand category that needs zero hole cards. "
-            "Your ace isn't even in your best 5 here, so it can't win anything, and kicker comparisons "
-            "only ever happen between two hands of the same rank."),
+            "Reaching for the ace builds three kings with an ace kicker — but you've ignored the "
+            "full house sitting on the board (K♥ K♣ K♦ Q♠ Q♣), a higher hand category that needs "
+            "zero hole cards. The ace isn't even in your best 5 here, so it can't win anything, and "
+            "kicker comparisons only ever happen between two hands of the same rank."),
         bait_tap=['AS', 'KH', 'KC', 'KD', 'QS'],
         bait_checks=['ace_not_in_best5', 'bait_is_worse_category'],
     ),
@@ -259,9 +264,9 @@ traps = [
                    "but it can never wrap around: Q-K-A-2-3 is not a straight."),
         why_the_bait_fails=(
             "A run steps in one direction: the ace counts as high (above K) or low (below 2), never "
-            "both, so K-A-2 can't continue around the corner. Tapping Q♣ K♠ A♠ 2♥ 3♣ leaves you with "
-            "nothing but ace-high. Meanwhile your actual best 5 is the straight you overlooked — the "
-            "wheel: A♠ 2♥ 3♣ 4♦ 5♦."),
+            "both, so K-A-2 can't continue around the corner. Building that wrap-around run "
+            "(Q♣ K♠ A♠ 2♥ 3♣) leaves you with nothing but ace-high. Meanwhile your actual best 5 is "
+            "the straight you overlooked — the wheel: A♠ 2♥ 3♣ 4♦ 5♦."),
         bait_tap=['QC', 'KS', 'AS', '2H', '3C'],
         bait_checks=['bait_is_not_straight', 'correct_is_wheel'],
     ),
@@ -279,8 +284,8 @@ traps = [
         why_the_bait_fails=(
             "The run you're seeing (9-8-7-6-5) isn't all spades: only 4 of your 7 cards are spades, "
             "and the 6 and 5 on the board are 6♥ and 5♦ — so there's no flush, let alone a straight "
-            "flush. Tapping that run also leaves your best hand on the table: J♠ 10♦ 9♠ 8♠ 7♠ is a "
-            "J-high straight, and it beats the 9-high run you tapped."),
+            "flush. Playing that run also leaves your best hand on the table: J♠ 10♦ 9♠ 8♠ 7♠ is a "
+            "J-high straight, and it beats the 9-high run."),
         bait_tap=['9S', '8S', '7S', '6H', '5D'],
         bait_checks=['no_straight_flush_exists', 'bait_is_lower_straight'],
     ),
@@ -331,6 +336,13 @@ JSON_LD = {
          'acceptedAnswer': {'@type': 'Answer', 'text':
              'Yes. For straights only, an ace can count as the low card, so A-2-3-4-5 is a straight '
              '— the lowest one. But the ace can never wrap around the end: Q-K-A-2-3 is not a straight.'}},
+        {'@type': 'Question', 'name': 'How do I teach poker hands to a beginner?',
+         'acceptedAnswer': {'@type': 'Answer', 'text':
+             'Start with the ten rankings, then let them work the five “combine” examples, '
+             'where the best-5 cards are outlined and the discarded ones are greyed out. After that, '
+             'play the seven traps in quiz mode and let them fall for each bait before revealing the '
+             'rule — the mistake is the lesson. Everything here works on a phone with no login, so it '
+             'doubles as a one-page handout.'}},
     ],
 }
 

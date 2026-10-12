@@ -76,7 +76,18 @@ body::after {
 .brk-note strong { color: var(--gold); font-weight: 600; }
 
 /* ===== quiz ===== */
-.quiz-intro { padding-top: 32px; max-width: 74ch; }
+.quiz-h2 {
+  font-family: var(--font-display); font-size: 1.7rem; font-weight: 700;
+  padding-top: 4px;
+}
+.teacher-note {
+  font-size: .82rem; font-style: italic; color: var(--text-faint);
+  max-width: 72ch; margin-top: 10px;
+  border-left: 2px solid var(--line); padding-left: 12px;
+}
+.no-has-note { display: none; }
+.fh-demo { margin-top: 40px; }
+.quiz-intro { padding-top: 20px; max-width: 74ch; }
 .quiz-section {
   font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;
   margin: 44px 0 2px; padding-top: 10px;
@@ -160,4 +171,20 @@ body::after {
   .q-prompt { font-size: .66rem; }
   .grp::after { font-size: .52rem; }
   .brk-card { height: 50px; }
+  .quiz-h2 { font-size: 1.4rem; }
+}
+
+/* ===== capability fallback: browsers without :has() (Chrome <105, Safari <15.4, Firefox <121) ===== */
+/* Selected-state feedback that needs no :has(): the input immediately precedes its label. */
+.qcard .qcheck:checked + label { outline-color: var(--gold); transform: translateY(-5px); }
+.qcard .qcheck:focus-visible + label { outline: 2px dashed var(--cyan); }
+
+@supports not (selector(:has(*))) {
+  /* The tap quiz needs :has() to react to checkboxes — degrade to a static answer sheet:
+     every reveal panel is open, and the "tap again to undo" chrome (tags / deselect lines)
+     is hidden because nothing has been tapped. <details> ("What hand is it?", "Show me")
+     still works natively in these browsers. */
+  .reveal { display: block; }
+  .reveal-tag, .reveal-best { display: none; }
+  .no-has-note { display: block; }
 }

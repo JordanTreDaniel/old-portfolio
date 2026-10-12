@@ -7,7 +7,7 @@
     description:
       'Poker hands for beginners: 10 rankings from royal flush to high card, how best-5-of-7 works, kickers explained, and 7 classic beginner mistakes to teach.',
     tag: 'Tutorial',
-    published: '2026-10-11',
+    published: '2026-10-12',
     author: 'Jordan Christley',
     jsonLd: {
       '@context': 'https://schema.org',
@@ -19,7 +19,7 @@
         '@type': 'Person',
         name: 'Jordan Christley',
       },
-      datePublished: '2026-10-11',
+      datePublished: '2026-10-12',
     },
     # page-level JSON-LD injected verbatim by build-v2.py (FAQPage, 8 Q&As):
     faqJsonLd: {
@@ -88,6 +88,14 @@
                   "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "Yes. For straights only, an ace can count as the low card, so A-2-3-4-5 is a straight — the lowest one. But the ace can never wrap around the end: Q-K-A-2-3 is not a straight."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "How do I teach poker hands to a beginner?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Start with the ten rankings, then let them work the five “combine” examples, where the best-5 cards are outlined and the discarded ones are greyed out. After that, play the seven traps in quiz mode and let them fall for each bait before revealing the rule — the mistake is the lesson. Everything here works on a phone with no login, so it doubles as a one-page handout."
                   }
             }
       ]

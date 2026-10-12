@@ -189,6 +189,12 @@ def breakdown_groups(best5):
             groups.append((cs, label))
         else:
             kickers.extend(cs)
+    # full house is the only hand that splits into TWO groups (3 + 2) — label it as such
+    if len(groups) == 2 and sorted(len(g[0]) for g in groups) == [2, 3]:
+        g3 = next(g for g in groups if len(g[0]) == 3)
+        g2 = next(g for g in groups if len(g[0]) == 2)
+        groups = [(g3[0], f'the 3 — three {RANK_WORD[parse(g3[0][0])[0]].lower()}s'),
+                  (g2[0], f'the 2 — two {RANK_WORD[parse(g2[0][0])[0]].lower()}s')]
     if kickers:
         groups.append((kickers, 'kickers — the best leftovers'))
     return groups
@@ -266,6 +272,11 @@ examples_html = ''.join(
     example_block(ex, i + 1, QV2['quiz'][i]['hand_name'])
     for i, ex in enumerate(HANDS['interaction']['examples']))
 
+# full-house 3+2 bracket demo for learn mode — reuses the verified Full house example cards
+FH_HAND = next(h for h in HANDS['hands'] if h['name'] == 'Full house')
+FH_DEMO = breakdown_html({'best5': list(FH_HAND['example_cards']), 'hole': [], 'board': []},
+                         FH_HAND['name'])
+
 # ---------------------------------------------------------------- learn zone
 P = HANDS['primer']
 steps_html = ''.join(f'<li>{e(s)}</li>' for s in P['steps'])
@@ -297,6 +308,12 @@ learn_zone = f'''
 
   <h3 class="panel-sub">{e(HANDS['interaction']['title'])} &mdash; five worked examples, from needing both your cards to using neither.</h3>
   {examples_html}
+
+  <aside class="fh-demo">
+    <h3 class="panel-sub">The one hand with two brackets &mdash; a full house splits 3 + 2</h3>
+    <p class="quiz-section-note">Every other hand breaks into a single matching group plus leftover kickers. A full house is the exception: three of one rank <em>and</em> a pair of another. Compare the triple first &mdash; the pair only matters when the triples tie.</p>
+    {FH_DEMO}
+  </aside>
 
   <aside class="mistakes">
     <h2>Seven beginner traps</h2>
@@ -413,7 +430,9 @@ def paired_question(a, b, n):
     assert cnt['b'] == 5, (qid, cnt)
     assert a['board'] == b['board']
     fourth_a, fourth_b = a['best5'][3], b['best5'][3]
-    combined_note = a['distractor_note'] + ' ' + b['distractor_note']
+    # ONE coherent paragraph, written from the learner's table perspective.
+    # (Never stitch a['distractor_note'] + b['distractor_note'] — "your" flipped players.)
+    duel_note = a['distractor_note']
     return f'''
 <section class="quiz-q q-paired" id="{qid}">
   <div class="q-head">
@@ -436,7 +455,7 @@ def paired_question(a, b, n):
   <p class="q-hint">Tap to select &middot; tap again to undo</p>
   <div class="reveal reveal-wrong">
     <span class="reveal-tag">Not quite</span>
-    <p>{e(combined_note)}</p>
+    <p>{e(duel_note)}</p>
     <p class="reveal-best">Player A&rsquo;s best 5 is outlined in green above &mdash; deselect and try again.</p>
   </div>
   <div class="reveal reveal-win">
@@ -525,7 +544,10 @@ trapz = ''.join(trap_question(t, i + 1, HANDS['interaction']['mistakes'])
 
 quiz_zone = f'''
 <div class="mode-zone quiz-zone">
+  <h2 class="quiz-h2">Test yourself</h2>
   <p class="panel-intro quiz-intro"><strong>Tap the cards, not the answers.</strong> Every deal below is real: pick the 5 cards that make your best hand out of your 7. Get it wrong and the table flips the lesson on you; get all 5 right and the hand reveals itself. First four are warm-ups &mdash; the last seven are the classic beginner traps, served raw.</p>
+  <p class="teacher-note">Coaching tip: let them fall for each trap before revealing the rule &mdash; the mistake is the lesson.</p>
+  <p class="no-has-note">Heads up: this browser doesn&rsquo;t support the <code>:has()</code> CSS rule the tap quiz runs on, so every question below is shown as a static answer sheet. Update to Chrome 105+, Safari 15.4+ or Firefox 121+ for the interactive version.</p>
 
   <h3 class="quiz-section">Warm-up &mdash; four spots</h3>
   {warmups}
@@ -559,9 +581,14 @@ page = f'''<!DOCTYPE html>
 <meta property="og:type" content="website">
 <meta property="og:url" content="{DEPLOY_BASE}">
 <meta property="og:site_name" content="Poker Hands, Decoded">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="{DEPLOY_BASE}og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Poker Hands, Decoded — hand rankings and a tap quiz for beginners">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{e(title_tag)}">
 <meta name="twitter:description" content="{e(desc)}">
+<meta name="twitter:image" content="{DEPLOY_BASE}og-image.png">
 <script type="application/ld+json">{jsonld}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -584,7 +611,7 @@ page = f'''<!DOCTYPE html>
 <header class="masthead">
   <div class="masthead-inner">
     <p class="kicker">Texas Hold&rsquo;em &middot; Beginner Series</p>
-    <h1>Poker Hands, <em>Decoded</em></h1>
+    <h1>Poker Hands for Beginners, <em>Decoded</em></h1>
     <nav class="tabbar" aria-label="Sections">
       <label class="tab" for="tab-input-rankings" id="tab-rankings"><span class="tab-num">01</span>Hand Rankings</label>
       <label class="tab" for="tab-input-combine" id="tab-combine"><span class="tab-num">02</span>How Cards Combine</label>
@@ -658,6 +685,11 @@ os.makedirs(f'{ARTIFACT}/content/public/poker-cards', exist_ok=True)
 shutil.copy2(f'{OUT_DIR}/poker-hands-v2.html', f'{ARTIFACT}/content/public/poker-hands-v2.html')
 for fn in os.listdir(f'{OUT_DIR}/poker-cards'):
     shutil.copy2(f'{OUT_DIR}/poker-cards/{fn}', f'{ARTIFACT}/content/public/poker-cards/{fn}')
+# social card (1200x630 PNG) — deployed at {DEPLOY_BASE}og-image.png
+og_src = f'{OUT_DIR}/og-image.png'
+if os.path.exists(og_src):
+    os.makedirs(f'{ARTIFACT}/content/public/poker-hands-v2', exist_ok=True)
+    shutil.copy2(og_src, f'{ARTIFACT}/content/public/poker-hands-v2/og-image.png')
 
 registry = f'''# registry entry v2 — for the portfolio-next / Mac merge.
 # shape mirrors content/registry-entry.txt (v1). Merge both; v1 stays live.
